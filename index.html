@@ -4,26 +4,112 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
 	<title>REALPROMMS</title>
 </head>
 
 <body>
 
-	<header class="header">
+	<header class="header" id="home">
 		<div class="container">
+			<button class="burger">
+				<nav class="header__menu">
+					<a class="header__menu-link active" href="#home">HOME</a>
+					<a class="header__menu-link" href="#aboutMe">ABOUT</a>
+					<a class="header__menu-link" href="">SKILL'S</a>
+					<a class="header__menu-link" href="">PORTFOLIO</a>
+					<a class="header__menu-link" href="">CONTACT</a>
+				</nav>
+			</button>
+			<nav class="header__menu">
+				<a class="header__menu-link active" href="#home">HOME</a>
+				<a class="header__menu-link" href="#aboutMe">ABOUT</a>
+				<a class="header__menu-link" href="">SKILL'S</a>
+				<a class="header__menu-link" href="">PORTFOLIO</a>
+				<a class="header__menu-link" href="">CONTACT</a>
+			</nav>
 
+			<div class="header__info">
+				<span class="header__info-span text">Welcome</span>
+				<h1 class="header__info-title text">I'M A FRONTEND DEVELOPER</h1>
+				<p class="header__info-subtitle text">Never Give Up, Always Go Only Forward</p>
+			</div>
+			<div class="header__button">
+				<a class="btn" href="#">LETS GO</a>
+			</div>
 		</div>
 	</header>
 
-	<section>
+	<section class="bg-scetion">
+		<div class="container">
+			<div class="about">
+				<div class="about-title">
+					<span id="aboutMe">ABOUT ME</span>
+				</div>
+				<div class="about__description">
+					<div class="about__description-img">
+						<img class="description-img" src="img/raznoe/logo.jpeg" alt="logo" width="450">
+					</div>
+					<div class="about__description-info">
+						<div class="info--top">
+							<span class="info--top-title">SALUTЕ!</span>
+							<span class="info--top-subtitle">My name is Misha Makarov and I love programming</span>
+							<p class="info--top-message">I want to enter the IT field with excellent knowledge, so I read for
+								several hours every day, practice and learn something new!
+								I really like Frontend development and I still have to master a lot of tools to feel comfortable
+								in this area.</p>
+						</div>
+						<hr>
+						<div class="info--bottom">
+							<p class="info--bottom-ld"><img src="img/content/icon/person.png" alt=""><span>Name:</span> Misha
+								Makarov</p>
+							<p class="info--bottom-ld"><img src="img/content/icon/number.png" alt=""><span>Age:</span> 33</p>
+							<p class="info--bottom-ld"><img src="img/content/icon/email.png" alt=""><span>Email:</span>
+								m.makarov90@bk.ru</p>
+							<p class="info--bottom-ld"><img src="img/content/icon/russia.png" alt=""><span>From:</span> Russia
+							</p>
+							<p class="info--bottom-ld"><img src="img/content/icon/work.png" alt=""><span>Profession:</span>
+								Frontend Dev.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="bg-scetionSecond">
 		<div class="container">
 
-		</div>
+			<div class="warpper">
+				<input class="radio" id="one" name="group" type="radio" checked>
+				<input class="radio" id="two" name="group" type="radio">
+				<input class="radio" id="three" name="group" type="radio">
+
+
+				<div class="tabs">
+					<label class="tab" id="one-tab" for="one">SKILL'S</label>
+					<label class="tab" id="two-tab" for="two">EXPERIENCES</label>
+					<label class="tab" id="three-tab" for="three">EDUCATION</label>
+				</div>
+
+				<div class="panels">
+					<div class="panel" id="one-panel">
+						<p>HTML</p>
+						<input type="range">
+						<p>HTML</p>
+						<input type="range">
+						<p>HTML</p>
+						<input type="range">
+					</div>
+					<div class="panel" id="two-panel">
+					</div>
+					<div class="panel" id="three-panel">
+					</div>
+
+				</div>
 	</section>
 
 	<fotter class="footer">
 		<div class="container">
-
 		</div>
 	</fotter>
 

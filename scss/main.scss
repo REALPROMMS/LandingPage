@@ -1,4 +1,6 @@
 @import 'header';
+@import 'about';
+@import 'skill';
 
 
 * {
@@ -20,3 +22,12 @@ body {
 	padding: 0 1rem;
 	margin: 0 auto;
 }
+
+// .container {
+// 	text-align: center;
+// 	min-height: 100vh;
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: center;
+// 	justify-content: center;
+// }

@@ -1,0 +1,235 @@
+.header {
+	background: url('/img/raznoe/bg2.jpg') fixed;
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	filter: brightness(75%);
+	animation: shrink 15s infinite alternate;
+}
+
+@keyframes shrink {
+	0% {
+		background-size: 120% 120%;
+	}
+
+	100% {
+		background-size: 100% 100%;
+	}
+}
+
+
+
+// !MENU
+.header__menu {
+	display: flex;
+	gap: 2%;
+	justify-content: center;
+	padding-top: 2rem;
+
+	&-link {
+		text-decoration: none;
+		padding: 1rem 1rem;
+		color: #ffffff;
+		font-size: 1.2rem;
+		letter-spacing: 0.3rem;
+		transition-duration: 0.3s;
+
+		&:hover {
+			color: #1bc7f1;
+			box-shadow: 0px 0px 12px 3px #1bc7f1;
+			translate: 0px 15px;
+		}
+	}
+}
+
+.active {
+	color: #1bc7f1;
+	font-weight: bold;
+
+	&:hover {
+		color: #ffffff;
+	}
+}
+
+
+
+// !BURGER
+.burger {
+	cursor: pointer;
+	position: relative;
+	border: none;
+	background: transparent;
+	width: 60px;
+	height: 26px;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	top: 20px;
+	display: none
+}
+
+.burger::before,
+.burger::after {
+	content: '';
+	left: 0;
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 4px;
+	border-radius: 10px;
+	background: #ffffff;
+	transition-duration: 0.3s;
+}
+
+.burger::before {
+	top: 0;
+	box-shadow: 0 11px 0 #ffffff;
+	transition-duration: 0.3s;
+}
+
+.burger::after {
+	bottom: 0;
+}
+
+
+
+// !TEXT
+.header__info {
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	height: 60vh;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.text {
+	color: #ffffff;
+	font-size: 1.2rem;
+	letter-spacing: 0.3rem;
+	transition-duration: 0.3s;
+	font-weight: bold;
+
+}
+
+.header__info-title {
+	font-size: 3rem;
+	color: #1bc7f1;
+	transition-duration: 0.3s;
+
+	&:hover {
+		box-shadow: 0px 14px 10px -6px #35b397;
+		border-radius: 15px;
+		cursor: pointer;
+	}
+}
+
+.header__info-subtitle {
+	font-size: 1rem;
+	text-shadow: 0px 0px 3px #35b397;
+}
+
+.header__info-span {
+	text-shadow: 0px 0px 3px #35b397;
+}
+
+
+// !TEXT ANIMATION
+.header__info h1 {
+	margin: 0;
+	font-size: 3rem;
+	color: #ffffff03;
+	background-image: url('/img/raznoe//animation.png');
+	background-repeat: repeat;
+	-webkit-background-clip: text;
+	animation: animate 15s ease-in-out infinite;
+	font-weight: 900;
+}
+
+@keyframes animate {
+
+	0%,
+	100% {
+		background-position: left top;
+	}
+
+	25% {
+		background-position: right bottom;
+	}
+
+	50% {
+		background-position: left bottom;
+	}
+
+	75% {
+		background-position: right top;
+	}
+}
+
+
+
+// !BTN
+.header__button {
+	display: flex;
+	justify-content: center;
+}
+
+.btn {
+	padding: 1rem 3.5rem;
+	text-decoration: none;
+	color: #ffffff;
+	border: 1px solid #ffffff;
+	border-radius: 55px;
+	transition-duration: 0.3s;
+
+	&:hover {
+		color: #1bc7f1;
+		border-color: #1bc7f1;
+		transform: scale(1.2);
+	}
+
+}
+
+
+
+// !MEDIA
+@media (max-width: 777px) {
+	.burger {
+		display: flex;
+	}
+
+	.header__menu {
+		display: none;
+	}
+
+	.burger:hover .header__menu {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.header__menu {
+		.header__menu-link {
+			&:hover {
+				color: #1bc7f1;
+				box-shadow: 0px 0px 12px 3px #1bc7f1;
+				translate: 0px 0px;
+				transform: scale(1.1);
+			}
+		}
+	}
+
+	.burger:hover::before,
+	.burger:hover::after {
+		background: #1bc7f1;
+		transition-duration: 0.3s;
+
+	}
+
+	.burger:hover::before {
+		box-shadow: 0 11px 0 #1bc7f1;
+		transition-duration: 0.3s;
+
+	}
+}
