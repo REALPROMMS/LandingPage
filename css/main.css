@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   filter: brightness(75%);
   animation: shrink 15s infinite alternate;
+  box-shadow: 0px 0px 50px 50px rgb(0, 0, 0) inset;
 }
 
 @keyframes shrink {
@@ -122,14 +123,14 @@
   margin: 0;
   font-size: 3rem;
   color: rgba(255, 255, 255, 0.0117647059);
-  background-image: url("/img/raznoe//animation.png");
+  background-image: url("/img/raznoe/animation.png");
   background-repeat: repeat;
   -webkit-background-clip: text;
-  animation: animate 15s ease-in-out infinite;
+  animation: animateText 15s ease-in-out infinite;
   font-weight: 900;
 }
 
-@keyframes animate {
+@keyframes animateText {
   0%, 100% {
     background-position: left top;
   }
@@ -190,11 +191,12 @@
     transition-duration: 0.3s;
   }
 }
-.bg-scetion {
+.bg-about {
   width: 100%;
-  min-height: 500px;
+  min-height: 600px;
   background-color: #000000;
   width: 100%;
+  box-shadow: 0px 0px 20px 50px rgb(0, 0, 0);
 }
 
 .about {
@@ -210,18 +212,16 @@
   letter-spacing: 0.3rem;
   font-weight: bold;
   color: rgba(255, 255, 255, 0.0117647059);
-  background-image: url("/img/raznoe//animation.png");
+  background-image: url("/img/raznoe/animation.png");
   background-repeat: repeat;
   -webkit-background-clip: text;
-  animation: animate 50s ease-in-out infinite;
+  animation: animateText 50s ease-in-out infinite;
   transition-duration: 0.3s;
   margin-bottom: 50px;
   box-shadow: 0px 14px 10px -6px #35b397;
   border-radius: 15px;
 }
 .about-title:hover {
-  box-shadow: 0px 14px 10px -6px #35b397;
-  border-radius: 15px;
   cursor: pointer;
 }
 
@@ -288,13 +288,15 @@ hr {
 }
 .info--bottom-ld span {
   color: #35b397;
+  font-weight: bold;
 }
 
-.bg-scetionSecond {
+.bg-skills {
   width: 100%;
-  min-height: 500px;
-  background-color: #050505;
-  width: 100vw;
+  min-height: 600px;
+  background-color: #000000;
+  margin-top: 180px;
+  box-shadow: 0px 0px 20px 50px rgb(0, 0, 0);
 }
 
 .tabs {
@@ -305,7 +307,7 @@ hr {
   padding-bottom: 20px;
   justify-content: center;
   padding-top: 60px;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
 }
 
 .warpper {
@@ -341,6 +343,13 @@ hr {
   display: none;
   animation: fadein 0.8s;
 }
+.warpper .panels .panel .panel-text {
+  color: #000000;
+  font-size: 1rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
 
 @keyframes fadein {
   from {
@@ -357,8 +366,10 @@ hr {
 #one:checked ~ .panels #one-panel,
 #two:checked ~ .panels #two-panel,
 #three:checked ~ .panels #three-panel {
-  display: block;
   transition-duration: 0.3s;
+  display: flex;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
 }
 
 #one:checked ~ .tabs #one-tab,
@@ -366,6 +377,348 @@ hr {
 #three:checked ~ .tabs #three-tab {
   color: #35b397;
   transform: scale(1.3);
+}
+
+.skill-bars-one {
+  padding: 25px 25px;
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  gap: 15px;
+}
+
+.info {
+  margin-bottom: 5px;
+}
+
+.info span {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+.progress-line {
+  height: 20px;
+  width: 100%;
+  background: #000000;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 15px;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.progress-line span {
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #35b397;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.progress-line span::before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-top-color: #000;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+
+.progress-line span::after {
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: #1bc7f1;
+  color: #000000;
+  opacity: 0;
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 10px;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
+}
+.html span {
+  width: 74%;
+}
+
+.css span {
+  width: 82%;
+}
+
+.JavaScript span {
+  width: 50%;
+}
+
+.react span {
+  width: 25%;
+}
+
+.bootstrap span {
+  width: 30%;
+}
+
+.wordpress span {
+  width: 35%;
+}
+
+.html span::after {
+  content: "74%";
+}
+
+.css span::after {
+  content: "82%";
+}
+
+.JavaScript span::after {
+  content: "50%";
+}
+
+.react span::after {
+  content: "25%";
+}
+
+.bootstrap span::after {
+  content: "30%";
+}
+
+.wordpress span::after {
+  content: "35%";
+}
+
+.html-two span::after {
+  content: "50%";
+}
+
+.html-two span {
+  width: 50%;
+}
+
+.git span {
+  width: 50%;
+}
+
+.npm span {
+  width: 35%;
+}
+
+.webpack span {
+  width: 25%;
+}
+
+.axios span {
+  width: 25%;
+}
+
+.swiper span {
+  width: 30%;
+}
+
+.animation span {
+  width: 44%;
+}
+
+.git span::after {
+  content: "50%";
+}
+
+.npm span::after {
+  content: "35%";
+}
+
+.webpack span::after {
+  content: "25%";
+}
+
+.axios span::after {
+  content: "25%";
+}
+
+.swiper span::after {
+  content: "63%";
+}
+
+.animation span::after {
+  content: "44%";
+}
+
+.bg-project {
+  width: 100%;
+  min-height: 600px;
+  background-color: #000000;
+  margin-top: 180px;
+  box-shadow: 0px 0px 20px 50px rgb(0, 0, 0);
+}
+
+.project {
+  text-align: center;
+}
+
+.project-title {
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.0117647059);
+  background-image: url("/img/raznoe/animation.png");
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  animation: animateText 50s ease-in-out infinite;
+  transition-duration: 0.3s;
+  margin-bottom: 50px;
+  box-shadow: 0px 14px 10px -6px #35b397;
+  border-radius: 15px;
+  display: inline-block;
+}
+.project-title:hover {
+  cursor: pointer;
+}
+
+.project__cards {
+  display: flex;
+  gap: 20px;
+}
+.project__cards .display {
+  display: contents;
+}
+
+.card {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  transition: ease all 1.5s;
+  perspective: 1200px;
+}
+.card:hover .cover {
+  transform: rotateX(0deg) rotateY(-180deg);
+}
+.card .cover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: ease all 1.5s;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  border: 1px solid #35b397;
+  box-shadow: 0px 0px 15px 10px #35b397 inset;
+}
+.card .cover:before {
+  content: "";
+  position: absolute;
+  border: 5px solid #35b397;
+  box-shadow: 0 0 12px #35b397;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  z-index: 2;
+  border-radius: 25px;
+}
+.card .cover:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 2;
+  transition: ease all 1.3s;
+  background: rgba(0, 0, 0, 0.4);
+}
+.card .cover.item-a {
+  background-image: url("/img/content/project/one.png");
+  background-position: center center;
+}
+.card .cover.item-b {
+  background-image: url("/img/content/project/two.png");
+  background-position: center center;
+}
+.card .cover.item-c {
+  background-image: url("/img/content/project/three.png");
+  background-position: center center;
+}
+.card .cover h6 {
+  font-weight: bold;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  color: #1bc7f1;
+  z-index: 3;
+  font-size: 1.6rem;
+  transform: translate(-50%, -5%);
+}
+.card .cover .price {
+  font-weight: bold;
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  z-index: 4;
+  font-size: 1rem;
+  color: #1bc7f1;
+}
+.card .card-back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url("/img/raznoe/logo.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transition: ease all 1.5s;
+  transform: translateZ(-1px);
+  display: flex;
+  border: 1px solid #35b397;
+  box-shadow: 0px 0px 25px 15px #35b397 inset;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+}
+.card .card-back:hover {
+  border: 1px solid #1bc7f1;
+  box-shadow: 0px 0px 25px 15px #1bc7f1 inset;
+}
+.card .card-back a {
+  background: transparent;
+  font-weight: 200;
+  font-size: 1.3em;
+  color: #35b397;
+  padding: 1rem 2rem;
+  outline: none;
+  text-decoration: none;
+  transition-duration: 1.5s;
+}
+.card .card-back a:hover {
+  border: 1px solid #1bc7f1;
+  border-radius: 25px;
+  color: #f80202;
+  transform: translateZ(-1px) rotateY(-180deg);
 }
 
 * {
@@ -377,7 +730,6 @@ hr {
 html,
 body {
   font-size: 16px;
-  height: 100%;
   width: 100%;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
@@ -386,4 +738,11 @@ body {
   max-width: 1200px;
   padding: 0 1rem;
   margin: 0 auto;
+}
+
+.main {
+  background: url("/img/raznoe/logo.jpeg") fixed;
+  background-size: cover;
+  height: 100%;
+  padding-top: 150px;
 }

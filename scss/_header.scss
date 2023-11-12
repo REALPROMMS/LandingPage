@@ -6,6 +6,7 @@
 	background-repeat: no-repeat;
 	filter: brightness(75%);
 	animation: shrink 15s infinite alternate;
+	box-shadow: 0px 0px 50px 50px rgba(0, 0, 0) inset;
 }
 
 @keyframes shrink {
@@ -140,14 +141,14 @@
 	margin: 0;
 	font-size: 3rem;
 	color: #ffffff03;
-	background-image: url('/img/raznoe//animation.png');
+	background-image: url('/img/raznoe/animation.png');
 	background-repeat: repeat;
 	-webkit-background-clip: text;
-	animation: animate 15s ease-in-out infinite;
+	animation: animateText 15s ease-in-out infinite;
 	font-weight: 900;
 }
 
-@keyframes animate {
+@keyframes animateText {
 
 	0%,
 	100% {

@@ -1,9 +1,11 @@
-.bg-scetionSecond {
+.bg-skills {
 	width: 100%;
-	min-height: 500px;
-	background-color: #050505;
-	width: 100vw;
+	min-height: 600px;
+	background-color: #000000;
+	margin-top: 180px;
+	box-shadow: 0px 0px 20px 50px rgba(0, 0, 0);
 }
+
 
 
 
@@ -16,7 +18,7 @@
 	padding-bottom: 20px;
 	justify-content: center;
 	padding-top: 60px;
-	padding-bottom: 120px;
+	padding-bottom: 60px;
 }
 
 .warpper {
@@ -53,10 +55,19 @@
 		.panel {
 			display: none;
 			animation: fadein 0.8s;
+
+			.panel-text {
+				color: #000000;
+				font-size: 1rem;
+				padding: 0.5rem;
+				font-weight: bold;
+				letter-spacing: 0.1rem;
+			}
 		}
 	}
-
 }
+
+
 
 @keyframes fadein {
 	from {
@@ -68,7 +79,6 @@
 	}
 }
 
-
 .radio {
 	display: none;
 }
@@ -76,11 +86,11 @@
 #one:checked~.panels #one-panel,
 #two:checked~.panels #two-panel,
 #three:checked~.panels #three-panel {
-	display: block;
 	transition-duration: 0.3s;
+	display: flex;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+	border-radius: 25px;
 }
-
-
 
 
 #one:checked~.tabs #one-tab,
@@ -88,4 +98,205 @@
 #three:checked~.tabs #three-tab {
 	color: #35b397;
 	transform: scale(1.3);
+}
+
+
+
+// !PANEL
+.skill-bars-one {
+	padding: 25px 25px;
+	display: flex;
+	flex-direction: column;
+	width: 48%;
+	gap: 15px;
+}
+
+
+.info {
+	margin-bottom: 5px;
+}
+
+.info span {
+	font-size: 1rem;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	opacity: 0;
+	animation: showText 0.5s 1s linear forwards;
+}
+
+@keyframes showText {
+	100% {
+		opacity: 1;
+	}
+}
+
+.progress-line {
+	height: 20px;
+	width: 100%;
+	background: #000000;
+	position: relative;
+	transform: scaleX(0);
+	transform-origin: left;
+	border-radius: 15px;
+	animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.progress-line span {
+	height: 100%;
+	position: absolute;
+	border-radius: 10px;
+	transform: scaleX(0);
+	transform-origin: left;
+	background: #35b397;
+	animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards
+}
+
+.progress-line span::before {
+	position: absolute;
+	content: "";
+	top: -10px;
+	right: 0;
+	height: 0;
+	width: 0;
+	opacity: 0;
+	border: 7px solid transparent;
+	border-bottom-width: 0px;
+	border-top-color: #000;
+	animation: showText2 0.5s 1.5s linear forwards;
+}
+
+.progress-line span::after {
+	position: absolute;
+	top: -28px;
+	right: 0;
+	font-weight: 500;
+	background: #1bc7f1;
+	color: #000000;
+	opacity: 0;
+	padding: 1px 8px;
+	font-size: 12px;
+	border-radius: 10px;
+	animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes animate {
+	100% {
+		transform: scaleX(1);
+	}
+}
+
+@keyframes showText2 {
+	100% {
+		opacity: 1;
+	}
+}
+
+// !ONE BAR
+.html span {
+	width: 74%;
+}
+
+.css span {
+	width: 82%;
+}
+
+.JavaScript span {
+	width: 50%;
+}
+
+.react span {
+	width: 25%;
+}
+
+.bootstrap span {
+	width: 30%;
+}
+
+.wordpress span {
+	width: 35%;
+}
+
+.html span::after {
+	content: "74%";
+}
+
+.css span::after {
+	content: "82%";
+}
+
+.JavaScript span::after {
+	content: "50%";
+}
+
+.react span::after {
+	content: "25%";
+}
+
+.bootstrap span::after {
+	content: "30%";
+}
+
+.wordpress span::after {
+	content: "35%";
+}
+
+
+
+// !TWO PANEL
+.html-two span::after {
+	content: "50%";
+}
+
+.html-two span {
+	width: 50%;
+}
+
+
+// !THREE PANEL
+.git span {
+	width: 50%;
+}
+
+.npm span {
+	width: 35%;
+}
+
+.webpack span {
+	width: 25%;
+}
+
+.axios span {
+	width: 25%;
+}
+
+.swiper span {
+	width: 30%;
+}
+
+.animation span {
+	width: 44%;
+}
+
+.git span::after {
+	content: "50%";
+}
+
+.npm span::after {
+	content: "35%";
+}
+
+.webpack span::after {
+	content: "25%";
+}
+
+.axios span::after {
+	content: "25%";
+}
+
+.swiper span::after {
+	content: "63%";
+}
+
+.animation span::after {
+	content: "44%";
 }

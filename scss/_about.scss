@@ -1,8 +1,10 @@
-.bg-scetion {
+.bg-about {
 	width: 100%;
-	min-height: 500px;
+	min-height: 600px;
 	background-color: #000000;
 	width: 100%;
+	// box-shadow: 0px 0px 15px 5px#1bc7f1;
+	box-shadow: 0px 0px 20px 50px rgba(0, 0, 0)
 }
 
 .about {
@@ -18,18 +20,18 @@
 	letter-spacing: 0.3rem;
 	font-weight: bold;
 	color: #ffffff03;
-	background-image: url('/img/raznoe//animation.png');
+	background-image: url('/img/raznoe/animation.png');
 	background-repeat: repeat;
 	-webkit-background-clip: text;
-	animation: animate 50s ease-in-out infinite;
+	animation: animateText 50s ease-in-out infinite;
 	transition-duration: 0.3s;
 	margin-bottom: 50px;
 	box-shadow: 0px 14px 10px -6px #35b397;
 	border-radius: 15px;
 
 	&:hover {
-		box-shadow: 0px 14px 10px -6px #35b397;
-		border-radius: 15px;
+		// box-shadow: 0px 14px 10px -6px #35b397;
+		// border-radius: 15px;
 		cursor: pointer;
 	}
 }
@@ -103,7 +105,8 @@ hr {
 		letter-spacing: 0.2rem;
 
 		span {
-			color: #35b397
+			color: #35b397;
+			font-weight: bold;
 		}
 	}
 }

@@ -1,0 +1,175 @@
+.bg-project {
+	width: 100%;
+	min-height: 600px;
+	background-color: #000000;
+	margin-top: 180px;
+	box-shadow: 0px 0px 20px 50px rgba(0, 0, 0)
+}
+
+.project {
+	text-align: center;
+}
+
+.project-title {
+	font-size: 3rem;
+	letter-spacing: 0.3rem;
+	font-weight: bold;
+	color: #ffffff03;
+	background-image: url('/img/raznoe/animation.png');
+	background-repeat: repeat;
+	-webkit-background-clip: text;
+	animation: animateText 50s ease-in-out infinite;
+	transition-duration: 0.3s;
+	margin-bottom: 50px;
+	box-shadow: 0px 14px 10px -6px #35b397;
+	border-radius: 15px;
+	display: inline-block;
+
+
+	&:hover {
+		// box-shadow: 0px 14px 10px -6px #35b397;
+		// border-radius: 15px;
+		cursor: pointer;
+	}
+}
+
+
+// !CARD
+.project__cards {
+	display: flex;
+	gap: 20px;
+
+	.display {
+		display: contents;
+	}
+}
+
+.card {
+	position: relative;
+	height: 400px;
+	width: 100%;
+	transition: ease all 1.5s;
+	perspective: 1200px;
+
+	&:hover {
+		.cover {
+			transform: rotateX(0deg) rotateY(-180deg);
+		}
+	}
+
+	.cover {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		transform-style: preserve-3d;
+		transition: ease all 1.5s;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		border-radius: 25px;
+		border: 1px solid #35b397;
+		box-shadow: 0px 0px 15px 10px #35b397 inset;
+
+		&:before {
+			content: '';
+			position: absolute;
+			border: 5px solid #35b397;
+			box-shadow: 0 0 12px #35b397;
+			top: 20px;
+			left: 20px;
+			right: 20px;
+			bottom: 20px;
+			z-index: 2;
+			border-radius: 25px;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			z-index: 2;
+			transition: ease all 1.3s;
+			background: rgba(0, 0, 0, .4);
+		}
+
+		&.item-a {
+			background-image: url('/img/content/project/one.png');
+			background-position: center center;
+		}
+
+		&.item-b {
+			background-image: url('/img/content/project/two.png');
+			background-position: center center;
+		}
+
+		&.item-c {
+			background-image: url('/img/content/project/three.png');
+			background-position: center center;
+		}
+
+		h6 {
+			font-weight: bold;
+			position: absolute;
+			bottom: 10%;
+			left: 50%;
+			color: #1bc7f1;
+			z-index: 3;
+			font-size: 1.6rem;
+			transform: translate(-50%, -5%);
+		}
+
+		.price {
+			font-weight: bold;
+			position: absolute;
+			top: 35px;
+			right: 35px;
+			z-index: 4;
+			font-size: 1rem;
+			color: #1bc7f1;
+		}
+	}
+
+	.card-back {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background: url('/img/raznoe/logo.jpeg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		transition: ease all 1.5s;
+		transform: translateZ(-1px);
+		display: flex;
+		border: 1px solid #35b397;
+		box-shadow: 0px 0px 25px 15px #35b397 inset;
+		align-items: center;
+		justify-content: center;
+		border-radius: 25px;
+
+		&:hover {
+			border: 1px solid #1bc7f1;
+			box-shadow: 0px 0px 25px 15px #1bc7f1 inset;
+		}
+
+		a {
+			background: transparent;
+			font-weight: 200;
+			font-size: 1.3em;
+			color: #35b397;
+			padding: 1rem 2rem;
+			outline: none;
+			text-decoration: none;
+			transition-duration: 1.5s;
+
+			&:hover {
+				border: 1px solid #1bc7f1;
+				border-radius: 25px;
+				color: #f80202;
+				transform: translateZ(-1px) rotateY(-180deg);
+			}
+		}
+	}
+}

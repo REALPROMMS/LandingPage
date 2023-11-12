@@ -1,6 +1,8 @@
 @import 'header';
 @import 'about';
 @import 'skill';
+@import 'proect';
+@import 'hobby';
 
 
 * {
@@ -12,7 +14,6 @@
 html,
 body {
 	font-size: 16px;
-	height: 100%;
 	width: 100%;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
@@ -23,11 +24,9 @@ body {
 	margin: 0 auto;
 }
 
-// .container {
-// 	text-align: center;
-// 	min-height: 100vh;
-// 	display: flex;
-// 	flex-direction: column;
-// 	align-items: center;
-// 	justify-content: center;
-// }
+.main {
+	background: url('/img/raznoe/logo.jpeg') fixed;
+	background-size: cover;
+	height: 100%;
+	padding-top: 150px;
+}
