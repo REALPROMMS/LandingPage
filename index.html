@@ -18,7 +18,7 @@
 					<a class="header__menu-link" href="#aboutMe">ABOUT</a>
 					<a class="header__menu-link" href="#skill">SKILL'S</a>
 					<a class="header__menu-link" href="#proect">PORTFOLIO</a>
-					<a class="header__menu-link" href="">CONTACT</a>
+					<a class="header__menu-link" href="#footer">CONTACT</a>
 				</nav>
 			</button>
 			<nav class="header__menu">
@@ -26,7 +26,7 @@
 				<a class="header__menu-link" href="#aboutMe">ABOUT</a>
 				<a class="header__menu-link" href="#skill">SKILL'S</a>
 				<a class="header__menu-link" href="#proect">PORTFOLIO</a>
-				<a class="header__menu-link" href="">CONTACT</a>
+				<a class="header__menu-link" href="#footer">CONTACT</a>
 			</nav>
 
 			<div class="header__info">
@@ -35,7 +35,7 @@
 				<p class="header__info-subtitle text">Never Give Up, Always Go Only Forward</p>
 			</div>
 			<div class="header__button">
-				<a class="btn" href="#">LETS GO</a>
+				<a class="btn" href="#project">LETS GO</a>
 			</div>
 		</div>
 	</header>
@@ -180,7 +180,7 @@
 		</section>
 		<section class="bg-project">
 			<div class="container">
-				<div class="project">
+				<div id="project" class="project">
 					<div class="project-title">
 						<span id="proect">ME PROJECT</span>
 					</div>
@@ -233,15 +233,19 @@
 	</main>
 
 
-
-
-	<footer class="bg-footer">
+	<footer id="footer" class="bg-footer">
 		<div class="container">
+			<div class="contact">
+				<a href="#" target="_blank"><img class="contact-img anim-1" src="img/footer/mail.png" alt="img"></a>
+				<a href="https://github.com/REALPROMMS" target="_blank"><img class="contact-img anim-2"
+						src="img/footer/git.png" alt="img"></a>
+				<a href="#" target="_blank"><img class="contact-img anim-3" src="img/footer/telega.png" alt="img"></a>
+			</div>
 		</div>
 	</footer>
 
+	<script src="js/main.mjs"></script>
 
-	<script src="js/swiper.js"></script>
 </body>
 
 </html>
