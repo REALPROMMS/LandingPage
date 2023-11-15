@@ -5,7 +5,7 @@ function initAudioPlayer() {
 	audio = new Audio()
 	audio.src = 'audio/Soular.mp3'
 	audio.loop = true
-	audio.play()
+	audio.pause()
 	// Set object references
 	playbtn = document.getElementById('playpausebtn')
 	// Add Event Handling
@@ -14,7 +14,7 @@ function initAudioPlayer() {
 	function playPause() {
 		if (audio.paused) {
 			audio.play()
-			playbtn.style.background = 'url(/img/audio-icons/pause.png) no-repeat'
+			playbtn.style.background = 'url(/img/audio-icons/pause.png ) no-repeat'
 		} else {
 			audio.pause()
 			playbtn.style.background = 'url(/img/audio-icons/play.png) no-repeat'
