@@ -11,8 +11,6 @@
 	padding: 0.5rem;
 }
 
-
-
 .hobby {
 	text-align: center;
 	padding-top: 30px;
@@ -24,7 +22,7 @@
 	letter-spacing: 0.3rem;
 	font-weight: bold;
 	color: #ffffff03;
-	background-image: url('/img/raznoe/animation.png');
+	background-image: url('/img/main/animation.png');
 	background-repeat: repeat;
 	-webkit-background-clip: text;
 	animation: animateText 50s ease-in-out infinite;
@@ -64,7 +62,6 @@
 
 
 
-
 // !SWIPER
 .swiper-box {
 	display: flex;
@@ -90,7 +87,9 @@
 		max-width: 80%;
 		max-height: 80%;
 		border-radius: 50px;
+		position: relative;
 	}
+
 }
 
 .swiper-button-prev {

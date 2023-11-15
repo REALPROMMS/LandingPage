@@ -53,7 +53,7 @@
 	letter-spacing: 1px;
 	font-weight: bold;
 	color: #ffffff03;
-	background-image: url('/img/raznoe/animation.png');
+	background-image: url('/img/main/animation.png');
 	background-repeat: repeat;
 	-webkit-background-clip: text;
 	animation: animateText 50s ease-in-out infinite;
@@ -253,25 +253,6 @@
 	}
 }
 
-.home-link {
-	img {
-		position: absolute;
-		top: 400px;
-		right: 20px;
-		position: fixed;
-		animation: myAnimTel 1s ease 0s infinite normal forwards;
-		border: 1px solid #35b397;
-		border-radius: 50%;
-		box-shadow: 0px 0px 12px 5px #35b397;
-		filter: opacity(0.7);
-		z-index: 50;
-
-		&:hover {
-			box-shadow: 0px 0px 12px 5px #1bc7f1;
-		}
-	}
-}
-
 @keyframes myAnimTel {
 	0% {
 		transform: scale(1);
@@ -285,7 +266,6 @@
 		transform: scale(1);
 	}
 }
-
 
 
 // !MEDIA

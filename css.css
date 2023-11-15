@@ -1,0 +1,16 @@
+body {
+	background-color: #ccc;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+}
+
+button#playpausebtn {
+	background: url(/icon/pause.png) no-repeat;
+	border: none;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+}
