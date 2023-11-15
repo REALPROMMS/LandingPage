@@ -4,6 +4,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="apple-touch-icon" sizes="180x180" href="fiveicons/android-chrome-192x192.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="fiveicons/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="fiveicons/favicon-16x16.png" />
+	<link rel="manifest" href="index.html" />
+	<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<title>REALPROMMS</title>
 </head>
@@ -14,7 +19,7 @@
 		<div class="container">
 			<button class="burger">
 				<nav class="header__menu">
-					<a class="header__menu-link active" href="#home">HOME</a>
+					<a class="header__menu-link active" href="index.html">HOME</a>
 					<a class="header__menu-link" href="#aboutMe">ABOUT</a>
 					<a class="header__menu-link" href="#skill">SKILL'S</a>
 					<a class="header__menu-link" href="#proect">PORTFOLIO</a>
@@ -22,7 +27,7 @@
 				</nav>
 			</button>
 			<nav class="header__menu">
-				<a class="header__menu-link active" href="#home">HOME</a>
+				<a class="header__menu-link active" href="index.html">HOME</a>
 				<a class="header__menu-link" href="#aboutMe">ABOUT</a>
 				<a class="header__menu-link" href="#skill">SKILL'S</a>
 				<a class="header__menu-link" href="#proect">PORTFOLIO</a>
@@ -35,186 +40,53 @@
 				<p class="header__info-subtitle text">Never Give Up, Always Go Only Forward</p>
 			</div>
 			<div class="header__button">
-				<a class="btn" href="#project">LETS GO</a>
+				<a class="btn" href="#hobby">LETS GO</a>
 			</div>
 		</div>
 	</header>
+	<hr class="header-hr">
+
+
 	<main class="main">
 
 		<section class="bg-about">
-			<div class="container">
-				<div class="about">
-					<div class="about-title">
-						<span id="aboutMe">ABOUT ME</span>
-					</div>
-					<div class="about__description">
-						<div class="about__description-img">
-							<img class="description-img" src="img/raznoe/logo.jpeg" alt="logo" width="450">
+			<div class="inset">
+				<div class="container">
+					<div class="about">
+						<div class="about-title">
+							<span id="aboutMe">ABOUT ME</span>
 						</div>
-						<div class="about__description-info">
-							<div class="info--top">
-								<span class="info--top-title">SALUTЕ!</span>
-								<span class="info--top-subtitle">My name is Misha Makarov and I love programming</span>
-								<p class="info--top-message">I want to enter the IT field with excellent knowledge, so I read
-									for
-									several hours every day, practice and learn something new!
-									I really like Frontend development and I still have to master a lot of tools to feel
-									comfortable
-									in this area.</p>
+						<div class="about__description">
+							<div class="about__description-img">
+								<a href="https://cherepovets.hh.ru/" target="_blank"><img class="description-img"
+										src="img/raznoe/logo.jpeg" alt="logo" width="450"></a>
 							</div>
-							<hr>
-							<div class="info--bottom">
-								<p class="info--bottom-ld"><img src="img/content/icon/person.png" alt=""><span>Name:</span>
-									Misha
-									Makarov</p>
-								<p class="info--bottom-ld"><img src="img/content/icon/number.png" alt=""><span>Age:</span> 33
-								</p>
-								<p class="info--bottom-ld"><img src="img/content/icon/email.png" alt=""><span>Email:</span>
-									m.makarov90@bk.ru</p>
-								<p class="info--bottom-ld"><img src="img/content/icon/russia.png" alt=""><span>From:</span>
-									Russia
-								</p>
-								<p class="info--bottom-ld"><img src="img/content/icon/work.png" alt=""><span>Profession:</span>
-									Frontend Dev.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="bg-skills">
-			<div class="container">
-
-				<div class="warpper" id="skill">
-
-					<input class="radio" id="one" name="group" type="radio" checked>
-					<input class="radio" id="two" name="group" type="radio">
-					<input class="radio" id="three" name="group" type="radio">
-
-					<div class="tabs">
-						<label class="tab" id="one-tab" for="one">SKILLS</label>
-						<label class="tab" id="two-tab" for="two">EXPERIENCES</label>
-						<label class="tab" id="three-tab" for="three">OTHER SKILLS</label>
-					</div>
-
-					<div class="panels">
-						<div class="panel" id="one-panel">
-							<div class="skill-bars-one">
-								<div class="bar">
-									<div class="info"> <span>HTML5</span> </div>
-									<div class="progress-line html"> <span></span> </div>
+							<div class="about__description-info">
+								<div class="info--top">
+									<span class="info--top-title">SALUTЕ!</span>
+									<span class="info--top-subtitle">My name is Misha Makarov and I love programming</span>
+									<p class="info--top-message">I want to enter the IT field with excellent knowledge, so I read
+										for
+										several hours every day, practice and learn something new!
+										I really like Frontend development and I still have to master a lot of tools to feel
+										comfortable
+										in this area.</p>
 								</div>
-								<div class="bar">
-									<div class="info"> <span>CSS3</span> </div>
-									<div class="progress-line css"> <span></span> </div>
-								</div>
-								<div class="bar">
-									<div class="info"> <span>Java Script</span> </div>
-									<div class="progress-line JavaScript"> <span></span> </div>
-								</div>
-							</div>
-							<div class="skill-bars-one">
-								<div class="bar">
-									<div class="info"> <span>React JS</span> </div>
-									<div class="progress-line react"> <span></span> </div>
-								</div>
-								<div class="bar">
-									<div class="info"> <span>BootStrap</span> </div>
-									<div class="progress-line bootstrap"> <span></span> </div>
-								</div>
-								<div class="bar">
-									<div class="info"> <span>WordPress</span> </div>
-									<div class="progress-line wordpress"> <span></span> </div>
-								</div>
-							</div>
-						</div>
-						<div class="panel" id="two-panel">
-							<div class="skill-bars-one">
-								<div class="bar">
-									<div class="info"> <span>------</span> </div>
-									<div class="progress-line html-two"> <span></span> </div>
-								</div>
-							</div>
-							<div class="skill-bars-one">
-								<div class="bar">
-									<div class="info"> <span>------</span> </div>
-									<div class="progress-line html-two"> <span></span> </div>
-								</div>
-							</div>
-						</div>
-						<div class="panel" id="three-panel">
-							<div class="skill-bars-one">
-								<div class="bar">
-									<div class="info"> <span>Git</span> </div>
-									<div class="progress-line git"> <span></span> </div>
-								</div>
-								<div class="bar">
-									<div class="info"> <span>Npm</span> </div>
-									<div class="progress-line npm"> <span></span> </div>
-								</div>
-								<div class="bar">
-									<div class="info"> <span>Webpack</span> </div>
-									<div class="progress-line webpack"> <span></span> </div>
-								</div>
-							</div>
-							<div class="skill-bars-one">
-								<div class="bar">
-									<div class="info"> <span>Axios</span> </div>
-									<div class="progress-line axios"> <span></span> </div>
-								</div>
-								<div class="bar">
-									<div class="info"> <span>Swiper</span> </div>
-									<div class="progress-line swiper"> <span></span> </div>
-								</div>
-								<div class="bar">
-									<div class="info"> <span>Animation</span> </div>
-									<div class="progress-line animation"> <span></span> </div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-			</div>
-		</section>
-		<section class="bg-project">
-			<div class="container">
-				<div id="project" class="project">
-					<div class="project-title">
-						<span id="proect">ME PROJECT</span>
-					</div>
-					<div class="project__cards">
-						<div class="display">
-							<div class="card">
-								<div class="cover item-a">
-									<h6>One Project</h6>
-									<span class="price">MMS</span>
-									<div class="card-back">
-										<a href="https://realpromms.github.io/HTML/" target="_blank">PLAY TO WATCH!</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="display">
-							<div class="card">
-								<div class="cover item-b">
-									<h6>Two Project</h6>
-									<span class="price">MMS</span>
-									<div class="card-back">
-										<a href="https://realpromms.github.io/Homework-HTML/" target="_blank">PLAY TO WATCH!</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="display">
-							<div class="card">
-								<div class="cover item-c">
-									<h6>Three Project</h6>
-									<span class="price">MMS</span>
-									<div class="card-back">
-										<a href="https://realpromms.github.io/GB-MMS-DZ/" target="_blank">PLAY TO WATCH!</a>
-									</div>
+								<hr>
+								<div class="info--bottom">
+									<p class="info--bottom-ld"><img src="img/content/icon/person.png" alt=""><span>Name:</span>
+										Misha
+										Makarov</p>
+									<p class="info--bottom-ld"><img src="img/content/icon/number.png" alt=""><span>Age:</span> 33
+									</p>
+									<p class="info--bottom-ld"><img src="img/content/icon/email.png" alt=""><span>Email:</span>
+										m.makarov90@bk.ru</p>
+									<p class="info--bottom-ld"><img src="img/content/icon/russia.png" alt=""><span>From:</span>
+										Russia
+									</p>
+									<p class="info--bottom-ld"><img src="img/content/icon/work.png"
+											alt=""><span>Profession:</span>
+										Frontend Dev.</p>
 								</div>
 							</div>
 						</div>
@@ -223,12 +95,350 @@
 			</div>
 		</section>
 		<section class="bg-hobby">
-			<div class="container">
-				<div class="hobby">
+			<div class="inset">
+				<div class="container">
+					<div class="hobby">
+						<div class="hobby-title">
+							<span id="hobby">MY HOBBY</span>
+						</div>
+						<div class="swiper-box">
+							<!-- Slider main container -->
+							<div class="swiper sliderTwo">
+								<!-- Additional required wrapper -->
+								<div class="swiper-wrapper">
+									<!-- Slides -->
+									<div class="swiper-slide"><img src="img/content/swiper/1.jpeg" alt="img"></div>
+									<div class="swiper-slide"><img src="img/content/swiper/2.jpeg" alt="img"></div>
+									<div class="swiper-slide"><img src="img/content/swiper/3.jpeg" alt="img"></div>
+									<div class="swiper-slide"><img src="img/content/swiper/4.jpeg" alt="img"></div>
+									<div class="swiper-slide"><img src="img/content/swiper/5.jpeg" alt="img"></div>
+									<div class="swiper-slide"><img src="img/content/swiper/6.jpeg" alt="img"></div>
+									<div class="swiper-slide"><img src="img/content/swiper/7.jpeg" alt="img"></div>
+									<div class="swiper-slide"><img src="img/content/swiper/8.jpeg" alt="img"></div>
+									<div class="swiper-slide"><img src="img/content/swiper/9.jpeg" alt="img"></div>
+								</div>
+								<!-- If we need pagination -->
+								<div class="swiper-pagination"></div>
+
+								<!-- If we need navigation buttons -->
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
+
+							</div>
+							<div class="hobby__info">
+								<h5 class="hobby__info-title">IT'S &#9786; OKEY </h5>
+								<p class="hobby__info-subtitle">
+									<!-- Как и у всех, я не только люблю IT сферу, но так же обожаю
+									кататься на сноутборде - это моя страть!<br>Я люблю ездить на велосипеде в теплые летние
+									деньки, на машине я выезжаю за город, потому что очень люблю фоткать различные пейзажи и
+									просто красивые места.<br>Много всего я люблю...долго писать &#9786; -->
+									Like everyone else, I not only love the IT sphere, but also adore
+									snowboarding is my passion!<br>I like to ride a bike in the warm summer
+									days, I go out of town by car, because I really like to take pictures of various landscapes
+									and
+									just beautiful places.<br>I love a lot of things...it takes a long time to write
+								</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-skills">
+			<div class="inset">
+				<div class="container">
+
+					<div class="warpper" id="skill">
+
+						<input class="radio" id="one" name="group" type="radio" checked>
+						<input class="radio" id="two" name="group" type="radio">
+						<input class="radio" id="three" name="group" type="radio">
+
+						<div class="tabs">
+							<label class="tab" id="one-tab" for="one">SKILLS</label>
+							<label class="tab" id="two-tab" for="two">EXPERIENCES</label>
+							<label class="tab" id="three-tab" for="three">OTHER SKILLS</label>
+						</div>
+
+						<div class="panels">
+							<div class="panel" id="one-panel">
+								<div class="skill-bars-one">
+									<div class="bar">
+										<div class="info"> <span>HTML5</span> </div>
+										<div class="progress-line html"> <span></span> </div>
+									</div>
+									<div class="bar">
+										<div class="info"> <span>CSS3</span> </div>
+										<div class="progress-line css"> <span></span> </div>
+									</div>
+									<div class="bar">
+										<div class="info"> <span>Java Script</span> </div>
+										<div class="progress-line JavaScript"> <span></span> </div>
+									</div>
+								</div>
+								<div class="skill-bars-one">
+									<div class="bar">
+										<div class="info"> <span>React JS</span> </div>
+										<div class="progress-line react"> <span></span> </div>
+									</div>
+									<div class="bar">
+										<div class="info"> <span>BootStrap</span> </div>
+										<div class="progress-line bootstrap"> <span></span> </div>
+									</div>
+									<div class="bar">
+										<div class="info"> <span>WordPress</span> </div>
+										<div class="progress-line wordpress"> <span></span> </div>
+									</div>
+								</div>
+							</div>
+							<div class="panel" id="two-panel">
+								<div class="skill-bars-one">
+									<div class="bar">
+										<div class="info"> <span>------</span> </div>
+										<div class="progress-line html-two"> <span></span> </div>
+									</div>
+								</div>
+								<div class="skill-bars-one">
+									<div class="bar">
+										<div class="info"> <span>------</span> </div>
+										<div class="progress-line html-two"> <span></span> </div>
+									</div>
+								</div>
+							</div>
+							<div class="panel" id="three-panel">
+								<div class="skill-bars-one">
+									<div class="bar">
+										<div class="info"> <span>Git</span> </div>
+										<div class="progress-line git"> <span></span> </div>
+									</div>
+									<div class="bar">
+										<div class="info"> <span>Npm</span> </div>
+										<div class="progress-line npm"> <span></span> </div>
+									</div>
+									<div class="bar">
+										<div class="info"> <span>Webpack</span> </div>
+										<div class="progress-line webpack"> <span></span> </div>
+									</div>
+								</div>
+								<div class="skill-bars-one">
+									<div class="bar">
+										<div class="info"> <span>Axios</span> </div>
+										<div class="progress-line axios"> <span></span> </div>
+									</div>
+									<div class="bar">
+										<div class="info"> <span>Swiper</span> </div>
+										<div class="progress-line swipers"> <span></span> </div>
+									</div>
+									<div class="bar">
+										<div class="info"> <span>Animation</span> </div>
+										<div class="progress-line animation"> <span></span> </div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
 
 				</div>
 			</div>
 		</section>
+		<section class="bg-project">
+			<div class="inset">
+				<div class="container">
+					<div id="project" class="project">
+						<div class="project-title">
+							<span id="proect">MY PROJECT</span>
+						</div>
+						<!-- <div class="project__cards">
+							<div class="display">
+								<div class="card">
+									<div class="cover item-a">
+										<h6>One Project</h6>
+										<span class="price">MMS</span>
+										<div class="card-back">
+											<a href="https://realpromms.github.io/HTML/" target="_blank">PLAY TO WATCH!</a>
+											<p class="card-back-text">white leading page (GB)</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="display">
+								<div class="card">
+									<div class="cover item-b">
+										<h6>Two Project</h6>
+										<span class="price">MMS</span>
+										<div class="card-back">
+											<a href="https://realpromms.github.io/Homework-HTML/" target="_blank">PLAY TO WATCH!</a>
+											<p class="card-back-text">dark leading page (GB)</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="display">
+								<div class="card">
+									<div class="cover item-c">
+										<h6>Three Project</h6>
+										<span class="price">MMS</span>
+										<div class="card-back">
+											<a href="https://realpromms.github.io/GB-MMS-DZ/" target="_blank">PLAY TO WATCH!</a>
+											<p class="card-back-text">online store (GB)</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> -->
+					</div>
+
+					<div class="swiper mySwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide project__cards">
+								<div class="display">
+									<div class="card">
+										<div class="cover item-a">
+											<h6>WHITE LEADING PAGE</h6>
+											<span class="price">GB PROJECT</span>
+											<div class="card-back">
+												<a href="https://realpromms.github.io/HTML/" target="_blank">PLAY TO WATCH!</a>
+											</div>
+										</div>
+										<div class="card__info">
+											<p class="card__info-description">
+												<!-- Макет сделан во время учебы в GeekBrains по программе
+												"Базовая верстка" -->
+												The layout was made while studying at GeekBrains under the program
+												"Basic layout"
+											</p>
+											<div class="block">
+												<p class="card__info-text">
+													<!-- Ипользовал технологии: -->
+													Used technology:
+												</p>
+											</div>
+											<ul class="card__info-list">
+												<li>HTML5</li>
+												<li>CSS3</li>
+												<li>SCSS - preprocessor</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide project__cards">
+								<div class="display">
+									<div class="card">
+										<div class="cover item-b">
+											<h6>DARK LEADING PAGE</h6>
+											<span class="price">GB PROJECT</span>
+											<div class="card-back">
+												<a href="https://realpromms.github.io/Homework-HTML/" target="_blank">PLAY TO
+													WATCH!</a>
+											</div>
+										</div>
+										<div class="card__info">
+											<p class="card__info-description">
+												<!-- Макет сделан во время учебы в GeekBrains по программе
+												"Базовая верстка" -->
+												The layout was made while studying at GeekBrains under the program
+												"Basic layout"
+											</p>
+											<div class="block">
+												<p class="card__info-text">
+													<!-- Ипользовал технологии: -->
+													Used technology:
+												</p>
+											</div>
+											<ul class="card__info-list">
+												<li>HTML5</li>
+												<li>CSS3</li>
+												<li>SCSS - preprocessor</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide project__cards">
+								<div class="display">
+									<div class="card">
+										<div class="cover item-c">
+											<h6>ONLINE STORE</h6>
+											<span class="price">GB PROJECT</span>
+											<div class="card-back">
+												<a href="https://realpromms.github.io/GB-MMS-DZ/" target="_blank">PLAY TO WATCH!</a>
+											</div>
+										</div>
+										<div class="card__info">
+											<p class="card__info-description">
+												<!-- Онлайн магазин сделанный во время учебы в GeekBrains
+												по
+												программе "Продвинутая верстка" -->
+												An online store made while studying at GeekBrains
+												by
+												the "Advanced Layout" program
+											</p>
+											<div class="block">
+												<p class="card__info-text">
+													<!-- Ипользовал технологии: -->
+													Used technology:
+												</p>
+											</div>
+											<ul class="card__info-list">
+												<li>HTML5</li>
+												<li>CSS3</li>
+												<li>SCSS - preprocessor</li>
+												<li>JavaScript</li>
+												<li>BootStrap</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide project__cards">
+								<div class="display">
+									<div class="card">
+										<div class="cover item-d">
+											<h6>WORKSHOP LEADING</h6>
+											<span class="price">FREELANCE PROJECT</span>
+											<div class="card-back">
+												<a href="https://drawingthebodycourse.pro/" target="_blank">PLAY TO WATCH!</a>
+											</div>
+										</div>
+										<div class="card__info">
+											<p class="card__info-description">
+												<!-- Одностраничный workshop сделанный на Фрилансе,
+												верстка
+												натянута на платформу WordPress -->
+												A one-page workshop made on a Freelance basis,
+												layout
+												stretched on the WordPress platform
+											</p>
+											<div class="block">
+												<p class="card__info-text">
+													<!-- Ипользовал технологии: -->
+													Used technology:
+												</p>
+											</div>
+											<ul class="card__info-list">
+												<li>HTML5</li>
+												<li>CSS3</li>
+												<li>SCSS - preprocessor</li>
+												<li>WordPress</li>
+												<li>PHP</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+
+		<hr class="footer-hr">
 
 	</main>
 
@@ -236,16 +446,35 @@
 	<footer id="footer" class="bg-footer">
 		<div class="container">
 			<div class="contact">
-				<a href="#" target="_blank"><img class="contact-img anim-1" src="img/footer/mail.png" alt="img"></a>
-				<a href="https://github.com/REALPROMMS" target="_blank"><img class="contact-img anim-2"
-						src="img/footer/git.png" alt="img"></a>
-				<a href="#" target="_blank"><img class="contact-img anim-3" src="img/footer/telega.png" alt="img"></a>
+				<div class="contact__box">
+					<div class="anim-box">
+						<a href="email:#" target="_blank"><img class="contact-img anim-1" src="img/footer/mail.png"
+								alt="img"></a>
+					</div>
+					<div class="anim-box">
+						<a href="https://github.com/REALPROMMS" target="_blank"><img class="contact-img anim-2"
+								src="img/footer/git.png" alt="img"></a>
+					</div>
+					<div class="anim-box">
+						<a href="#" target="_blank"><img class="contact-img anim-3" src="img/footer/telega.png" alt="img"></a>
+					</div>
+				</div>
+				<div class="reverse">
+					<p>All rights reserved &copy; Makarov Mihail</p>
+				</div>
+
+
+
+			</div>
+			<div id="home" class="home-link">
+				<a href="#home"><img src="img/footer/home.png" width="52px" alt="img"></a>
 			</div>
 		</div>
 	</footer>
 
-	<script src="js/main.mjs"></script>
 
+	<script src="libs/swiper/swiper-bundle.min.js"></script>
+	<script src="js/app.js"></script>
 </body>
 
 </html>

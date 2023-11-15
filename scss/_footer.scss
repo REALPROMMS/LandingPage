@@ -10,26 +10,64 @@
 
 .contact {
 	display: flex;
-	gap: 100px;
+	gap: 30px;
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
+	flex-direction: column;
+
 
 	&-img {
 		transition-duration: 0.3s;
 		border: 1px solid #35b397;
 		border-radius: 50%;
-
+		filter: opacity(0.5);
 
 		&:hover {
 			transform: scale(1.2);
 			border: 1px solid #35b397;
 			border-radius: 50%;
 			box-shadow: 0px 0px 12px 5px #35b397;
+			filter: opacity(1);
 		}
 	}
 }
 
+
+.footer-hr {
+	height: 10px;
+	position: relative;
+	z-index: 20;
+	margin: 120px 0px 35px 0px;
+	border: 0;
+	border-radius: 0;
+}
+
+.contact__box {
+	display: flex;
+	gap: 100px;
+}
+
+.reverse {
+	font-size: 1.2rem;
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: #ffffff03;
+	background-image: url('/img/raznoe/animation.png');
+	background-repeat: repeat;
+	-webkit-background-clip: text;
+	animation: animateText 50s ease-in-out infinite;
+	transition-duration: 0.3s;
+	margin-bottom: 50px;
+	box-shadow: 0px 5px 10px -6px #35b397;
+	border-radius: 15px;
+	display: inline-block;
+
+}
+
+.anim-box {
+	animation: contact 3s ease-out 3s 1 normal both;
+}
 
 .anim-1 {
 	animation: myAmiFooter-1 3s linear 0s 1 alternate none;
@@ -37,6 +75,7 @@
 
 .anim-2 {
 	animation: myAmiFooter-2 3s linear 0s 1 alternate none;
+
 }
 
 .anim-3 {
@@ -178,5 +217,71 @@
 	100% {
 		animation-timing-function: ease-out;
 		transform: translateY(0);
+	}
+}
+
+@keyframes contact {
+
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 50%;
+	}
+
+	10% {
+		transform: rotate(8deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-10deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(10deg);
+	}
+
+	80% {
+		transform: rotate(-8deg);
+	}
+
+	90% {
+		transform: rotate(8deg);
+	}
+}
+
+.home-link {
+	img {
+		position: absolute;
+		top: 400px;
+		right: 20px;
+		position: fixed;
+		animation: myAnimTel 1s ease 0s infinite normal forwards;
+		border: 1px solid #35b397;
+		border-radius: 50%;
+		box-shadow: 0px 0px 12px 5px #35b397;
+		filter: opacity(0.7);
+		z-index: 50;
+
+		&:hover {
+			box-shadow: 0px 0px 12px 5px #1bc7f1;
+		}
+	}
+}
+
+@keyframes myAnimTel {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
 	}
 }
