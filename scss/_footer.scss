@@ -285,3 +285,18 @@
 		transform: scale(1);
 	}
 }
+
+
+
+// !MEDIA
+@media (max-width: 990px) {
+	.contact__box {
+		flex-direction: column;
+		gap: 10px;
+		margin-top: 15px;
+	}
+
+	.reverse {
+		text-align: center;
+	}
+}

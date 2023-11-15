@@ -216,9 +216,11 @@
 
 
 // !MEDIA
-@media (max-width: 777px) {
+@media (max-width: 784px) {
 	.burger {
 		display: flex;
+		margin-bottom: 60px;
+
 	}
 
 	.header__menu {
@@ -253,5 +255,27 @@
 		box-shadow: 0 11px 0 #1bc7f1;
 		transition-duration: 0.3s;
 
+	}
+}
+
+@media (max-width: 567px) {
+	.header {
+		height: 100vh;
+	}
+
+	.header__info {
+		height: 25vh;
+	}
+
+	.header__info h1 {
+		font-size: 1.4rem;
+	}
+
+	.text {
+		font-size: 0.8rem;
+	}
+
+	.burger {
+		margin-bottom: 280px;
 	}
 }

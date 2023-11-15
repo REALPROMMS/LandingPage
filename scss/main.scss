@@ -37,4 +37,11 @@ body {
 .inset {
 	box-shadow: 0px 0px 17px 7px rgb(0, 0, 0) inset;
 	flex-grow: 1;
+	border-radius: 50px;
+}
+
+@media (max-width: 567px) {
+	.main {
+		padding-top: 70px;
+	}
 }

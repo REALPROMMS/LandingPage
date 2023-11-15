@@ -25,7 +25,7 @@ const swiperTwo = new Swiper('.sliderTwo', {
 		prevEl: '.swiper-button-prev',
 	},
 
-	// autoplay: {
-	// 	delay: 3000,
-	// }
+	autoplay: {
+		delay: 3000,
+	}
 });
