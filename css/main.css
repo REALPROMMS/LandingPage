@@ -166,18 +166,58 @@
   justify-content: center;
 }
 
-.btn {
-  padding: 1rem 3.5rem;
+.btn-flip {
+  opacity: 1;
+  outline: 0;
+  color: #35b397;
+  line-height: 40px;
+  position: relative;
+  text-align: center;
+  letter-spacing: 1px;
+  display: inline-block;
   text-decoration: none;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-  border-radius: 55px;
-  transition-duration: 0.3s;
+  text-transform: uppercase;
+  font-weight: bold;
 }
-.btn:hover {
+.btn-flip:hover:after {
+  opacity: 1;
+  transform: translateY(0) rotateX(0);
+}
+.btn-flip:hover:before {
+  opacity: 0;
+  transform: translateY(50%) rotateX(90deg);
+}
+.btn-flip:after {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
   color: #1bc7f1;
-  border-color: #1bc7f1;
-  transform: scale(1.2);
+  display: block;
+  transition: 0.5s;
+  position: absolute;
+  background: transparent;
+  content: "LETS GO";
+  transform: translateY(-50%) rotateX(90deg);
+  border-radius: 25px;
+  border: 3px solid #1bc7f1;
+  box-shadow: 0px 0px 7px 3px #1bc7f1;
+}
+.btn-flip:before {
+  top: 0;
+  left: 0;
+  opacity: 1;
+  color: #35b397;
+  display: block;
+  padding: 0px 30px;
+  line-height: 40px;
+  transition: 0.5s;
+  position: relative;
+  background: transparent;
+  content: "HELLO ME FRIEND";
+  transform: translateY(0) rotateX(0);
+  border: 3px solid #35b397;
+  border-radius: 25px;
 }
 
 @media (max-width: 784px) {
