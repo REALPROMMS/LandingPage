@@ -1563,13 +1563,13 @@ hr {
   cursor: pointer;
   flex-direction: column;
 }
-.contact-img {
+.contact img {
   transition-duration: 0.3s;
   border: 1px solid #35b397;
   border-radius: 50%;
   filter: opacity(0.5);
 }
-.contact-img:hover {
+.contact img:hover {
   transform: scale(1.2);
   border: 1px solid #35b397;
   border-radius: 50%;
@@ -1610,7 +1610,7 @@ hr {
   filter: hue-rotate(45deg);
 }
 
-.anim-box {
+.social-box-anim {
   animation: contact 3s ease-out 3s 1 normal both;
 }
 

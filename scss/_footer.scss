@@ -20,7 +20,7 @@
 	flex-direction: column;
 
 
-	&-img {
+	img {
 		transition-duration: 0.3s;
 		border: 1px solid #35b397;
 		border-radius: 50%;
@@ -72,7 +72,7 @@
 
 }
 
-.anim-box {
+.social-box-anim {
 	animation: contact 3s ease-out 3s 1 normal both;
 }
 
