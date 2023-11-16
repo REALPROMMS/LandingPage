@@ -19,7 +19,7 @@
 	padding-top: 30px;
 }
 
-.project-title {
+.project-title span {
 	font-size: 3rem;
 	letter-spacing: 0.3rem;
 	font-weight: bold;
@@ -37,7 +37,6 @@
 
 	&:hover {
 		filter: hue-rotate(45deg);
-		animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 	}
 }
 
@@ -325,7 +324,7 @@
 
 @media (max-width: 490px) {
 
-	.project-title {
+	.project-title span {
 		font-size: 2.2rem;
 	}
 

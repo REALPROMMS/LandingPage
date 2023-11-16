@@ -48,6 +48,11 @@
 			box-shadow: 0px 0px 12px 3px #1bc7f1;
 			translate: 0px 15px;
 		}
+
+		&:active {
+			color: #35b397;
+			box-shadow: 0px 0px 12px 3px #35b397;
+		}
 	}
 }
 
@@ -57,6 +62,11 @@
 
 	&:hover {
 		color: #ffffff;
+	}
+
+	&:active {
+		color: #35b397;
+		box-shadow: 0px 0px 12px 3px #35b397;
 	}
 }
 
@@ -137,8 +147,11 @@
 		border-radius: 15px;
 		cursor: pointer;
 		filter: hue-rotate(45deg);
-		animation: text-flicker-out-glow 2.5s linear both;
 	}
+}
+
+.headerTextAnim {
+	animation: text-flicker-in-glow 4s linear both;
 }
 
 .header__info-subtitle {

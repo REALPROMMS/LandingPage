@@ -19,7 +19,7 @@
 	flex-direction: column;
 }
 
-.about-title {
+.about-title span {
 	font-size: 3rem;
 	letter-spacing: 0.3rem;
 	font-weight: bold;
@@ -36,11 +36,23 @@
 
 	&:hover {
 		filter: hue-rotate(45deg);
-		animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+
 	}
 }
 
+.shakeAnim {
+	animation: shake-bottom 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
 
+
+.bubbly-button {
+	transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+
+	&:active {
+		transform: scale(0.9);
+	}
+
+}
 
 // !DESCRIPTION
 .about__description {
@@ -164,7 +176,7 @@ hr {
 		gap: 2rem;
 	}
 
-	.about-title {
+	.about-title span {
 		font-size: 2.2rem;
 		margin-bottom: 20px;
 	}
