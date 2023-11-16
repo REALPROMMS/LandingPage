@@ -26,6 +26,6 @@ const swiperTwo = new Swiper('.sliderTwo', {
 	},
 
 	autoplay: {
-		delay: 3000,
+		delay: 2500,
 	}
 });

@@ -1,3 +1,6 @@
+@import './animation/anim-footer';
+
+
 .bg-footer {
 	width: 100%;
 	min-height: 200px;
@@ -63,6 +66,10 @@
 	border-radius: 15px;
 	display: inline-block;
 
+	&:hover {
+		filter: hue-rotate(45deg);
+	}
+
 }
 
 .anim-box {
@@ -82,190 +89,6 @@
 	animation: myAmiFooter-3 3s linear 0s 1 alternate none;
 }
 
-// !ONE ANIMATION
-@keyframes myAmiFooter-1 {
-	0% {
-		animation-timing-function: ease-in;
-		opacity: 0;
-		transform: translateY(-250px);
-	}
-
-	38% {
-		animation-timing-function: ease-out;
-		opacity: 1;
-		transform: translateY(0);
-	}
-
-	55% {
-		animation-timing-function: ease-in;
-		transform: translateY(-65px);
-	}
-
-	72% {
-		animation-timing-function: ease-out;
-		transform: translateY(0);
-	}
-
-	81% {
-		animation-timing-function: ease-in;
-		transform: translateY(-28px);
-	}
-
-	90% {
-		animation-timing-function: ease-out;
-		transform: translateY(0);
-	}
-
-	95% {
-		animation-timing-function: ease-in;
-		transform: translateY(-8px);
-	}
-
-	100% {
-		animation-timing-function: ease-out;
-		transform: translateY(0);
-	}
-}
-
-
-
-// !TWO ANIMATION
-@keyframes myAmiFooter-2 {
-	0% {
-		animation-timing-function: ease-in;
-		opacity: 0;
-		transform: translateY(-250px);
-	}
-
-	18% {
-		animation-timing-function: ease-out;
-		opacity: 1;
-		transform: translateY(0);
-	}
-
-	35% {
-		animation-timing-function: ease-in;
-		transform: translateY(-65px);
-	}
-
-	52% {
-		animation-timing-function: ease-out;
-		transform: translateY(0);
-	}
-
-	61% {
-		animation-timing-function: ease-in;
-		transform: translateY(-28px);
-	}
-
-	80% {
-		animation-timing-function: ease-out;
-		transform: translateY(0);
-	}
-
-	85% {
-		animation-timing-function: ease-in;
-		transform: translateY(-8px);
-	}
-
-	100% {
-		animation-timing-function: ease-out;
-		transform: translateY(0);
-	}
-}
-
-
-// !THREE ANIMATION
-@keyframes myAmiFooter-3 {
-	0% {
-		animation-timing-function: ease-in;
-		opacity: 0;
-		transform: translateY(-250px);
-	}
-
-	28% {
-		animation-timing-function: ease-out;
-		opacity: 1;
-		transform: translateY(0);
-	}
-
-	45% {
-		animation-timing-function: ease-in;
-		transform: translateY(-65px);
-	}
-
-	62% {
-		animation-timing-function: ease-out;
-		transform: translateY(0);
-	}
-
-	71% {
-		animation-timing-function: ease-in;
-		transform: translateY(-28px);
-	}
-
-	80% {
-		animation-timing-function: ease-out;
-		transform: translateY(0);
-	}
-
-	83% {
-		animation-timing-function: ease-in;
-		transform: translateY(-8px);
-	}
-
-	100% {
-		animation-timing-function: ease-out;
-		transform: translateY(0);
-	}
-}
-
-@keyframes contact {
-
-	0%,
-	100% {
-		transform: rotate(0deg);
-		transform-origin: 50% 50%;
-	}
-
-	10% {
-		transform: rotate(8deg);
-	}
-
-	20%,
-	40%,
-	60% {
-		transform: rotate(-10deg);
-	}
-
-	30%,
-	50%,
-	70% {
-		transform: rotate(10deg);
-	}
-
-	80% {
-		transform: rotate(-8deg);
-	}
-
-	90% {
-		transform: rotate(8deg);
-	}
-}
-
-@keyframes myAnimTel {
-	0% {
-		transform: scale(1);
-	}
-
-	50% {
-		transform: scale(1.1);
-	}
-
-	100% {
-		transform: scale(1);
-	}
-}
 
 
 // !MEDIA

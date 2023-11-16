@@ -1,3 +1,6 @@
+@import './animation/anim-proect';
+
+
 .bg-project {
 	width: 100%;
 	min-height: 600px;
@@ -34,9 +37,10 @@
 
 	&:hover {
 		filter: hue-rotate(45deg);
+		animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 	}
-
 }
+
 
 
 // !CARD
@@ -60,7 +64,6 @@
 
 .card__info-description {
 	color: white;
-	// text-align: center;
 	text-align: center;
 	margin-bottom: 5px;
 }
@@ -74,7 +77,7 @@
 	padding: 0.3rem;
 }
 
-.block {
+.card__info-block {
 	display: flex;
 	justify-content: center;
 }
@@ -269,6 +272,7 @@
 }
 
 
+
 // !MEDIA
 @media (max-width: 567px) {
 	.bg-project {
@@ -292,7 +296,6 @@
 	.swiper-slide .project__cards .swiper-slide-active {
 		margin-right: 0px;
 	}
-
 
 	.card__info-list {
 		text-align: center;
@@ -318,7 +321,6 @@
 		bottom: -10px;
 		right: 5%;
 	}
-
 }
 
 @media (max-width: 490px) {

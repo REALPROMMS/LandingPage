@@ -1,3 +1,6 @@
+@import './animation/anim-header';
+
+
 .header {
 	background: url('/img/main/bg-header.jpg') fixed;
 	height: 100vh;
@@ -21,16 +24,6 @@
 	z-index: 30;
 	border: 0;
 	border-radius: 0;
-}
-
-@keyframes shrink {
-	0% {
-		background-size: 120% 120%;
-	}
-
-	100% {
-		background-size: 100% 100%;
-	}
 }
 
 
@@ -129,6 +122,10 @@
 
 }
 
+.header__info-link {
+	text-decoration: none;
+}
+
 .header__info-title {
 	font-size: 3rem;
 	color: #1bc7f1;
@@ -139,13 +136,10 @@
 		box-shadow: 0px 14px 10px -6px #35b397;
 		border-radius: 15px;
 		cursor: pointer;
+		filter: hue-rotate(45deg);
+		animation: text-flicker-out-glow 2.5s linear both;
 	}
 }
-
-.header .header__info-title:hover {
-	filter: hue-rotate(45deg);
-}
-
 
 .header__info-subtitle {
 	font-size: 1rem;
@@ -155,6 +149,7 @@
 .header__info-span {
 	text-shadow: 0px 0px 3px #35b397;
 }
+
 
 
 // !TEXT ANIMATION
@@ -169,34 +164,20 @@
 	font-weight: 900;
 }
 
-@keyframes animateText {
-
-	0%,
-	100% {
-		background-position: left top;
-	}
-
-	25% {
-		background-position: right bottom;
-	}
-
-	50% {
-		background-position: left bottom;
-	}
-
-	75% {
-		background-position: right top;
-	}
-}
-
 
 
 // !BTN
 .header__button {
 	display: flex;
 	justify-content: center;
+	// animation: bounce-top 1.2s both;
+	animation: bounce-top 1.5s both;
+
 }
 
+
+
+// !OLD BTN
 // .btn {
 // 	padding: 1rem 3.5rem;
 // 	text-decoration: none;
@@ -212,7 +193,6 @@
 // 	}
 // }
 
-
 .btn-flip {
 	opacity: 1;
 	outline: 0;
@@ -225,7 +205,6 @@
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: bold;
-
 
 	&:hover {
 
@@ -276,7 +255,6 @@
 
 	}
 }
-
 
 
 

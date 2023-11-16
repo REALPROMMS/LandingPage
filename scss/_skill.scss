@@ -1,3 +1,5 @@
+@import './animation/anim-skill';
+
 .bg-skills {
 	width: 100%;
 	min-height: 600px;
@@ -13,9 +15,7 @@
 
 
 
-
 // !TABS
-
 .tabs {
 	display: flex;
 	flex-wrap: wrap;
@@ -43,18 +43,20 @@
 
 		&:hover {
 			background: #35b397;
-			transition: all 0.2s ease-in;
-			color: #000
+			// transition: all 0.2s ease-in;
+			color: #000;
+			animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 		}
 	}
 
 	.panels {
-		background: linear-gradient(0deg, #000000 -21%, #1bc7f1 100%);
-		box-shadow: 0px 0px 12px 2px #35b397;
+		// background: linear-gradient(0deg, #000000 -21%, #1bc7f1 100%);
+		box-shadow: 0px 0px 12px 2px #35b397 inset;
 		width: 100%;
-		border-radius: 1rem;
+		border-radius: 10rem;
 		overflow: hidden;
 		padding: 2rem;
+		color: #ffffff;
 
 		.panel {
 			display: none;
@@ -71,18 +73,6 @@
 	}
 }
 
-
-
-@keyframes fadein {
-	from {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
-	}
-}
-
 .radio {
 	display: none;
 }
@@ -95,7 +85,6 @@
 	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 	border-radius: 25px;
 }
-
 
 #one:checked~.tabs #one-tab,
 #two:checked~.tabs #two-tab,
@@ -114,9 +103,17 @@
 	gap: 15px;
 }
 
-
 .info {
 	margin-bottom: 5px;
+}
+
+.bar {
+	cursor: pointer;
+
+	&:hover {
+		filter: hue-rotate(45deg);
+		color: #1bc7f1;
+	}
 }
 
 .info span {
@@ -125,12 +122,6 @@
 	letter-spacing: 0.1rem;
 	opacity: 0;
 	animation: showText 0.5s 1s linear forwards;
-}
-
-@keyframes showText {
-	100% {
-		opacity: 1;
-	}
 }
 
 .progress-line {
@@ -142,6 +133,8 @@
 	transform-origin: left;
 	border-radius: 15px;
 	animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+	cursor: pointer;
+	transition-duration: 0.3s;
 }
 
 .progress-line span {
@@ -182,17 +175,7 @@
 	animation: showText2 0.5s 1.5s linear forwards;
 }
 
-@keyframes animate {
-	100% {
-		transform: scaleX(1);
-	}
-}
 
-@keyframes showText2 {
-	100% {
-		opacity: 1;
-	}
-}
 
 // !ONE BAR
 .html span {
@@ -253,6 +236,7 @@
 .html-two span {
 	width: 50%;
 }
+
 
 
 // !THREE PANEL
@@ -336,6 +320,7 @@
 		width: 95%;
 		padding: 0;
 		margin-bottom: 2rem;
+		border-radius: 2rem;
 	}
 
 	.progress-line span::after {

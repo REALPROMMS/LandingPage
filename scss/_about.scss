@@ -1,3 +1,6 @@
+@import './animation/anim-about';
+
+
 .bg-about {
 	width: 100%;
 	min-height: 600px;
@@ -33,6 +36,7 @@
 
 	&:hover {
 		filter: hue-rotate(45deg);
+		animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 	}
 }
 
@@ -49,9 +53,12 @@
 
 .about__description-img {
 	width: 100%;
+	transition-duration: 0.3s;
 
 	&:hover {
 		filter: hue-rotate(45deg);
+		transition-duration: 0.3s;
+		animation: jello-horizontal 1.2s both;
 	}
 }
 
@@ -114,6 +121,12 @@ hr {
 			font-size: 1.2rem;
 		}
 	}
+}
+
+.mail-link {
+	cursor: pointer;
+	text-decoration: none;
+	color: #ffffff;
 }
 
 

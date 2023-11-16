@@ -1,3 +1,6 @@
+@import './animation/anim-hobby';
+
+
 .bg-hobby {
 	width: 100%;
 	min-height: 600px;
@@ -35,6 +38,7 @@
 
 	&:hover {
 		filter: hue-rotate(45deg);
+		animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 	}
 }
 
@@ -88,6 +92,17 @@
 		max-height: 80%;
 		border-radius: 50px;
 		position: relative;
+		cursor: grab;
+		transition-duration: 0.3s;
+
+		&:hover {
+
+			box-shadow: 0px 0px 10px 5px #35b397;
+		}
+	}
+
+	img:active {
+		cursor: grabbing;
 	}
 
 }
@@ -123,6 +138,8 @@
 .swiper-pagination-bullet-active {
 	background-color: #1bc7f1;
 }
+
+
 
 // !MEDIA
 @media (max-width: 750px) {
