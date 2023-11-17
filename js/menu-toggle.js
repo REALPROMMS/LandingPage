@@ -7,14 +7,17 @@ toggleBtn.addEventListener('click', () => {
 });
 
 
-// !Удаляет класс с анимацией на кнопке toggle menubar(при ее активации)
-const animToggle = document.querySelector('.toggle-btn'),
-	animTgBtn = animToggle.querySelector('.bx');
+// !Удаляет класс с анимацией на кнопке toggle menubar(при ее активации), а после закрытия меню снова добалвяет этот класс
+const animToggle = document.querySelector('.menu__toggle'),
+	animTgBtn = animToggle.querySelector('.toggleMain');
 
 animTgBtn.addEventListener('click', () => {
-	animTgBtn.classList.remove('tgdBtn')
+	if (animTgBtn.querySelector('tgdBtn') === true) {
+		animTgBtn.classList.remove('tgdBtn')
+	} else {
+		animTgBtn.classList.toggle('tgdBtn')
+	}
 });
-
 
 
 

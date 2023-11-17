@@ -240,3 +240,75 @@ const observerWp = new IntersectionObserver(entries => {
 	});
 });
 observerWp.observe(document.querySelector('.panels'));
+
+
+
+// !ABOUT ICONS - вылетают иконки в разделе ABOUT
+const observerIconsAbout = new IntersectionObserver(entries => {
+	entries.forEach(entry => {
+		const observerIcons = entry.target.querySelector('.imgAnim');
+		if (entry.isIntersecting) {
+			observerIcons.classList.add('animAboutimg');
+			return; // если класс добавлен, продолжать уже не надо
+		}
+		// перемещение завершено, теперь надо удалить класс
+		observerIcons.classList.remove('animAboutimg');
+	});
+});
+observerIconsAbout.observe(document.querySelector('.info--bottom'));
+
+// ! 2
+const observerIconsAbout2 = new IntersectionObserver(entries => {
+	entries.forEach(entry => {
+		const observerIcons = entry.target.querySelector('.imgAnim2');
+		if (entry.isIntersecting) {
+			observerIcons.classList.add('animAboutimg2');
+			return; // если класс добавлен, продолжать уже не надо
+		}
+		// перемещение завершено, теперь надо удалить класс
+		observerIcons.classList.remove('animAboutimg2');
+	});
+});
+observerIconsAbout2.observe(document.querySelector('.info--bottom'));
+
+// ! 3
+const observerIconsAbout3 = new IntersectionObserver(entries => {
+	entries.forEach(entry => {
+		const observerIcons = entry.target.querySelector('.imgAnim3');
+		if (entry.isIntersecting) {
+			observerIcons.classList.add('animAboutimg3');
+			return; // если класс добавлен, продолжать уже не надо
+		}
+		// перемещение завершено, теперь надо удалить класс
+		observerIcons.classList.remove('animAboutimg3');
+	});
+});
+observerIconsAbout3.observe(document.querySelector('.info--bottom'));
+
+// ! 4
+const observerIconsAbout4 = new IntersectionObserver(entries => {
+	entries.forEach(entry => {
+		const observerIcons = entry.target.querySelector('.imgAnim4');
+		if (entry.isIntersecting) {
+			observerIcons.classList.add('animAboutimg4');
+			return; // если класс добавлен, продолжать уже не надо
+		}
+		// перемещение завершено, теперь надо удалить класс
+		observerIcons.classList.remove('animAboutimg4');
+	});
+});
+observerIconsAbout4.observe(document.querySelector('.info--bottom'));
+
+// ! 5
+const observerIconsAbout5 = new IntersectionObserver(entries => {
+	entries.forEach(entry => {
+		const observerIcons = entry.target.querySelector('.imgAnim5');
+		if (entry.isIntersecting) {
+			observerIcons.classList.add('animAboutimg5');
+			return; // если класс добавлен, продолжать уже не надо
+		}
+		// перемещение завершено, теперь надо удалить класс
+		observerIcons.classList.remove('animAboutimg5');
+	});
+});
+observerIconsAbout5.observe(document.querySelector('.info--bottom'));

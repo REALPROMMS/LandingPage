@@ -14,12 +14,13 @@ function initAudioPlayer() {
 	function playPause() {
 		if (audio.paused) {
 			audio.play()
-			playbtn.style.background = 'url(/img/audio-icons/pause.png ) no-repeat'
+			playbtn.style.background = 'url(/img/audio-icons/pause2.png ) no-repeat'
 		} else {
 			audio.pause()
-			playbtn.style.background = 'url(/img/audio-icons/play.png) no-repeat'
+			playbtn.style.background = 'url(/img/audio-icons/play2.png) no-repeat'
 		}
 	}
 }
 
 window.addEventListener('load', initAudioPlayer);
+
