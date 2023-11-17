@@ -48,11 +48,14 @@
 	opacity: 0.5;
 	box-shadow: 0px 0px 12px 5px #35b397;
 	border-radius: 50%;
+	transition: all 0.3s ease;
 }
+
 
 
 .menu__toggle.open .toggle-btn {
 	transform: rotate(120deg);
+	// box-shadow: 0px 0px 12px 5px #1bc7f1;
 }
 
 .menu__toggle-content span {
@@ -74,7 +77,7 @@
 
 .menu__toggle-content span a i {
 	font-size: 40px;
-	color: #1bc7f1;
+	color: #35b397;
 	// transform: rotate(calc(var(--i) * (-55deg/ -1)));
 	// transform: rotate(5deg);
 	opacity: 0.5;

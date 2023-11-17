@@ -1763,6 +1763,7 @@ hr {
   opacity: 0.5;
   box-shadow: 0px 0px 12px 5px #35b397;
   border-radius: 50%;
+  transition: all 0.3s ease;
 }
 
 .menu__toggle.open .toggle-btn {
@@ -1788,7 +1789,7 @@ hr {
 
 .menu__toggle-content span a i {
   font-size: 40px;
-  color: #1bc7f1;
+  color: #35b397;
   opacity: 0.5;
   transition: all 0.2s;
 }
@@ -2063,6 +2064,11 @@ hr {
   right: 0;
 }
 
+@media (max-width: 567px) {
+  .night-btn {
+    top: 75%;
+  }
+}
 @keyframes myAnimPulse {
   0% {
     transform: scale(1);
