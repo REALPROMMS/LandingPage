@@ -4,6 +4,7 @@
 @import 'proect';
 @import 'hobby';
 @import 'footer';
+@import 'menu-toggle';
 @import './animation/anim-main';
 
 
@@ -93,7 +94,13 @@ body {
 	}
 }
 
+.menu__toggle .nav-block-none {
+	display: none;
+}
 
+.nav-flex {
+	display: flex;
+}
 
 // !MEDIA
 @media (max-width: 567px) {

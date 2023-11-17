@@ -1,5 +1,5 @@
 // !Иконки выпадают сверх и пружинят, пока не остановятся
-const observer = new IntersectionObserver(entries => {
+const observerIcons = new IntersectionObserver(entries => {
 	entries.forEach(entry => {
 		const social = entry.target.querySelector('.social');
 		if (entry.isIntersecting) {
@@ -10,9 +10,9 @@ const observer = new IntersectionObserver(entries => {
 		social.classList.remove('anim-1');
 	});
 });
-observer.observe(document.querySelector('.social-box'));
+observerIcons.observe(document.querySelector('.social-box'));
 
-const observer2 = new IntersectionObserver(entries => {
+const observerIcons2 = new IntersectionObserver(entries => {
 	entries.forEach(entry => {
 		const social = entry.target.querySelector('.social');
 		if (entry.isIntersecting) {
@@ -23,9 +23,9 @@ const observer2 = new IntersectionObserver(entries => {
 		social.classList.remove('anim-2');
 	});
 });
-observer2.observe(document.querySelector('.social-box2'));
+observerIcons2.observe(document.querySelector('.social-box2'));
 
-const observer3 = new IntersectionObserver(entries => {
+const observerIcons3 = new IntersectionObserver(entries => {
 	entries.forEach(entry => {
 		const social = entry.target.querySelector('.social');
 		if (entry.isIntersecting) {
@@ -36,7 +36,7 @@ const observer3 = new IntersectionObserver(entries => {
 		social.classList.remove('anim-3');
 	});
 });
-observer3.observe(document.querySelector('.social-box3'));
+observerIcons3.observe(document.querySelector('.social-box3'));
 
 
 
@@ -138,3 +138,36 @@ const observerHeaderText = new IntersectionObserver(entries => {
 	});
 });
 observerHeaderText.observe(document.querySelector('.header__info'));
+
+
+
+// !Эффект падающей кнопки
+const observerBtn = new IntersectionObserver(entries => {
+	entries.forEach(entry => {
+		const observerHeader = entry.target.querySelector('.btn-flip');
+		if (entry.isIntersecting) {
+			observerHeader.classList.add('animationBtn');
+			return; // если класс добавлен, продолжать уже не надо
+		}
+		// перемещение завершено, теперь надо удалить класс
+		observerHeader.classList.remove('animationBtn');
+	});
+});
+observerBtn.observe(document.querySelector('.header__button'));
+
+
+// !Эффект падающей кнопки
+const observerNone = new IntersectionObserver(entries => {
+	entries.forEach(entry => {
+		const dpnone = entry.target.querySelector('.dpnone');
+		if (entry.isIntersecting) {
+			dpnone.classList.add('nav-flex');
+			return; // если класс добавлен, продолжать уже не надо
+		}
+		// перемещение завершено, теперь надо удалить класс
+		dpnone.classList.remove('nav-flex');
+	});
+});
+observerNone.observe(document.querySelector('.menu__toggle'));
+
+

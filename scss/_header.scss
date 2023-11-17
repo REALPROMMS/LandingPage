@@ -11,6 +11,7 @@
 	filter: brightness(75%);
 	animation: shrink 15s infinite alternate;
 	box-shadow: 0px 0px 50px 30px rgba(0, 0, 0) inset;
+	// overflow: hidden;
 }
 
 .header-hr {
@@ -151,7 +152,7 @@
 }
 
 .headerTextAnim {
-	animation: text-flicker-in-glow 4s linear both;
+	animation: text-flicker-in-glow 4s 2s linear both;
 }
 
 .header__info-subtitle {
@@ -183,9 +184,10 @@
 .header__button {
 	display: flex;
 	justify-content: center;
-	// animation: bounce-top 1.2s both;
-	animation: bounce-top 1.5s both;
+}
 
+.animationBtn {
+	animation: bounce-top 1.5s both;
 }
 
 
