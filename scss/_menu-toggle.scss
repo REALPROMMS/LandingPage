@@ -1,16 +1,15 @@
 .menu__toggle {
-	position: absolute;
-	top: 600px;
-	right: 5px;
+	// position: absolute;
 	width: 80px;
-	height: 300px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	// cursor: grab;
 	position: fixed;
 	z-index: 101;
-
+	left: 97%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .menu__toggle .menu__toggle-content {
@@ -35,7 +34,6 @@
 		box-shadow: 0px 0px 5px 1px #1bc7f1;
 		transform: scale(1.1);
 	}
-
 }
 
 .menu__toggle-content .toggle-btn {
@@ -58,13 +56,13 @@
 }
 
 .menu__toggle.open .menu__toggle-content span {
-	transform: rotate(calc(var(--i) * (360deg/8))) translateY(120px);
+	transform: rotate(calc(var(--i) * (360deg/8))) translateY(90px);
 	opacity: 1;
 }
 
 .menu__toggle-content span a {
 	text-decoration: none;
-	transform: rotate(45deg);
+	transform: rotate(-40deg);
 }
 
 .menu__toggle-content span a i {
@@ -78,4 +76,17 @@
 .menu__toggle-content span a:hover i {
 	opacity: 1;
 	color: #1bc7f1;
+}
+
+.bx-plus:before {
+	box-shadow: 0px 0px 5px 1px #35b397;
+	border-radius: 50px;
+}
+
+.bx-plus:before:hover {
+	box-shadow: 0px 0px 5px 1px #1bc7f1;
+}
+
+.menu__toggle-content .toggle-btn {
+	animation: myAnimPulse 1s ease 0s infinite normal forwards;
 }

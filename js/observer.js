@@ -154,20 +154,3 @@ const observerBtn = new IntersectionObserver(entries => {
 	});
 });
 observerBtn.observe(document.querySelector('.header__button'));
-
-
-// !Эффект падающей кнопки
-const observerNone = new IntersectionObserver(entries => {
-	entries.forEach(entry => {
-		const dpnone = entry.target.querySelector('.dpnone');
-		if (entry.isIntersecting) {
-			dpnone.classList.add('nav-flex');
-			return; // если класс добавлен, продолжать уже не надо
-		}
-		// перемещение завершено, теперь надо удалить класс
-		dpnone.classList.remove('nav-flex');
-	});
-});
-observerNone.observe(document.querySelector('.menu__toggle'));
-
-

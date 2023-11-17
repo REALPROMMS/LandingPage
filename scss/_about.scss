@@ -45,14 +45,6 @@
 }
 
 
-.bubbly-button {
-	transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
-
-	&:active {
-		transform: scale(0.9);
-	}
-
-}
 
 // !DESCRIPTION
 .about__description {
