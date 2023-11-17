@@ -661,6 +661,11 @@ hr {
     transform: scaleX(1);
   }
 }
+@keyframes animateSkill {
+  100% {
+    transform: scaleX(1);
+  }
+}
 .bg-skills {
   width: 100%;
   min-height: 600px;
@@ -779,9 +784,13 @@ hr {
   transform: scaleX(0);
   transform-origin: left;
   border-radius: 15px;
-  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
   cursor: pointer;
   transition-duration: 0.3s;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.animationPanel {
+  animation: animateSkill 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
 .progress-line span {
@@ -1674,7 +1683,6 @@ hr {
 .menu__toggle-content span a {
   height: 52px;
   width: 52px;
-  background-color: #000000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1714,19 +1722,20 @@ hr {
 .menu__toggle-content span a {
   text-decoration: none;
   transform: rotate(-45deg);
+  animation: myAnimPulse 1s ease 0s infinite normal forwards;
 }
 
 .menu__toggle-content span a i {
   font-size: 35px;
   color: #1bc7f1;
-  transform: rotate(calc(var(--i) * -300deg));
   opacity: 0.8;
-  transition: 0.2s;
+  transition: all 0.2s;
 }
 
 .menu__toggle-content span a:hover i {
   opacity: 1;
   color: #1bc7f1;
+  animation: jello-horizontal 1.2s both;
 }
 
 .bx-plus:before {
@@ -1738,7 +1747,7 @@ hr {
   box-shadow: 0px 0px 5px 1px #1bc7f1;
 }
 
-.menu__toggle-content .toggle-btn {
+.tgdBtn {
   animation: myAnimPulse 1s ease 0s infinite normal forwards;
 }
 
@@ -1799,9 +1808,9 @@ hr {
 .power-switch .button:after {
   content: "";
   width: 100%;
-  height: 100%;
+  height: 60%;
   position: absolute;
-  background: radial-gradient(circle closest-side, #1bc7f1, transparent);
+  background: radial-gradient(circle closest-side, #2e5dc7, transparent);
   filter: blur(10px);
   opacity: 0;
   transition: opacity 1s ease, transform 1s ease;
@@ -1827,7 +1836,7 @@ hr {
 .power-switch .button .power-on .circle,
 .power-switch .button .power-off .circle {
   opacity: 0.2;
-  transform: rotate(-58deg);
+  transform: rotate(-57deg);
   transform-origin: center 80px;
   stroke-dasharray: 220;
   stroke-dashoffset: 40;
@@ -1853,10 +1862,11 @@ hr {
   opacity: 0;
 }
 .power-switch input:checked + .button:after {
-  opacity: 0.15;
+  opacity: 1;
   transform: scale(2) perspective(1px) translateZ(0);
   backface-visibility: hidden;
   transition: opacity 0.5s ease, transform 0.5s ease;
+  filter: opacity(1);
 }
 .power-switch input:checked + .button .power-on,
 .power-switch input:checked + .button .power-off {
@@ -1882,7 +1892,114 @@ hr {
 }
 
 .night-mode {
-  filter: saturate(0.3);
+  filter: grayscale(1);
+}
+
+.power-switch-toggle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 156px;
+}
+.power-switch-toggle .button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.power-switch-toggle .button:after {
+  content: "";
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  background: radial-gradient(circle closest-side, #2e5dc7, transparent);
+  filter: blur(10px);
+  opacity: 0;
+  transition: opacity 1s ease, transform 1s ease;
+  transform: perspective(1px) translateZ(0);
+  backface-visibility: hidden;
+}
+.power-switch-toggle .button .power-on,
+.power-switch-toggle .button .power-off {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  fill: none;
+  stroke: #35b397;
+  stroke-width: 8px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.power-switch-toggle .button .power-on .line,
+.power-switch-toggle .button .power-off .line {
+  opacity: 0.2;
+}
+.power-switch-toggle .button .power-on .circle,
+.power-switch-toggle .button .power-off .circle {
+  opacity: 0.2;
+  transform: rotate(-57deg);
+  transform-origin: center 80px;
+  stroke-dasharray: 220;
+  stroke-dashoffset: 40;
+}
+.power-switch-toggle .button .power-on {
+  filter: drop-shadow(0px 0px 6px #1bc7f1);
+}
+.power-switch-toggle .button .power-on .line {
+  opacity: 0.5;
+  transition: opacity 0.3s ease 1s;
+}
+.power-switch-toggle .button .power-on .circle {
+  opacity: 1;
+  stroke-dashoffset: 220;
+  transition: transform 0s ease, stroke-dashoffset 1s ease 0s;
+}
+.power-switch-toggle input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0;
+}
+.power-switch-toggle input:checked + .button:after {
+  opacity: 1;
+  transform: scale(2) perspective(1px) translateZ(0);
+  backface-visibility: hidden;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  filter: opacity(1);
+}
+.power-switch-toggle input:checked + .button .power-on,
+.power-switch-toggle input:checked + .button .power-off {
+  animation: click-animation 0.3s ease forwards;
+  transform: scale(1);
+}
+.power-switch-toggle input:checked + .button .power-on .line,
+.power-switch-toggle input:checked + .button .power-off .line {
+  animation: line-animation 0.8s ease-in forwards;
+}
+.power-switch-toggle input:checked + .button .power-on .circle,
+.power-switch-toggle input:checked + .button .power-off .circle {
+  transform: rotate(302deg);
+}
+.power-switch-toggle input:checked + .button .power-on .line {
+  opacity: 1;
+  transition: opacity 0.05s ease-in 0.55s;
+}
+.power-switch-toggle input:checked + .button .power-on .circle {
+  transform: rotate(302deg);
+  stroke-dashoffset: 40;
+  transition: transform 0.4s ease 0.2s, stroke-dashoffset 0.4s ease 0.2s;
+}
+
+.night-btn-toggle {
+  left: 0;
+  right: 0;
 }
 
 @keyframes myAnimPulse {

@@ -114,3 +114,12 @@
 		transform: scaleX(1);
 	}
 }
+
+// !.progress-line, .progress-line span - появление полосы прогресса за определнное время Для первой панели код написан в JS
+// animation: animateSkill 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+
+@keyframes animateSkill {
+	100% {
+		transform: scaleX(1);
+	}
+}

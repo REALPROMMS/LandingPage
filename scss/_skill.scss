@@ -132,9 +132,13 @@
 	transform: scaleX(0);
 	transform-origin: left;
 	border-radius: 15px;
-	animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 	cursor: pointer;
 	transition-duration: 0.3s;
+	animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.animationPanel {
+	animation: animateSkill 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
 .progress-line span {

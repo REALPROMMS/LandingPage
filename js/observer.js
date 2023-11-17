@@ -154,3 +154,89 @@ const observerBtn = new IntersectionObserver(entries => {
 	});
 });
 observerBtn.observe(document.querySelector('.header__button'));
+
+
+
+// !Эффект выезжающих панелей skills
+const observerHtml = new IntersectionObserver(entries => {
+	entries.forEach(entry => {
+		const observerExp = entry.target.querySelector('.html');
+		if (entry.isIntersecting) {
+			observerExp.classList.add('animationPanel');
+			return; // если класс добавлен, продолжать уже не надо
+		}
+		// перемещение завершено, теперь надо удалить класс
+		observerExp.classList.remove('animationPanel');
+	});
+});
+observerHtml.observe(document.querySelector('.panels'));
+
+// !CSS
+const observerCss = new IntersectionObserver(entries => {
+	entries.forEach(entry => {
+		const observerExp = entry.target.querySelector('.css');
+		if (entry.isIntersecting) {
+			observerExp.classList.add('animationPanel');
+			return; // если класс добавлен, продолжать уже не надо
+		}
+		// перемещение завершено, теперь надо удалить класс
+		observerExp.classList.remove('animationPanel');
+	});
+});
+observerCss.observe(document.querySelector('.panels'));
+
+// !JS
+const observerJs = new IntersectionObserver(entries => {
+	entries.forEach(entry => {
+		const observerExp = entry.target.querySelector('.JavaScript');
+		if (entry.isIntersecting) {
+			observerExp.classList.add('animationPanel');
+			return; // если класс добавлен, продолжать уже не надо
+		}
+		// перемещение завершено, теперь надо удалить класс
+		observerExp.classList.remove('animationPanel');
+	});
+});
+observerJs.observe(document.querySelector('.panels'));
+
+// !REACT
+const observerReact = new IntersectionObserver(entries => {
+	entries.forEach(entry => {
+		const observerExp = entry.target.querySelector('.react');
+		if (entry.isIntersecting) {
+			observerExp.classList.add('animationPanel');
+			return; // если класс добавлен, продолжать уже не надо
+		}
+		// перемещение завершено, теперь надо удалить класс
+		observerExp.classList.remove('animationPanel');
+	});
+});
+observerReact.observe(document.querySelector('.panels'));
+
+// !BS
+const observerBs = new IntersectionObserver(entries => {
+	entries.forEach(entry => {
+		const observerExp = entry.target.querySelector('.bootstrap');
+		if (entry.isIntersecting) {
+			observerExp.classList.add('animationPanel');
+			return; // если класс добавлен, продолжать уже не надо
+		}
+		// перемещение завершено, теперь надо удалить класс
+		observerExp.classList.remove('animationPanel');
+	});
+});
+observerBs.observe(document.querySelector('.panels'));
+
+// !WP
+const observerWp = new IntersectionObserver(entries => {
+	entries.forEach(entry => {
+		const observerExp = entry.target.querySelector('.wordpress');
+		if (entry.isIntersecting) {
+			observerExp.classList.add('animationPanel');
+			return; // если класс добавлен, продолжать уже не надо
+		}
+		// перемещение завершено, теперь надо удалить класс
+		observerExp.classList.remove('animationPanel');
+	});
+});
+observerWp.observe(document.querySelector('.panels'));

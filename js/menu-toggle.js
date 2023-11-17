@@ -1,9 +1,20 @@
+// !Добавляет класс open при нажатии на кнопку roggle-btn
 const nav = document.querySelector('.menu__toggle'),
 	toggleBtn = nav.querySelector('.toggle-btn');
 
 toggleBtn.addEventListener('click', () => {
 	nav.classList.toggle('open')
 });
+
+
+// !Удаляет класс с анимацией на кнопке toggle menubar(при ее активации)
+const animToggle = document.querySelector('.toggle-btn'),
+	animTgBtn = animToggle.querySelector('.bx');
+
+animTgBtn.addEventListener('click', () => {
+	animTgBtn.classList.remove('tgdBtn')
+});
+
 
 
 

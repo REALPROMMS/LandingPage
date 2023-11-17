@@ -17,6 +17,8 @@
 
 <body>
 
+
+
 	<header class="header" id="home">
 		<div class="container">
 			<button class="burger">
@@ -43,11 +45,17 @@
 				</a>
 				<p class="header__info-subtitle text">Never Give Up, Always Go Only Forward</p>
 			</div>
-			<div class="header__button">
+			<div class="header__button bubbly-button">
 				<a class="btn-flip" data-back="Back" data-front="Front" href="#hobby"></a>
 			</div>
 		</div>
+
 	</header>
+	<!-- <header class="header2" id="myHeader">
+		<div class="content">
+			<h2>HELLO</h2>
+		</div>
+	</header> -->
 
 	<hr class="header-hr">
 
@@ -457,6 +465,107 @@
 
 	</main>
 
+	<section class="all_button">
+
+		<div id="home" class="home-link">
+			<a href="#home"><img src="img/footer/home.png" width="52px" alt="img"></a>
+		</div>
+
+		<div class="audio">
+			<button class="audio-btn" id="playpausebtn"></button>
+		</div>
+
+		<nav class="menu__toggle">
+			<div class="menu__toggle-content">
+				<div class="toggle-btn">
+					<i class='bx bx-plus tgdBtn'></i>
+				</div>
+
+				<!-- btn mail -->
+				<!-- <span style="--i:1;">
+					<a href="https://mail.ru/" target="_blank"><i class='bx bxs-envelope'></i></a>
+				</span> -->
+
+				<span style="--i:5;">
+					<a href="https://web.whatsapp.com/" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+				</span>
+
+				<span style="--i:2;">
+					<a href="https://vk.com/" target="_blank"><i class='bx bxl-vk'></i></a>
+				</span>
+
+				<span style="--i:4;">
+					<a href="https://github.com/REALPROMMS" target="_blank"><i class='bx bxl-github'></i></a>
+				</span>
+
+				<span style="--i:1;">
+					<a href="https://web.telegram.org/" target="_blank"><i class='bx bxl-telegram'></i></a>
+				</span>
+
+				<!-- btn night-theme -->
+				<span class="night-btn-toggle" style="--i:3;">
+					<a href="">
+						<div class="power-switch-toggle">
+							<input type="checkbox" />
+							<div class="button">
+								<svg class="power-off">
+									<use xlink:href="#line" class="line" />
+									<use xlink:href="#circle" class="circle" />
+								</svg>
+								<svg class="power-on">
+									<use xlink:href="#line" class="line" />
+									<use xlink:href="#circle" class="circle" />
+								</svg>
+							</div>
+						</div>
+						<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+							<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="line">
+								<line x1="75" y1="34" x2="75" y2="58" />
+							</symbol>
+							<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="circle">
+								<circle cx="75" cy="80" r="35" />
+							</symbol>
+						</svg>
+					</a>
+				</span>
+
+				<!-- sound btn -->
+				<!-- <span style="--i:1;">
+					<a href="#" id="playpausebtn" class="audio-btn"></a>
+				</span> -->
+
+			</div>
+		</nav>
+
+		<div class="night-btn">
+
+			<div class="power-switch">
+				<input type="checkbox" />
+				<div class="button">
+					<svg class="power-off">
+						<use xlink:href="#line" class="line" />
+						<use xlink:href="#circle" class="circle" />
+					</svg>
+					<svg class="power-on">
+						<use xlink:href="#line" class="line" />
+						<use xlink:href="#circle" class="circle" />
+					</svg>
+				</div>
+			</div>
+
+			<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+				<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="line">
+					<line x1="75" y1="34" x2="75" y2="58" />
+				</symbol>
+				<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="circle">
+					<circle cx="75" cy="80" r="35" />
+				</symbol>
+			</svg>
+
+		</div>
+
+	</section>
+
 	<footer id="footer" class="bg-footer">
 		<div class="container">
 			<div class="contact">
@@ -476,74 +585,13 @@
 					<p>All rights reserved &copy; Makarov Mihail</p>
 				</div>
 			</div>
-
-
-
-			<div id="home" class="home-link">
-				<a href="#home"><img src="img/footer/home.png" width="52px" alt="img"></a>
-			</div>
-
-			<div class="audio">
-				<button class="audio-btn" id="playpausebtn"></button>
-			</div>
-
-			<nav class="menu__toggle">
-				<div class="menu__toggle-content">
-					<div class="toggle-btn">
-						<i class='bx bx-plus'></i>
-					</div>
-					<span style="--i:1;">
-						<a href="https://mail.ru/" target="_blank"><i class='bx bxs-envelope'></i></a>
-					</span>
-					<span style="--i:5;">
-						<a href="https://web.whatsapp.com/" target="_blank"><i class='bx bxl-whatsapp'></i></a>
-					</span>
-					<span style="--i:2;">
-						<a href="https://vk.com/" target="_blank"><i class='bx bxl-vk'></i></a>
-					</span>
-					<span style="--i:3;">
-						<a href="https://github.com/REALPROMMS" target="_blank"><i class='bx bxl-github'></i></a>
-					</span>
-					<span style="--i:4;">
-						<a href="https://web.telegram.org/" target="_blank"><i class='bx bxl-telegram'></i></a>
-					</span>
-				</div>
-			</nav>
-
-			<div class="night-btn">
-
-				<div class="power-switch">
-					<input type="checkbox" />
-					<div class="button">
-						<svg class="power-off">
-							<use xlink:href="#line" class="line" />
-							<use xlink:href="#circle" class="circle" />
-						</svg>
-						<svg class="power-on">
-							<use xlink:href="#line" class="line" />
-							<use xlink:href="#circle" class="circle" />
-						</svg>
-					</div>
-				</div>
-
-				<!-- SVG -->
-				<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-					<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="line">
-						<line x1="75" y1="34" x2="75" y2="58" />
-					</symbol>
-					<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="circle">
-						<circle cx="75" cy="80" r="35" />
-					</symbol>
-				</svg>
-
-			</div>
-
-
-
 		</div>
 	</footer>
 
+
+
 	<script src="libs/swiper/swiper-bundle.min.js"></script>
+	<!-- <script src="js/scroll-header.js"></script> -->
 	<script src="js/app.js"></script>
 	<script src="js/audio-btn.js"></script>
 	<script src="js/observer.js"></script>
