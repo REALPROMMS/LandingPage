@@ -1658,8 +1658,8 @@ hr {
   justify-content: center;
   position: fixed;
   z-index: 101;
-  left: 97%;
-  top: 50%;
+  left: 50%;
+  top: 95%;
   transform: translate(-50%, -50%);
 }
 
@@ -1707,19 +1707,19 @@ hr {
 }
 
 .menu__toggle.open .menu__toggle-content span {
-  transform: rotate(calc(var(--i) * 45deg)) translateY(90px);
+  transform: rotate(calc(var(--i) * -45deg)) translateY(120px);
   opacity: 1;
 }
 
 .menu__toggle-content span a {
   text-decoration: none;
-  transform: rotate(-40deg);
+  transform: rotate(-45deg);
 }
 
 .menu__toggle-content span a i {
   font-size: 35px;
   color: #1bc7f1;
-  transform: rotate(calc(var(--i) * -45deg));
+  transform: rotate(calc(var(--i) * -300deg));
   opacity: 0.8;
   transition: 0.2s;
 }
@@ -1816,8 +1816,8 @@ body {
   height: 52px;
   cursor: pointer;
   position: absolute;
-  top: 30%;
-  right: 15px;
+  top: 92%;
+  left: 2%;
   position: fixed;
   z-index: 50;
   filter: opacity(0.7);
@@ -1833,8 +1833,8 @@ body {
 
 .home-link img {
   position: absolute;
-  top: 65%;
-  right: 15px;
+  top: 92%;
+  right: 2%;
   position: fixed;
   animation: myAnimPulse 1s ease 0s infinite normal forwards;
   border: 1px solid #35b397;

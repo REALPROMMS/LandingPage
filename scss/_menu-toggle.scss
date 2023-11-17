@@ -7,8 +7,8 @@
 	// cursor: grab;
 	position: fixed;
 	z-index: 101;
-	left: 97%;
-	top: 50%;
+	left: 50%;
+	top: 95%;
 	transform: translate(-50%, -50%);
 }
 
@@ -56,19 +56,19 @@
 }
 
 .menu__toggle.open .menu__toggle-content span {
-	transform: rotate(calc(var(--i) * (360deg/8))) translateY(90px);
+	transform: rotate(calc(var(--i) * (-360deg/8))) translateY(120px);
 	opacity: 1;
 }
 
 .menu__toggle-content span a {
 	text-decoration: none;
-	transform: rotate(-40deg);
+	transform: rotate(-45deg);
 }
 
 .menu__toggle-content span a i {
 	font-size: 35px;
 	color: #1bc7f1;
-	transform: rotate(calc(var(--i) * (360deg/ -8)));
+	transform: rotate(calc(var(--i) * (300deg/ -1)));
 	opacity: 0.8;
 	transition: 0.2s;
 }
