@@ -1,0 +1,47 @@
+// !.line - анимация линий обволакивающих по контуру кнопки
+// animation: line-animation .8s ease-in forwards;
+
+@keyframes line-animation {
+	0% {
+		transform: translateY(0);
+	}
+
+	10% {
+		transform: translateY(10px);
+	}
+
+	40% {
+		transform: translateY(-25px);
+	}
+
+	60% {
+		transform: translateY(-25px);
+	}
+
+	85% {
+		transform: translateY(10px);
+	}
+
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+
+
+// !.power-on, .power-off - анимация свечения при клике на кнопку
+// animation: click-animation .3s ease forwards;
+
+@keyframes click-animation {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(.9);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
