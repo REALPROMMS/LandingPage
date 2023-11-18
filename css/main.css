@@ -101,7 +101,7 @@
     opacity: 1;
   }
 }
-@keyframes animateText {
+@keyframes animationFloatingBg {
   0%, 100% {
     background-position: left top;
   }
@@ -280,7 +280,7 @@
   filter: hue-rotate(45deg);
 }
 
-.headerTextAnim {
+.animationGlitchTitle {
   animation: text-flicker-in-glow 4s 2s linear both;
 }
 
@@ -300,7 +300,7 @@
   background-image: url("/img/main/animation.png");
   background-repeat: repeat;
   -webkit-background-clip: text;
-  animation: animateText 15s ease-in-out infinite;
+  animation: animationGlitchTitle 15s ease-in-out infinite;
   font-weight: 900;
 }
 
@@ -517,7 +517,7 @@
   background-image: url("/img/main/animation.png");
   background-repeat: repeat;
   -webkit-background-clip: text;
-  animation: animateText 50s ease-in-out infinite;
+  animation: animationFloatingBg 50s ease-in-out infinite;
   transition-duration: 0.3s;
   margin-bottom: 50px;
   box-shadow: 0px 7px 10px -6px #35b397;
@@ -1061,7 +1061,7 @@ hr {
   background-image: url("/img/main/animation.png");
   background-repeat: repeat;
   -webkit-background-clip: text;
-  animation: animateText 50s ease-in-out infinite;
+  animation: animationFloatingBg 50s ease-in-out infinite;
   transition-duration: 0.3s;
   margin-bottom: 40px;
   box-shadow: 0px 7px 10px -6px #35b397;
@@ -1358,7 +1358,7 @@ hr {
   background-image: url("/img/main/animation.png");
   background-repeat: repeat;
   -webkit-background-clip: text;
-  animation: animateText 50s ease-in-out infinite;
+  animation: animationFloatingBg 50s ease-in-out infinite;
   transition-duration: 0.3s;
   margin-bottom: 10px;
   box-shadow: 0px 7px 10px -6px #35b397;
@@ -1496,7 +1496,7 @@ hr {
     font-size: 0.9rem;
   }
 }
-@keyframes contact {
+@keyframes rotateIcon {
   0%, 100% {
     transform: rotate(0deg);
     transform-origin: 50% 50%;
@@ -1517,7 +1517,7 @@ hr {
     transform: rotate(8deg);
   }
 }
-@keyframes myAmiFooter-1 {
+@keyframes myAnimationFooterIcon-1 {
   0% {
     animation-timing-function: ease-in;
     opacity: 0;
@@ -1553,7 +1553,7 @@ hr {
     transform: translateY(0);
   }
 }
-@keyframes myAmiFooter-2 {
+@keyframes myAnimationFooterIcon-2 {
   0% {
     animation-timing-function: ease-in;
     opacity: 0;
@@ -1589,7 +1589,7 @@ hr {
     transform: translateY(0);
   }
 }
-@keyframes myAmiFooter-3 {
+@keyframes myAnimationFooterIcon-3 {
   0% {
     animation-timing-function: ease-in;
     opacity: 0;
@@ -1679,7 +1679,7 @@ hr {
   background-image: url("/img/main/animation.png");
   background-repeat: repeat;
   -webkit-background-clip: text;
-  animation: animateText 50s ease-in-out infinite;
+  animation: animationFloatingBg 50s ease-in-out infinite;
   transition-duration: 0.3s;
   margin-bottom: 50px;
   box-shadow: 0px 5px 10px -6px #35b397;
@@ -1690,20 +1690,20 @@ hr {
   filter: hue-rotate(45deg);
 }
 
-.social-box-anim {
-  animation: contact 3s ease-out 3s 1 normal both;
+.social__box-anim {
+  animation: rotateIcon 3s ease-out 3s 1 normal both;
 }
 
-.anim-1 {
-  animation: myAmiFooter-1 3s linear 0s 1 alternate none;
+.animationIcons-1 {
+  animation: myAnimationFooterIcon-1 3s linear 0s 1 alternate none;
 }
 
-.anim-2 {
-  animation: myAmiFooter-2 3s linear 0s 1 alternate none;
+.animationIcons-2 {
+  animation: myAnimationFooterIcon-2 3s linear 0s 1 alternate none;
 }
 
-.anim-3 {
-  animation: myAmiFooter-3 3s linear 0s 1 alternate none;
+.animationIcons-3 {
+  animation: myAnimationFooterIcon-3 3s linear 0s 1 alternate none;
 }
 
 @media (max-width: 990px) {
@@ -2127,7 +2127,7 @@ body {
   background-size: cover;
   height: 100%;
   padding-top: 150px;
-  animation: animateText 25s ease-in-out infinite;
+  animation: animationFloatingBg 25s ease-in-out infinite;
 }
 
 .inset {
@@ -2137,7 +2137,7 @@ body {
 }
 
 .audio-btn {
-  background: url(/img/audio-icons/play2.png) no-repeat;
+  background: url(/img/audio-icons/play.png) no-repeat;
   border: none;
   width: 50px;
   height: 50px;

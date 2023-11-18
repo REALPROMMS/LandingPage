@@ -59,7 +59,7 @@
 	background-image: url('/img/main/animation.png');
 	background-repeat: repeat;
 	-webkit-background-clip: text;
-	animation: animateText 50s ease-in-out infinite;
+	animation: animationFloatingBg 50s ease-in-out infinite;
 	transition-duration: 0.3s;
 	margin-bottom: 50px;
 	box-shadow: 0px 5px 10px -6px #35b397;
@@ -72,21 +72,24 @@
 
 }
 
-.social-box-anim {
-	animation: contact 3s ease-out 3s 1 normal both;
+.social__box-anim {
+	animation: rotateIcon 3s ease-out 3s 1 normal both;
 }
 
-.anim-1 {
-	animation: myAmiFooter-1 3s linear 0s 1 alternate none;
+// animationIcons for JS
+.animationIcons-1 {
+	animation: myAnimationFooterIcon-1 3s linear 0s 1 alternate none;
 }
 
-.anim-2 {
-	animation: myAmiFooter-2 3s linear 0s 1 alternate none;
+// animationIcons for JS
+.animationIcons-2 {
+	animation: myAnimationFooterIcon-2 3s linear 0s 1 alternate none;
 
 }
 
-.anim-3 {
-	animation: myAmiFooter-3 3s linear 0s 1 alternate none;
+// animationIcons for JS
+.animationIcons-3 {
+	animation: myAnimationFooterIcon-3 3s linear 0s 1 alternate none;
 }
 
 

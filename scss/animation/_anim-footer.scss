@@ -1,14 +1,14 @@
 // !.reverse - animation - задний фон h1, плавающий бэкграунд
-// animation: animateText 50s ease-in-out infinite;
+// animation: animationFloatingBg 50s ease-in-out infinite;
 
 // родитель находится в header
 
 
 
-// !.anim-box - поворачиваются в разные стороны иконки
-// animation: contact 3s ease-out 3s 1 normal both;
+// !.social__box-anim - поворачиваются в разные стороны иконки
+// animation: rotateIcon 3s ease-out 3s 1 normal both;
 
-@keyframes contact {
+@keyframes rotateIcon {
 
 	0%,
 	100% {
@@ -43,13 +43,12 @@
 
 
 
-// !.anim-1,anim-2,anim-3 - падают сверху вниз иконки
-// animation: myAmiFooter-1 3s linear 0s 1 alternate none;
-// animation: myAmiFooter-2 3s linear 0s 1 alternate none;
-// animation: myAmiFooter-3 3s linear 0s 1 alternate none;
+// !.animationIcons - падают сверху вниз иконки
+// animation: myAnimationFooterIcon-1(2,3) 3s linear 0s 1 alternate none;
+
 
 // !ONE ANIMATION
-@keyframes myAmiFooter-1 {
+@keyframes myAnimationFooterIcon-1 {
 	0% {
 		animation-timing-function: ease-in;
 		opacity: 0;
@@ -94,7 +93,7 @@
 }
 
 // !TWO ANIMATION
-@keyframes myAmiFooter-2 {
+@keyframes myAnimationFooterIcon-2 {
 	0% {
 		animation-timing-function: ease-in;
 		opacity: 0;
@@ -139,7 +138,7 @@
 }
 
 // !THREE ANIMATION
-@keyframes myAmiFooter-3 {
+@keyframes myAnimationFooterIcon-3 {
 	0% {
 		animation-timing-function: ease-in;
 		opacity: 0;

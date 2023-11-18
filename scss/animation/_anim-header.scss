@@ -272,9 +272,9 @@
 
 
 // !.header__info h1 - задний фон h1, плавающий бэкграунд
-// animation: animateText 15s ease-in-out infinite;
+// animation: animationFloatingBg 15s ease-in-out infinite;
 
-@keyframes animateText {
+@keyframes animationFloatingBg {
 
 	0%,
 	100% {
@@ -296,7 +296,7 @@
 
 
 
-// !.header__button - кнопка прыгает вверх вниз
+// !.animationBtn - кнопка прыгает вверх вниз
 // animation: bounce-top 1.5s both;
 
 @-webkit-keyframes bounce-top {

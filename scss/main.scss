@@ -36,7 +36,7 @@ body {
 	background-size: cover;
 	height: 100%;
 	padding-top: 150px;
-	animation: animateText 25s ease-in-out infinite;
+	animation: animationFloatingBg 25s ease-in-out infinite;
 }
 
 .inset {
@@ -49,7 +49,7 @@ body {
 
 // !AUDIO-BTN
 .audio-btn {
-	background: url(/img/audio-icons/play2.png) no-repeat;
+	background: url(/img/audio-icons/play.png) no-repeat;
 	border: none;
 	width: 50px;
 	height: 50px;

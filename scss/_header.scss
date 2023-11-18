@@ -5,9 +5,6 @@
 	background: url('/img/main/bg-header.jpg') fixed;
 	height: 100vh;
 	max-width: 100%;
-	// background-image: url('/img/raznoe/bg2.jpg');
-	// background-size: cover;
-	// background-repeat: no-repeat;
 	filter: brightness(75%);
 	animation: shrink 15s infinite alternate;
 	box-shadow: 0px 0px 50px 30px rgba(0, 0, 0) inset;
@@ -151,7 +148,7 @@
 	}
 }
 
-.headerTextAnim {
+.animationGlitchTitle {
 	animation: text-flicker-in-glow 4s 2s linear both;
 }
 
@@ -174,7 +171,7 @@
 	background-image: url('/img/main/animation.png');
 	background-repeat: repeat;
 	-webkit-background-clip: text;
-	animation: animateText 15s ease-in-out infinite;
+	animation: animationGlitchTitle 15s ease-in-out infinite;
 	font-weight: 900;
 }
 
