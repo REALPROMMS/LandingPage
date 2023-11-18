@@ -51,7 +51,7 @@
 	gap: 100px;
 }
 
-.reverse {
+.reserved {
 	font-size: 1.2rem;
 	letter-spacing: 1px;
 	font-weight: bold;
@@ -61,7 +61,7 @@
 	-webkit-background-clip: text;
 	animation: animationFloatingBg 50s ease-in-out infinite;
 	transition-duration: 0.3s;
-	margin-bottom: 50px;
+	margin-bottom: 80px;
 	box-shadow: 0px 5px 10px -6px #35b397;
 	border-radius: 15px;
 	display: inline-block;
@@ -72,8 +72,9 @@
 
 }
 
+// Иконки сжимаются в footer
 .social__box-anim {
-	animation: rotateIcon 3s ease-out 3s 1 normal both;
+	animation: jello-horizontal 1.2s 3s both;
 }
 
 // animationIcons for JS
@@ -102,7 +103,7 @@
 		margin-top: 15px;
 	}
 
-	.reverse {
+	.reserved {
 		text-align: center;
 	}
 }

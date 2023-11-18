@@ -89,23 +89,20 @@
 								</div>
 								<hr>
 								<div class="info--bottom">
-									<p class="info--bottom-ld"><img class="imgAnim" src="img/content/icon/person.png"
-											alt=""><span>Name:</span>
+									<p class="info--bottom-ld"><img src="img/content/icon/person.png" alt=""><span>Name:</span>
 										Misha
 										Makarov</p>
-									<p class="info--bottom-ld"><img class="imgAnim2" src="img/content/icon/number.png"
-											alt=""><span>Age:</span> 33
+									<p class="info--bottom-ld"><img src="img/content/icon/number.png" alt=""><span>Age:</span> 33
 									</p>
 									<a class="mail-link" href="https://mail.ru/" target="_blank">
-										<p class="info--bottom-ld"><img class="imgAnim3" src="img/content/icon/email.png"
+										<p class="info--bottom-ld"><img class="icon-mail" src="img/content/icon/email.png"
 												alt=""><span>Email:</span>
 											m.makarov90@bk.ru</p>
 									</a>
-									<p class="info--bottom-ld"><img class="imgAnim4" src="img/content/icon/russia.png"
-											alt=""><span>From:</span>
+									<p class="info--bottom-ld"><img src="img/content/icon/russia.png" alt=""><span>From:</span>
 										Russia
 									</p>
-									<p class="info--bottom-ld"><img class="imgAnim5" src="img/content/icon/work.png"
+									<p class="info--bottom-ld"><img src="img/content/icon/work.png"
 											alt=""><span>Profession:</span>
 										Frontend Dev.</p>
 								</div>
@@ -126,7 +123,7 @@
 						</div>
 						<div class="swiper-box">
 							<!-- Slider main container -->
-							<div class="swiper sliderTwo">
+							<div class="swiper sliderHobby">
 								<!-- Additional required wrapper -->
 								<div class="swiper-wrapper">
 									<!-- Slides -->
@@ -153,10 +150,6 @@
 							<div class="hobby__info">
 								<h5 class="hobby__info-title">IT'S &#9786; OKEY </h5>
 								<p class="hobby__info-subtitle">
-									<!-- Как и у всех, я не только люблю IT сферу, но так же обожаю
-									кататься на сноутборде - это моя страть!<br>Я люблю ездить на велосипеде в теплые летние
-									деньки, на машине я выезжаю за город, потому что очень люблю фоткать различные пейзажи и
-									просто красивые места.<br>Много всего я люблю...долго писать &#9786; -->
 									Like everyone else, I not only love the IT sphere, but also adore
 									snowboarding is my passion!<br>I like to ride a bike in the warm summer
 									days, I go out of town by car, because I really like to take pictures of various landscapes
@@ -191,43 +184,55 @@
 								<div class="skill-bars-one">
 									<div class="bar">
 										<div class="info"> <span>HTML5</span> </div>
-										<div class="progress-line html"> <span></span> </div>
+										<div class="skill__progress">
+											<div class="progress-line html"> <span></span> </div>
+										</div>
 									</div>
 									<div class="bar">
 										<div class="info"> <span>CSS3</span> </div>
-										<div class="progress-line css"> <span></span> </div>
+										<div class="skill__progress2">
+											<div class="progress-line css"> <span></span> </div>
+										</div>
 									</div>
 									<div class="bar">
 										<div class="info"> <span>Java Script</span> </div>
-										<div class="progress-line JavaScript"> <span></span> </div>
+										<div class="skill__progress3">
+											<div class="progress-line JavaScript"> <span></span> </div>
+										</div>
 									</div>
 								</div>
 								<div class="skill-bars-one">
 									<div class="bar">
 										<div class="info"> <span>React JS</span> </div>
-										<div class="progress-line react"> <span></span> </div>
+										<div class="skill__progress4">
+											<div class="progress-line react"> <span></span></div>
+										</div>
 									</div>
 									<div class="bar">
 										<div class="info"> <span>BootStrap</span> </div>
-										<div class="progress-line bootstrap"> <span></span> </div>
+										<div class="skill__progress5">
+											<div class="progress-line bootstrap"> <span></span></div>
+										</div>
 									</div>
 									<div class="bar">
-										<div class="info"> <span>WordPress</span> </div>
-										<div class="progress-line wordpress"> <span></span> </div>
+										<div class="info"> <span>WordPress</span></div>
+										<div class="skill__progress6">
+											<div class="progress-line wordpress"> <span></span></div>
+										</div>
 									</div>
 								</div>
 							</div>
 							<div class="panel flex" id="two-panel">
 								<div class="skill-bars-one">
 									<div class="bar">
-										<div class="info"> <span>------</span> </div>
-										<div class="progress-line html-two"> <span></span> </div>
+										<div class="info"> <span class="panelAnimation">------</span> </div>
+										<div class="progress-line other_skill"> <span></span> </div>
 									</div>
 								</div>
 								<div class="skill-bars-one">
 									<div class="bar">
 										<div class="info"> <span>------</span> </div>
-										<div class="progress-line html-two"> <span></span> </div>
+										<div class="progress-line other_skill"> <span></span> </div>
 									</div>
 								</div>
 							</div>
@@ -277,46 +282,8 @@
 								<span id="proect">MY PROJECT</span>
 							</div>
 						</div>
-						<!-- <div class="project__cards">
-							<div class="display">
-								<div class="card">
-									<div class="cover item-a">
-										<h6>One Project</h6>
-										<span class="price">MMS</span>
-										<div class="card-back">
-											<a href="https://realpromms.github.io/HTML/" target="_blank">PLAY TO WATCH!</a>
-											<p class="card-back-text">white leading page (GB)</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="display">
-								<div class="card">
-									<div class="cover item-b">
-										<h6>Two Project</h6>
-										<span class="price">MMS</span>
-										<div class="card-back">
-											<a href="https://realpromms.github.io/Homework-HTML/" target="_blank">PLAY TO WATCH!</a>
-											<p class="card-back-text">dark leading page (GB)</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="display">
-								<div class="card">
-									<div class="cover item-c">
-										<h6>Three Project</h6>
-										<span class="price">MMS</span>
-										<div class="card-back">
-											<a href="https://realpromms.github.io/GB-MMS-DZ/" target="_blank">PLAY TO WATCH!</a>
-											<p class="card-back-text">online store (GB)</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div> -->
 					</div>
-					<div class="swiper mySwiper">
+					<div class="swiper swiperProject">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide project__cards">
 								<div class="display">
@@ -573,26 +540,26 @@
 		<div class="container">
 			<div class="contact">
 				<div class="contact__box">
-					<div class="animationRotateIcons">
-						<div class="animBox social__box">
+					<div class="animationJelloIcons">
+						<div class="animBoxIcon social__mail">
 							<a href="email:#" target="_blank"><img class="social__box-icon" src="img/footer/mail.png"
 									alt="img"></a>
 						</div>
 					</div>
-					<div class="animationRotateIcons2">
-						<div class="animBox social__box2">
+					<div class="animationJelloIcons2">
+						<div class="animBoxIcon social__git">
 							<a href="https://github.com/REALPROMMS" target="_blank"><img class="social__box-icon"
 									src="img/footer/git.png" alt="img"></a>
 						</div>
 					</div>
-					<div class="animationRotateIcons3">
-						<div class="animBox social__box3">
+					<div class="animationJelloIcons3">
+						<div class="animBoxIcon social__telegram">
 							<a href="#" target="_blank"><img class="social__box-icon" src="img/footer/telega.png"
 									alt="img"></a>
 						</div>
 					</div>
 				</div>
-				<div class="reverse">
+				<div class="reserved">
 					<p>All rights reserved &copy; Makarov Mihail</p>
 				</div>
 			</div>

@@ -1,40 +1,6 @@
 // !.tab:hover - вибрируют из стороны в сторону
 // animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 
-@-webkit-keyframes shake-horizontal {
-
-	0%,
-	100% {
-		-webkit-transform: translateX(0);
-		transform: translateX(0);
-	}
-
-	10%,
-	30%,
-	50%,
-	70% {
-		-webkit-transform: translateX(-10px);
-		transform: translateX(-10px);
-	}
-
-	20%,
-	40%,
-	60% {
-		-webkit-transform: translateX(10px);
-		transform: translateX(10px);
-	}
-
-	80% {
-		-webkit-transform: translateX(8px);
-		transform: translateX(8px);
-	}
-
-	90% {
-		-webkit-transform: translateX(-8px);
-		transform: translateX(-8px);
-	}
-}
-
 @keyframes shake-horizontal {
 
 	0%,
@@ -82,8 +48,6 @@
 	}
 }
 
-
-
 // !.info span - появление текста на панели за определнное время
 // animation: showText 0.5s 1s linear forwards;
 
@@ -93,8 +57,6 @@
 	}
 }
 
-
-
 // !.progress-line span::before,::after - появление текста на панели за определнное время
 // animation: showText2 0.5s 1.5s linear forwards;
 
@@ -103,8 +65,6 @@
 		opacity: 1;
 	}
 }
-
-
 
 // !.progress-line, .progress-line span - появление полосы прогресса за определнное время
 // animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;

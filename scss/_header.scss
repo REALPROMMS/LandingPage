@@ -1,12 +1,11 @@
 @import './animation/anim-header';
 
-
 .header {
 	background: url('/img/main/bg-header.jpg') fixed;
 	height: 100vh;
 	max-width: 100%;
 	filter: brightness(75%);
-	animation: shrink 15s infinite alternate;
+	animation: shrink 55s infinite alternate;
 	box-shadow: 0px 0px 50px 30px rgba(0, 0, 0) inset;
 	// overflow: hidden;
 }
@@ -23,8 +22,6 @@
 	border: 0;
 	border-radius: 0;
 }
-
-
 
 // !MENU
 .header__menu {
@@ -68,8 +65,6 @@
 	}
 }
 
-
-
 // !BURGER
 .burger {
 	cursor: pointer;
@@ -108,8 +103,6 @@
 	bottom: 0;
 }
 
-
-
 // !TEXT
 .header__info {
 	display: flex;
@@ -144,7 +137,6 @@
 		box-shadow: 0px 14px 10px -6px #35b397;
 		border-radius: 15px;
 		cursor: pointer;
-		filter: hue-rotate(45deg);
 	}
 }
 
@@ -161,8 +153,6 @@
 	text-shadow: 0px 0px 3px #35b397;
 }
 
-
-
 // !TEXT ANIMATION
 .header__info h1 {
 	margin: 0;
@@ -171,11 +161,8 @@
 	background-image: url('/img/main/animation.png');
 	background-repeat: repeat;
 	-webkit-background-clip: text;
-	animation: animationGlitchTitle 15s ease-in-out infinite;
 	font-weight: 900;
 }
-
-
 
 // !BTN
 .header__button {
@@ -184,26 +171,9 @@
 }
 
 .animationBtn {
-	animation: bounce-top 1.5s both;
+	// animation: bounce-top 1.5s both;
+	animation: text-flicker-in-glow 2s 0.5s linear both;
 }
-
-
-
-// !OLD BTN
-// .btn {
-// 	padding: 1rem 3.5rem;
-// 	text-decoration: none;
-// 	color: #ffffff;
-// 	border: 1px solid #ffffff;
-// 	border-radius: 55px;
-// 	transition-duration: 0.3s;
-
-// 	&:hover {
-// 		color: #1bc7f1;
-// 		border-color: #1bc7f1;
-// 		transform: scale(1.2);
-// 	}
-// }
 
 .btn-flip {
 	opacity: 1;

@@ -1,6 +1,5 @@
 @import './animation/anim-hobby';
 
-
 .bg-hobby {
 	width: 100%;
 	min-height: 600px;
@@ -41,8 +40,6 @@
 	}
 }
 
-
-
 // !HOBBY-INFO
 .hobby__info {
 	color: #ffffff;
@@ -53,25 +50,21 @@
 .hobby__info-title {
 	font-size: 1.5rem;
 	margin-bottom: 1rem;
-
 }
 
 .hobby__info-subtitle {
 	font-size: 1rem;
 	border-bottom: 1px solid #35b397;
 	border-radius: 5px;
-
 }
 
-
-
-// !SWIPER
+// !SWIPER HOBBY
 .swiper-box {
 	display: flex;
 	align-items: center;
 }
 
-.sliderTwo {
+.sliderHobby {
 	display: flex;
 	max-width: 800px;
 	width: 70%;
@@ -103,7 +96,6 @@
 	img:active {
 		cursor: grabbing;
 	}
-
 }
 
 .swiper-button-prev {

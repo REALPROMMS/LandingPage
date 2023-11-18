@@ -13,8 +13,6 @@
 	padding: 0.5rem;
 }
 
-
-
 // !TABS
 .tabs {
 	display: flex;
@@ -38,19 +36,18 @@
 		font-weight: bold;
 		border-radius: 5px;
 		box-shadow: 0px 0px 9px 0px #35b397;
-		transition: all 0.3s ease-in;
+		transition: all 0.5s ease-in;
 		align-items: center;
 
 		&:hover {
 			background: #35b397;
-			// transition: all 0.2s ease-in;
 			color: #000;
-			animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+			animation: shake-horizontal 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 		}
 	}
 
 	.panels {
-		// background: linear-gradient(0deg, #000000 -21%, #1bc7f1 100%);
+		// background: linear-gradient(0deg, #000000 -21%, #1bc7f1 500%);
 		box-shadow: 0px 0px 12px 2px #35b397 inset;
 		width: 100%;
 		border-radius: 10rem;
@@ -89,10 +86,8 @@
 #one:checked~.tabs #one-tab,
 #two:checked~.tabs #two-tab,
 #three:checked~.tabs #three-tab {
-	transform: scale(1.3);
+	transform: scale(1.2);
 }
-
-
 
 // !PANEL
 .skill-bars-one {
@@ -179,8 +174,6 @@
 	animation: showText2 0.5s 1.5s linear forwards;
 }
 
-
-
 // !ONE BAR
 .html span {
 	width: 74%;
@@ -230,18 +223,14 @@
 	content: "35%";
 }
 
-
-
 // !TWO PANEL
-.html-two span::after {
+.other_skill span::after {
 	content: "50%";
 }
 
-.html-two span {
+.other_skill span {
 	width: 50%;
 }
-
-
 
 // !THREE PANEL
 .git span {
@@ -313,7 +302,6 @@
 		row-gap: 1.5rem;
 		padding-bottom: 20px;
 		padding-top: 20px;
-
 	}
 
 	.warpper .tab {

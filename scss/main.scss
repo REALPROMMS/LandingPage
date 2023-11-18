@@ -1,7 +1,7 @@
 @import 'header';
 @import 'about';
 @import 'skill';
-@import 'proect';
+@import 'project';
 @import 'hobby';
 @import 'footer';
 @import 'menu-toggle';
@@ -28,8 +28,6 @@ body {
 	margin: 0 auto;
 }
 
-
-
 // !BG
 .main {
 	background: url('/img/main/bg-main.jpg') fixed;
@@ -45,8 +43,6 @@ body {
 	border-radius: 50px;
 }
 
-
-
 // !AUDIO-BTN
 .audio-btn {
 	background: url(/img/audio-icons/play.png) no-repeat;
@@ -60,21 +56,19 @@ body {
 	position: fixed;
 	z-index: 50;
 	filter: opacity(0.7);
-	border: 1px solid #35b397;
 	border-radius: 50%;
-	box-shadow: 0px 0px 12px 5px #35b397;
+	// box-shadow: 0px 0px 12px 5px #35b397;
 	animation: myAnimPulse 1s ease 0s infinite normal forwards;
 	opacity: 0.5;
+	transition: all 0.2s;
 
 	&:hover {
 		box-shadow: 0px 0px 12px 5px #1bc7f1;
-		animation: jello-horizontal 1.2s both;
+		// animation: jello-horizontal 1.2s both;
 		opacity: 1;
 
 	}
 }
-
-
 
 // !HOME-BTN
 .home-link {
@@ -84,21 +78,19 @@ body {
 		right: 2%;
 		position: fixed;
 		animation: myAnimPulse 1s ease 0s infinite normal forwards;
-		border: 1px solid #35b397;
 		border-radius: 50%;
-		box-shadow: 0px 0px 12px 5px #35b397;
+		// box-shadow: 0px 0px 12px 5px #35b397;
 		opacity: 0.5;
 		z-index: 50;
+		transition: all 0.2s;
 
 		&:hover {
 			box-shadow: 0px 0px 12px 5px #1bc7f1;
-			animation: jello-horizontal 1.2s both;
+			// animation: jello-horizontal 1.2s both;
 			opacity: 1;
 		}
 	}
 }
-
-
 
 // !Анимация нажатия кнопки
 .bubbly-button {

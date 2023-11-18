@@ -1,4 +1,4 @@
-const swiper = new Swiper(".mySwiper", {
+const swiperProect = new Swiper(".swiperProject", {
 	slidesPerView: 1,
 	spaceBetween: 30,
 	loop: true,
@@ -12,7 +12,7 @@ const swiper = new Swiper(".mySwiper", {
 });
 
 
-const swiperTwo = new Swiper('.sliderTwo', {
+const sliderHobby = new Swiper('.sliderHobby', {
 
 	effect: 'cube',
 	loop: true,
