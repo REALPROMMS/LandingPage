@@ -96,6 +96,16 @@
 	flex-direction: column;
 	width: 48%;
 	gap: 15px;
+	background-color: #00000082;
+	border-top-left-radius: 80px;
+	border-bottom-left-radius: 80px;
+}
+
+.two {
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-top-right-radius: 80px;
+	border-bottom-right-radius: 80px;
 }
 
 .info {

@@ -140,10 +140,6 @@
 	}
 }
 
-.animationGlitchTitle {
-	animation: text-flicker-in-glow 4s 2s linear both;
-}
-
 .header__info-subtitle {
 	font-size: 1rem;
 	text-shadow: 0px 0px 3px #35b397;
@@ -161,6 +157,7 @@
 	background-image: url('/img/main/animation.png');
 	background-repeat: repeat;
 	-webkit-background-clip: text;
+	animation: animationFloatingBg 50s ease-in-out infinite;
 	font-weight: 900;
 }
 

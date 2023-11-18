@@ -1,6 +1,5 @@
 @import './animation/anim-ntheme';
 
-
 // !NIGHT BTN
 .night-btn {
 	position: absolute;
@@ -128,14 +127,10 @@
 	}
 }
 
-
-
-// !NIGHT MMODE
+// !NIGHT MODE
 .night-mode {
 	filter: grayscale(1);
 }
-
-
 
 // !NIGHT BTN TOGGLE
 .power-switch-toggle {
@@ -256,7 +251,6 @@
 		}
 	}
 }
-
 
 .night-btn-toggle {
 	left: 0;

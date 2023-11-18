@@ -279,10 +279,6 @@
   cursor: pointer;
 }
 
-.animationGlitchTitle {
-  animation: text-flicker-in-glow 4s 2s linear both;
-}
-
 .header__info-subtitle {
   font-size: 1rem;
   text-shadow: 0px 0px 3px #35b397;
@@ -299,6 +295,7 @@
   background-image: url("/img/main/animation.png");
   background-repeat: repeat;
   -webkit-background-clip: text;
+  animation: animationFloatingBg 50s ease-in-out infinite;
   font-weight: 900;
 }
 
@@ -736,6 +733,16 @@ hr {
   flex-direction: column;
   width: 48%;
   gap: 15px;
+  background-color: rgba(0, 0, 0, 0.5098039216);
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+}
+
+.two {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
 }
 
 .info {
@@ -1157,13 +1164,13 @@ hr {
   padding: 1rem 2rem;
   outline: none;
   text-decoration: none;
-  transition-duration: 1.5s;
+  transition-duration: 0.5s;
+  transform: translateZ(-1px) rotateY(-180deg);
 }
 .card .card-back a:hover {
-  border: 1px solid #1bc7f1;
+  box-shadow: 0px 0px 3px 1px red;
   border-radius: 25px;
   color: #f80202;
-  transform: translateZ(-1px) rotateY(-180deg);
 }
 
 .swiperProject {
@@ -1173,6 +1180,7 @@ hr {
   height: 45vh;
   border-radius: 25px;
   box-shadow: 0px 0px 10px 5px #35b397 inset;
+  background-color: rgba(0, 0, 0, 0.5098039216);
 }
 
 .swiper-wrapper {
@@ -1201,6 +1209,12 @@ hr {
 
 .swiper-pagination-bullet-active {
   background-color: #1bc7f1;
+}
+
+.card__info {
+  background-color: rgba(0, 0, 0, 0.5725490196);
+  border-radius: 20px;
+  padding: 10px;
 }
 
 @media (max-width: 567px) {

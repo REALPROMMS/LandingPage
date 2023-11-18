@@ -1,6 +1,7 @@
 const swiperProect = new Swiper(".swiperProject", {
 	slidesPerView: 1,
-	spaceBetween: 30,
+	// spaceBetween: 30,
+	effect: 'cube',
 	loop: true,
 	pagination: {
 		el: ".swiper-pagination",
@@ -11,7 +12,7 @@ const swiperProect = new Swiper(".swiperProject", {
 	// }
 });
 
-
+// кнопки сделать переключения впред и назад справа вверхнем углу
 const sliderHobby = new Swiper('.sliderHobby', {
 
 	effect: 'cube',
