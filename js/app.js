@@ -1,12 +1,15 @@
 const swiperProect = new Swiper(".swiperProject", {
 	slidesPerView: 1,
-	// spaceBetween: 30,
-	effect: 'cube',
+	spaceBetween: 30,
+
+	// effect: 'cube',
+
 	loop: true,
 	pagination: {
 		el: ".swiper-pagination",
 		clickable: true,
 	},
+
 	// autoplay: {
 	// 	delay: 1500,
 	// }
@@ -30,3 +33,4 @@ const sliderHobby = new Swiper('.sliderHobby', {
 		delay: 2500,
 	}
 });
+

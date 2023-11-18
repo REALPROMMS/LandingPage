@@ -79,7 +79,7 @@
 #three:checked~.panels #three-panel {
 	transition-duration: 0.3s;
 	display: flex;
-	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+	// box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 	border-radius: 25px;
 }
 
@@ -338,6 +338,17 @@
 	.skill-bars-one {
 		width: 100%;
 		padding: 10px 25px;
+		border-top-left-radius: 0px;
+		border-bottom-left-radius: 0px;
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 0px;
+	}
+
+	.two {
+		border-top-left-radius: 0px;
+		border-bottom-left-radius: 0px;
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 0px;
 	}
 }
 

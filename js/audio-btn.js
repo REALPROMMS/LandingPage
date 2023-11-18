@@ -1,5 +1,5 @@
 function initAudioPlayer() {
-	const audio = new Audio('audio/Soular.mp3');
+	const audio = new Audio('audio/RG-Rose-Wasted.mp3');
 	audio.loop = true;
 	// Set object references
 	const playbtn = document.getElementById('playpausebtn');

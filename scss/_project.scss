@@ -53,7 +53,7 @@
 	width: 30%;
 	position: absolute;
 	right: 20px;
-	top: 50px;
+	top: 35px;
 	padding: 0.4rem;
 	margin-right: 23px;
 }
@@ -95,6 +95,7 @@
 	transition: ease all 1.5s;
 	perspective: 1200px;
 	cursor: pointer;
+	margin-left: 10px;
 
 	&:hover {
 		.cover {
@@ -266,9 +267,10 @@
 }
 
 .card__info {
-	background-color: #00000092;
+	background-color: #00000082;
 	border-radius: 20px;
-	padding: 10px;
+	padding: 7px;
+	box-shadow: -3px -3px 3px 1px #35b397;
 }
 
 // !MEDIA
@@ -283,16 +285,21 @@
 		margin-right: 0;
 	}
 
+	.swiper-slide .project__cards .swiper-slide-active {
+		margin-right: 0px;
+	}
+
 	.card__info {
 		width: 90%;
 		left: 50%;
 		top: 15%;
 		transform: translate(-50%, -50%);
 		margin-right: 0px;
+		padding: 5px;
 	}
 
-	.swiper-slide .project__cards .swiper-slide-active {
-		margin-right: 0px;
+	.card {
+		margin-left: 0px;
 	}
 
 	.card__info-list {
