@@ -54,9 +54,12 @@
 	width: 30%;
 	position: absolute;
 	right: 20px;
-	top: 35px;
-	padding: 0.4rem;
+	top: 12px;
+	padding: 7px;
 	margin-right: 23px;
+	background-color: #00000082;
+	border-radius: 20px;
+	box-shadow: -3px -3px 3px 1px #35b397;
 }
 
 .card__info-description {
@@ -267,19 +270,17 @@
 	background-color: #1bc7f1;
 }
 
-.card__info {
-	background-color: #00000082;
-	border-radius: 20px;
-	padding: 7px;
-	box-shadow: -3px -3px 3px 1px #35b397;
-}
-
 // !MEDIA
-@media (max-width: 567px) {
+@media (max-width: 585px) {
+
 	.bg-project {
 		box-shadow: 0px 0px 20px 50px rgb(0, 0, 0);
 		margin-top: 95px;
 	}
+
+	// .swiperProject {
+	// 	height: 50vh;
+	// }
 
 	.swiper-backface-hidden .swiper-slide {
 		margin-left: 0;
@@ -324,6 +325,7 @@
 		height: 60%;
 		width: 90%;
 		bottom: -10px;
+		// bottom: -35px;
 		right: 5%;
 	}
 }

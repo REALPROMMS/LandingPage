@@ -6,7 +6,8 @@
 	position: absolute;
 	left: 50%;
 	// top: 27.5%;
-	top: 1465px;
+	// top: 1465px;
+	top: 550px;
 	transform: translate(-50%, -50%);
 	z-index: 3000;
 }
@@ -266,6 +267,7 @@
 @media (max-width: 567px) {
 	.night-btn {
 		// top: 75%;
-		top: 1645px;
+		// top: 1645px;
+		top: 725px;
 	}
 }

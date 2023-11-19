@@ -253,7 +253,7 @@
   display: flex;
   text-align: center;
   flex-direction: column;
-  height: 60vh;
+  height: 75vh;
   justify-content: center;
   gap: 2rem;
   align-items: center;
@@ -371,6 +371,9 @@
   .burger {
     display: flex;
     margin-bottom: 60px;
+  }
+  .header__info {
+    height: 59vh;
   }
   .header__menu {
     display: none;
@@ -1079,9 +1082,12 @@ hr {
   width: 30%;
   position: absolute;
   right: 20px;
-  top: 35px;
-  padding: 0.4rem;
+  top: 12px;
+  padding: 7px;
   margin-right: 23px;
+  background-color: rgba(0, 0, 0, 0.5098039216);
+  border-radius: 20px;
+  box-shadow: -3px -3px 3px 1px #35b397;
 }
 
 .card__info-description {
@@ -1273,14 +1279,7 @@ hr {
   background-color: #1bc7f1;
 }
 
-.card__info {
-  background-color: rgba(0, 0, 0, 0.5098039216);
-  border-radius: 20px;
-  padding: 7px;
-  box-shadow: -3px -3px 3px 1px #35b397;
-}
-
-@media (max-width: 567px) {
+@media (max-width: 585px) {
   .bg-project {
     box-shadow: 0px 0px 20px 50px rgb(0, 0, 0);
     margin-top: 95px;
@@ -1866,7 +1865,7 @@ hr {
 .night-btn {
   position: absolute;
   left: 50%;
-  top: 1465px;
+  top: 550px;
   transform: translate(-50%, -50%);
   z-index: 3000;
 }
@@ -2086,7 +2085,7 @@ hr {
 
 @media (max-width: 567px) {
   .night-btn {
-    top: 1645px;
+    top: 725px;
   }
 }
 @keyframes rotate_scale {
@@ -2369,14 +2368,6 @@ hr {
     font-size: 1em;
   }
 }
-.displayNoneAll {
-  display: none;
-}
-
-.displayBlockAll {
-  display: block;
-}
-
 @keyframes myAnimPulse {
   0% {
     transform: scale(1);
@@ -2494,10 +2485,18 @@ body {
 }
 
 .sticky {
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 500000;
+}
+
+.displayNoneAll {
+  display: none;
+}
+
+.displayBlockAll {
+  display: block;
 }
 
 @media (max-width: 567px) {

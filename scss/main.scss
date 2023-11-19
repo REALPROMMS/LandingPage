@@ -112,12 +112,24 @@ body {
 
 // !Для header что бы сдлеать его липким
 .sticky {
-	position: sticky;
+	position: fixed;
+	// position: sticky;
 	top: 0;
 	width: 100%;
 	z-index: 500000;
 
 }
+
+// !Для первоночальной страницы, display none block
+.displayNoneAll {
+	display: none;
+}
+
+.displayBlockAll {
+	display: block;
+}
+
+
 
 // !MEDIA
 @media (max-width: 567px) {

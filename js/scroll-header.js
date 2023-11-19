@@ -19,7 +19,7 @@ for (let anchor of anchors) {
 
 // !Скрипт для липкой навигации
 
-let headerSelector = document.getElementById("myHeader");
+let headerSelector = document.getElementById("stickHeader");
 let sticky = headerSelector.offsetTop;
 
 function myFunction() {

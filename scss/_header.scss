@@ -110,7 +110,7 @@
 	display: flex;
 	text-align: center;
 	flex-direction: column;
-	height: 60vh;
+	height: 75vh;
 	justify-content: center;
 	gap: 2rem;
 	align-items: center;
@@ -245,7 +245,10 @@
 	.burger {
 		display: flex;
 		margin-bottom: 60px;
+	}
 
+	.header__info {
+		height: 59vh;
 	}
 
 	.header__menu {

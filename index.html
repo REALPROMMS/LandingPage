@@ -34,7 +34,7 @@
 		</div>
 	</header>
 
-	<div class="all displayNoneAll">
+	<div class="full-site displayNoneAll">
 
 		<!-- <div class="noneBurger">
 			<div class="icon" id="menu"><i class="fas fa-bars" id="toggler"></i></div>
@@ -52,40 +52,48 @@
 		</div> -->
 
 		<!--Main Body Content-->
+		<header>
+			<nav id="stickHeader" class="header__menu">
+				<a class="header__menu-link bubbly-button active" href="index.html">HOME</a>
+				<a class="header__menu-link bubbly-button" href="#aboutMe">ABOUT</a>
+				<a class="header__menu-link bubbly-button" href="#skill">SKILL'S</a>
+				<a class="header__menu-link bubbly-button" href="#proect">PORTFOLIO</a>
+				<a class="header__menu-link bubbly-button" href="#footer">CONTACT</a>
+			</nav>
+			<section class="header" id="home">
+				<div class="container">
 
-		<header class="header" id="home">
-			<div class="container">
-
-				<button class="burger">
-					<nav class="header__menu">
+					<button class="burger">
+						<nav class="header__menu">
+							<a class="header__menu-link bubbly-button active" href="index.html">HOME</a>
+							<a class="header__menu-link bubbly-button" href="#aboutMe">ABOUT</a>
+							<a class="header__menu-link bubbly-button" href="#skill">SKILL'S</a>
+							<a class="header__menu-link bubbly-button" href="#proect">PORTFOLIO</a>
+							<a class="header__menu-link bubbly-button" href="#footer">CONTACT</a>
+						</nav>
+					</button>
+					<!-- <nav id="myHeader" class="header__menu">
 						<a class="header__menu-link bubbly-button active" href="index.html">HOME</a>
 						<a class="header__menu-link bubbly-button" href="#aboutMe">ABOUT</a>
 						<a class="header__menu-link bubbly-button" href="#skill">SKILL'S</a>
 						<a class="header__menu-link bubbly-button" href="#proect">PORTFOLIO</a>
 						<a class="header__menu-link bubbly-button" href="#footer">CONTACT</a>
-					</nav>
-				</button>
-				<nav id="myHeader" class="header__menu">
-					<a class="header__menu-link bubbly-button active" href="index.html">HOME</a>
-					<a class="header__menu-link bubbly-button" href="#aboutMe">ABOUT</a>
-					<a class="header__menu-link bubbly-button" href="#skill">SKILL'S</a>
-					<a class="header__menu-link bubbly-button" href="#proect">PORTFOLIO</a>
-					<a class="header__menu-link bubbly-button" href="#footer">CONTACT</a>
-				</nav>
+					</nav> -->
 
-				<div class="header__info">
-					<span class="header__info-span text">Welcome</span>
-					<a class="header__info-link observer-title-header" href="https://cherepovets.hh.ru/" target="_blank">
-						<h1 class="header__info-title text">I'M A FRONTEND DEVELOPER</h1>
-					</a>
-					<p class="header__info-subtitle text">Never Give Up, Always Go Only Forward</p>
+					<div class="header__info">
+						<span class="header__info-span text">Welcome</span>
+						<a class="header__info-link observer-title-header" href="https://cherepovets.hh.ru/" target="_blank">
+							<h1 class="header__info-title text">I'M A FRONTEND DEVELOPER</h1>
+						</a>
+						<p class="header__info-subtitle text">Never Give Up, Always Go Only Forward</p>
+					</div>
+
+					<div class="header__button bubbly-button">
+						<a class="btn-flip header__button-animation" data-back="Back" data-front="Front" href="#hobby"></a>
+					</div>
+
 				</div>
-
-				<div class="header__button bubbly-button">
-					<a class="btn-flip header__button-animation" data-back="Back" data-front="Front" href="#hobby"></a>
-				</div>
-
-			</div>
+			</section>
 		</header>
 
 		<hr class="header-hr">
@@ -487,11 +495,6 @@
 						<img class="toggleMain tgdBtn" src="img/footer/setting.png" alt="icon">
 					</div>
 
-					<!-- btn mail -->
-					<!-- <span style="--i:1;">
-					<a href="https://mail.ru/" target="_blank"><i class='bx bxs-envelope'></i></a>
-				</span> -->
-
 					<span style="--i:5;">
 						<a href="https://web.whatsapp.com/" target="_blank"><i class='bx bxl-whatsapp flap'></i></a>
 					</span>
@@ -603,13 +606,14 @@
 	</div>
 
 	<script src="libs/swiper/swiper-bundle.min.js"></script>
-	<script src="js/menu-toggle.js"></script>
 	<script src="js/burger-nav.js"></script>
+	<script src="js/menu-toggle.js"></script>
 	<script src="js/night-theme.js"></script>
-	<script src="js/scroll-header.js"></script>
 	<script src="js/app.js"></script>
 	<script src="js/audio-btn.js"></script>
 	<script src="js/observer.js"></script>
+	<script src="js/full-screen.js"></script>
+	<script src="js/scroll-header.js"></script>
 
 </body>
 
