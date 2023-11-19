@@ -1,0 +1,134 @@
+// !#main- поворачивает квадраты в воздухе
+// animation: rotate_scale 11s ease-in-out forwards infinite;
+// -webkit-animation: rotate_scale 10s ease-in-out forwards infinite;
+
+@keyframes rotate_scale {
+	0% {
+		transform: scale(0) rotate(0) translate(25%, -50%);
+		opacity: 1;
+	}
+
+	100% {
+		transform: scale(6) rotate(250deg) translate(-50%, -50%);
+		opacity: 0;
+	}
+}
+
+// !#main- поворачивает квадраты в воздухе
+// animation: border-flicker 2s linear infinite;
+// animation: text-flicker 3s linear infinite;
+// animation: letter-flicker 2s linear infinite;
+
+@keyframes letter-flicker {
+	0% {
+		opacity: 0.1;
+	}
+
+	2% {
+		opacity: 0.1;
+	}
+
+	4% {
+		opacity: 0.5;
+	}
+
+	19% {
+		opacity: 0.5;
+	}
+
+	21% {
+		opacity: 0.1;
+	}
+
+	23% {
+		opacity: 1;
+	}
+
+	80% {
+		opacity: 0.5;
+	}
+
+	83% {
+		opacity: 0.4;
+	}
+
+	87% {
+		opacity: 1;
+	}
+}
+
+@keyframes text-flicker {
+	0% {
+		opacity: 0.1;
+	}
+
+	2% {
+		opacity: 1;
+	}
+
+	8% {
+		opacity: 0.1;
+	}
+
+	9% {
+		opacity: 1;
+	}
+
+	12% {
+		opacity: 0.1;
+	}
+
+	20% {
+		opacity: 1;
+	}
+
+	25% {
+		opacity: 0.3;
+	}
+
+	30% {
+		opacity: 1;
+	}
+
+	70% {
+		opacity: 0.7;
+	}
+
+	72% {
+		opacity: 0.2;
+	}
+
+	77% {
+		opacity: 0.9;
+	}
+
+	100% {
+		opacity: 0.9;
+	}
+}
+
+@keyframes border-flicker {
+	0% {
+		opacity: 0.1;
+	}
+
+	2% {
+		opacity: 1;
+	}
+
+	4% {
+		opacity: 0.1;
+	}
+
+	8% {
+		opacity: 1;
+	}
+
+	70% {
+		opacity: 0.7;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

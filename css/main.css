@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Tomorrow:wght@700&display=swap");
 @keyframes shrink {
   0% {
     background-size: 120% 120%;
@@ -157,6 +158,8 @@
   filter: brightness(75%);
   animation: shrink 55s infinite alternate;
   box-shadow: 0px 0px 50px 30px rgb(0, 0, 0) inset;
+  position: relative;
+  z-index: 3000;
 }
 
 .header-hr {
@@ -2069,6 +2072,238 @@ hr {
     top: 75%;
   }
 }
+@keyframes rotate_scale {
+  0% {
+    transform: scale(0) rotate(0) translate(25%, -50%);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(6) rotate(250deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+@keyframes letter-flicker {
+  0% {
+    opacity: 0.1;
+  }
+  2% {
+    opacity: 0.1;
+  }
+  4% {
+    opacity: 0.5;
+  }
+  19% {
+    opacity: 0.5;
+  }
+  21% {
+    opacity: 0.1;
+  }
+  23% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  83% {
+    opacity: 0.4;
+  }
+  87% {
+    opacity: 1;
+  }
+}
+@keyframes text-flicker {
+  0% {
+    opacity: 0.1;
+  }
+  2% {
+    opacity: 1;
+  }
+  8% {
+    opacity: 0.1;
+  }
+  9% {
+    opacity: 1;
+  }
+  12% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  72% {
+    opacity: 0.2;
+  }
+  77% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+@keyframes border-flicker {
+  0% {
+    opacity: 0.1;
+  }
+  2% {
+    opacity: 1;
+  }
+  4% {
+    opacity: 0.1;
+  }
+  8% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.full__screen-squere {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: #000;
+  overflow: hidden;
+  z-index: 1000;
+}
+.full__screen-squere .squere-box {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  z-index: 5;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #35b397;
+  transform: scale(0) rotate(0) translate(-50%, -50%);
+  animation: rotate_scale 11s ease-in-out forwards infinite;
+  -webkit-animation: rotate_scale 10s ease-in-out forwards infinite;
+}
+.full__screen-squere .squere-box:nth-child(2) {
+  border-color: #1bc7f1;
+  animation-delay: 2s;
+  left: 50%;
+  bottom: 30%;
+}
+.full__screen-squere .squere-box:nth-child(3) {
+  border-color: #65cae4;
+  animation-delay: 4s;
+  left: 50%;
+  top: 5%;
+}
+.full__screen-squere .squere-box:nth-child(4) {
+  border-color: #066875;
+  animation-delay: 6s;
+  right: 10%;
+  top: 20%;
+}
+.full__screen-squere .squere-box:nth-child(5) {
+  border-color: #08f5ba;
+  animation-delay: 8s;
+  top: 50%;
+  left: 85%;
+}
+.full__screen-squere .squere-box:nth-child(6) {
+  animation-delay: 9s;
+  top: 50%;
+  left: 50%;
+}
+
+.full__screen-btn {
+  position: absolute;
+  color: hsl(186, 100%, 69%);
+  cursor: pointer;
+  padding: 0.35em 1em;
+  border: 0.15em solid hsl(186, 100%, 69%);
+  border-radius: 0.45em;
+  background: none;
+  perspective: 2em;
+  font-family: "Tomorrow", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 1em;
+  z-index: 10000;
+  left: 50%;
+  top: 8%;
+  transform: translate(-50%, -50%);
+  box-shadow: inset 0px 0px 0.5em 0px hsl(186, 100%, 69%), 0px 0px 0.5em 0px hsl(186, 100%, 69%);
+  animation: border-flicker 2s linear infinite;
+}
+.full__screen-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
+  filter: blur(1em);
+  transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+  background: hsl(186, 100%, 69%);
+  pointer-events: none;
+}
+.full__screen-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+  background-color: hsl(186, 100%, 69%);
+  box-shadow: 0 0 2em 0.2em hsl(186, 100%, 69%);
+  transition: opacity 100ms linear;
+}
+
+.full__screen-txt {
+  float: left;
+  margin-right: -0.8em;
+  text-shadow: 0 0 0.125em hsla(0, 0%, 100%, 0.3), 0 0 0.45em hsl(186, 100%, 69%);
+  animation: text-flicker 3s linear infinite;
+}
+
+.full__screen-letter {
+  opacity: 0.5;
+  animation: letter-flicker 2s linear infinite;
+}
+
+.full__screen-btn:hover {
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: none;
+  animation: none;
+}
+.full__screen-btn:hover .full__screen-txt {
+  animation: none;
+}
+.full__screen-btn:hover .full__screen-letter {
+  animation: none;
+  text-shadow: none;
+  opacity: 1;
+}
+.full__screen-btn:hover:before {
+  filter: blur(1.5em);
+  opacity: 1;
+}
+.full__screen-btn:hover:after {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .full__screen-btn {
+    font-size: 1em;
+  }
+}
 @keyframes myAnimPulse {
   0% {
     transform: scale(1);
@@ -2107,6 +2342,10 @@ hr {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  position: relative;
 }
 
 html,

@@ -13,15 +13,58 @@
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="css/main.css">
 	<title>REALPROMMS</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
 
 <body>
+	<div class="full__screen">
 
+		<a href="#home2">
+			<button class='full__screen-btn'>
+				<span class='full__screen-txt'>C<span class='full__screen-letter'>L</span>ICK</span></button>
+		</a>
 
+		<div class="full__screen-squere">
+			<div class="squere-box"></div>
+			<div class="squere-box"></div>
+			<div class="squere-box"></div>
+			<div class="squere-box"></div>
+			<div class="squere-box"></div>
+			<div class="squere-box"></div>
+			</в>
+		</div>
 
-	<header class="header" id="home">
-		<div class="container">
-			<button class="burger">
+		<!-- <div class="srit">
+		<div class="noneBurger">
+
+			<div class="icon" id="menu"><i class="fas fa-bars" id="toggler"></i></div>
+			<header id="main">
+				<nav id="navbar">
+					<ul id="links">
+						<li><a href="#">home</a></li>
+						<li><a href="#">about</a></li>
+						<li><a href="#">portfolio</a></li>
+						<li><a href="#">design</a></li>
+						<li><a href="#">contact us</a></li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+	</div> -->
+
+		<!--Main Body Content-->
+
+		<header class="header" id="home">
+			<div class="container">
+				<button class="burger">
+					<nav class="header__menu">
+						<a class="header__menu-link bubbly-button active" href="index.html">HOME</a>
+						<a class="header__menu-link bubbly-button" href="#aboutMe">ABOUT</a>
+						<a class="header__menu-link bubbly-button" href="#skill">SKILL'S</a>
+						<a class="header__menu-link bubbly-button" href="#proect">PORTFOLIO</a>
+						<a class="header__menu-link bubbly-button" href="#footer">CONTACT</a>
+					</nav>
+				</button>
 				<nav class="header__menu">
 					<a class="header__menu-link bubbly-button active" href="index.html">HOME</a>
 					<a class="header__menu-link bubbly-button" href="#aboutMe">ABOUT</a>
@@ -29,552 +72,541 @@
 					<a class="header__menu-link bubbly-button" href="#proect">PORTFOLIO</a>
 					<a class="header__menu-link bubbly-button" href="#footer">CONTACT</a>
 				</nav>
-			</button>
-			<nav class="header__menu">
-				<a class="header__menu-link bubbly-button active" href="index.html">HOME</a>
-				<a class="header__menu-link bubbly-button" href="#aboutMe">ABOUT</a>
-				<a class="header__menu-link bubbly-button" href="#skill">SKILL'S</a>
-				<a class="header__menu-link bubbly-button" href="#proect">PORTFOLIO</a>
-				<a class="header__menu-link bubbly-button" href="#footer">CONTACT</a>
-			</nav>
 
-			<div class="header__info">
-				<span class="header__info-span text">Welcome</span>
-				<a class="header__info-link observer-title-header" href="https://cherepovets.hh.ru/" target="_blank">
-					<h1 class="header__info-title text">I'M A FRONTEND DEVELOPER</h1>
-				</a>
-				<p class="header__info-subtitle text">Never Give Up, Always Go Only Forward</p>
+				<div class="header__info">
+					<span class="header__info-span text">Welcome</span>
+					<a class="header__info-link observer-title-header" href="https://cherepovets.hh.ru/" target="_blank">
+						<h1 class="header__info-title text">I'M A FRONTEND DEVELOPER</h1>
+					</a>
+					<p class="header__info-subtitle text">Never Give Up, Always Go Only Forward</p>
+				</div>
+				<div class="header__button bubbly-button" id="home2">
+					<a class="btn-flip header__button-animation" data-back="Back" data-front="Front" href="#hobby"></a>
+				</div>
 			</div>
-			<div class="header__button bubbly-button">
-				<a class="btn-flip header__button-animation" data-back="Back" data-front="Front" href="#hobby"></a>
-			</div>
-		</div>
+		</header>
 
-	</header>
+		<hr class="header-hr">
 
-	<!-- <header class="header2" id="myHeader">
-		<div class="content">
-			<h2>HELLO</h2>
-		</div>
-	</header> -->
+		<main class="main">
 
-	<hr class="header-hr">
-
-	<main class="main">
-
-		<section class="bg-about">
-			<div class="inset">
-				<div class="container">
-					<div class="about">
-						<div class="about-title bubbly-button">
-							<div class="animationTitle">
-								<span id="aboutMe">ABOUT ME</span>
+			<section class="bg-about">
+				<div class="inset">
+					<div class="container">
+						<div class="about">
+							<div class="about-title bubbly-button">
+								<div class="animationTitle">
+									<span id="aboutMe">ABOUT ME</span>
+								</div>
+							</div>
+							<div class="about__description">
+								<div class="about__description-img">
+									<a href="https://vk.ru/realizing/" target="_blank"><img class="description-img"
+											src="img/main/logo.jpeg" alt="logo" width="450"></a>
+								</div>
+								<div class="about__description-info">
+									<div class="info--top">
+										<span class="info--top-title">SALUTЕ!</span>
+										<span class="info--top-subtitle">My name is Misha Makarov and I love programming</span>
+										<p class="info--top-message">I want to enter the IT field with excellent knowledge, so I
+											read
+											for
+											several hours every day, practice and learn something new!
+											I really like Frontend development and I still have to master a lot of tools to feel
+											comfortable
+											in this area.</p>
+									</div>
+									<hr>
+									<div class="info--bottom">
+										<p class="info--bottom-ld"><img src="img/content/icon/person.png"
+												alt=""><span>Name:</span>
+											Misha
+											Makarov</p>
+										<p class="info--bottom-ld"><img src="img/content/icon/number.png" alt=""><span>Age:</span>
+											33
+										</p>
+										<a class="mail-link" href="https://mail.ru/" target="_blank">
+											<p class="info--bottom-ld"><img class="icon-mail" src="img/content/icon/email.png"
+													alt=""><span>Email:</span>
+												m.makarov90@bk.ru</p>
+										</a>
+										<p class="info--bottom-ld"><img src="img/content/icon/russia.png"
+												alt=""><span>From:</span>
+											Russia
+										</p>
+										<p class="info--bottom-ld"><img src="img/content/icon/work.png"
+												alt=""><span>Profession:</span>
+											Frontend Dev.</p>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="about__description">
-							<div class="about__description-img">
-								<a href="https://vk.ru/realizing/" target="_blank"><img class="description-img"
-										src="img/main/logo.jpeg" alt="logo" width="450"></a>
-							</div>
-							<div class="about__description-info">
-								<div class="info--top">
-									<span class="info--top-title">SALUTЕ!</span>
-									<span class="info--top-subtitle">My name is Misha Makarov and I love programming</span>
-									<p class="info--top-message">I want to enter the IT field with excellent knowledge, so I read
-										for
-										several hours every day, practice and learn something new!
-										I really like Frontend development and I still have to master a lot of tools to feel
-										comfortable
-										in this area.</p>
+					</div>
+				</div>
+			</section>
+			<section class="bg-hobby">
+				<div class="inset">
+					<div class="container">
+						<div class="hobby">
+							<div class="hobby-title bubbly-button">
+								<div class="animationTitle">
+									<span id="hobby">MY HOBBY</span>
 								</div>
-								<hr>
-								<div class="info--bottom">
-									<p class="info--bottom-ld"><img src="img/content/icon/person.png" alt=""><span>Name:</span>
-										Misha
-										Makarov</p>
-									<p class="info--bottom-ld"><img src="img/content/icon/number.png" alt=""><span>Age:</span> 33
+							</div>
+							<div class="swiper-box">
+								<!-- Slider main container -->
+								<div class="swiper sliderHobby">
+									<!-- Additional required wrapper -->
+									<div class="swiper-wrapper">
+										<!-- Slides -->
+										<div class="swiper-slide"><img src="img/content/swiper/1.jpeg" alt="img">
+										</div>
+										<div class="swiper-slide"><img src="img/content/swiper/2.jpeg" alt="img"></div>
+										<div class="swiper-slide"><img src="img/content/swiper/3.jpeg" alt="img"></div>
+										<div class="swiper-slide"><img src="img/content/swiper/4.jpeg" alt="img"></div>
+										<div class="swiper-slide"><img src="img/content/swiper/5.jpeg" alt="img"></div>
+										<div class="swiper-slide"><img src="img/content/swiper/6.jpeg" alt="img"></div>
+										<div class="swiper-slide"><img src="img/content/swiper/7.jpeg" alt="img"></div>
+										<div class="swiper-slide"><img src="img/content/swiper/8.jpeg" alt="img"></div>
+										<div class="swiper-slide"><img src="img/content/swiper/9.jpeg" alt="img">
+										</div>
+									</div>
+									<!-- If we need pagination -->
+									<div class="swiper-pagination"></div>
+
+									<!-- If we need navigation buttons -->
+									<div class="swiper-button-prev"></div>
+									<div class="swiper-button-next"></div>
+
+								</div>
+								<div class="hobby__info">
+									<h5 class="hobby__info-title">IT'S &#9786; OKEY </h5>
+									<p class="hobby__info-subtitle">
+										Like everyone else, I not only love the IT sphere, but also adore
+										snowboarding is my passion!<br>I like to ride a bike in the warm summer
+										days, I go out of town by car, because I really like to take pictures of various
+										landscapes
+										and
+										just beautiful places.<br>I love a lot of things...it takes a long time to write
 									</p>
-									<a class="mail-link" href="https://mail.ru/" target="_blank">
-										<p class="info--bottom-ld"><img class="icon-mail" src="img/content/icon/email.png"
-												alt=""><span>Email:</span>
-											m.makarov90@bk.ru</p>
-									</a>
-									<p class="info--bottom-ld"><img src="img/content/icon/russia.png" alt=""><span>From:</span>
-										Russia
-									</p>
-									<p class="info--bottom-ld"><img src="img/content/icon/work.png"
-											alt=""><span>Profession:</span>
-										Frontend Dev.</p>
 								</div>
 							</div>
+
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<section class="bg-hobby">
-			<div class="inset">
-				<div class="container">
-					<div class="hobby">
-						<div class="hobby-title bubbly-button">
-							<div class="animationTitle">
-								<span id="hobby">MY HOBBY</span>
+			</section>
+			<section class="bg-skills">
+				<div class="inset">
+					<div class="container">
+
+						<div class="warpper" id="skill">
+
+							<input class="radio" id="one" name="group" type="radio" checked>
+							<input class="radio" id="two" name="group" type="radio">
+							<input class="radio" id="three" name="group" type="radio">
+
+							<div class="tabs">
+								<label class="tab" id="one-tab" for="one">SKILLS</label>
+								<label class="tab" id="two-tab" for="two">EXPERIENCES</label>
+								<label class="tab" id="three-tab" for="three">OTHER SKILLS</label>
 							</div>
-						</div>
-						<div class="swiper-box">
-							<!-- Slider main container -->
-							<div class="swiper sliderHobby">
-								<!-- Additional required wrapper -->
-								<div class="swiper-wrapper">
-									<!-- Slides -->
-									<div class="swiper-slide"><img src="img/content/swiper/1.jpeg" alt="img">
-									</div>
-									<div class="swiper-slide"><img src="img/content/swiper/2.jpeg" alt="img"></div>
-									<div class="swiper-slide"><img src="img/content/swiper/3.jpeg" alt="img"></div>
-									<div class="swiper-slide"><img src="img/content/swiper/4.jpeg" alt="img"></div>
-									<div class="swiper-slide"><img src="img/content/swiper/5.jpeg" alt="img"></div>
-									<div class="swiper-slide"><img src="img/content/swiper/6.jpeg" alt="img"></div>
-									<div class="swiper-slide"><img src="img/content/swiper/7.jpeg" alt="img"></div>
-									<div class="swiper-slide"><img src="img/content/swiper/8.jpeg" alt="img"></div>
-									<div class="swiper-slide"><img src="img/content/swiper/9.jpeg" alt="img">
-									</div>
-								</div>
-								<!-- If we need pagination -->
-								<div class="swiper-pagination"></div>
 
-								<!-- If we need navigation buttons -->
-								<div class="swiper-button-prev"></div>
-								<div class="swiper-button-next"></div>
-
-							</div>
-							<div class="hobby__info">
-								<h5 class="hobby__info-title">IT'S &#9786; OKEY </h5>
-								<p class="hobby__info-subtitle">
-									Like everyone else, I not only love the IT sphere, but also adore
-									snowboarding is my passion!<br>I like to ride a bike in the warm summer
-									days, I go out of town by car, because I really like to take pictures of various landscapes
-									and
-									just beautiful places.<br>I love a lot of things...it takes a long time to write
-								</p>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="bg-skills">
-			<div class="inset">
-				<div class="container">
-
-					<div class="warpper" id="skill">
-
-						<input class="radio" id="one" name="group" type="radio" checked>
-						<input class="radio" id="two" name="group" type="radio">
-						<input class="radio" id="three" name="group" type="radio">
-
-						<div class="tabs">
-							<label class="tab" id="one-tab" for="one">SKILLS</label>
-							<label class="tab" id="two-tab" for="two">EXPERIENCES</label>
-							<label class="tab" id="three-tab" for="three">OTHER SKILLS</label>
-						</div>
-
-						<div class="panels">
-							<div class="panel flex" id="one-panel">
-								<div class="skill-bars-one">
-									<div class="bar">
-										<div class="info"> <span>HTML5</span> </div>
-										<div class="skill__progress">
-											<div class="progress-line html"> <span></span> </div>
-										</div>
-									</div>
-									<div class="bar">
-										<div class="info"> <span>CSS3</span> </div>
-										<div class="skill__progress2">
-											<div class="progress-line css"> <span></span> </div>
-										</div>
-									</div>
-									<div class="bar">
-										<div class="info"> <span>Java Script</span> </div>
-										<div class="skill__progress3">
-											<div class="progress-line JavaScript"> <span></span> </div>
-										</div>
-									</div>
-								</div>
-								<div class="skill-bars-one two">
-									<div class="bar">
-										<div class="info"> <span>React JS</span> </div>
-										<div class="skill__progress4">
-											<div class="progress-line react"> <span></span></div>
-										</div>
-									</div>
-									<div class="bar">
-										<div class="info"> <span>BootStrap</span> </div>
-										<div class="skill__progress5">
-											<div class="progress-line bootstrap"> <span></span></div>
-										</div>
-									</div>
-									<div class="bar">
-										<div class="info"> <span>WordPress</span></div>
-										<div class="skill__progress6">
-											<div class="progress-line wordpress"> <span></span></div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="panel flex" id="two-panel">
-								<div class="skill-bars-one">
-									<div class="bar">
-										<div class="info"> <span class="panelAnimation">------</span> </div>
-										<div class="progress-line other_skill"> <span></span> </div>
-									</div>
-								</div>
-								<div class="skill-bars-one">
-									<div class="bar">
-										<div class="info"> <span>------</span> </div>
-										<div class="progress-line other_skill"> <span></span> </div>
-									</div>
-								</div>
-							</div>
-							<div class="panel flex" id="three-panel">
-								<div class="skill-bars-one">
-									<div class="bar">
-										<div class="info"> <span>Git</span> </div>
-										<div class="progress-line git"> <span></span> </div>
-									</div>
-									<div class="bar">
-										<div class="info"> <span>Npm</span> </div>
-										<div class="progress-line npm"> <span></span> </div>
-									</div>
-									<div class="bar">
-										<div class="info"> <span>Webpack</span> </div>
-										<div class="progress-line webpack"> <span></span> </div>
-									</div>
-								</div>
-								<div class="skill-bars-one">
-									<div class="bar">
-										<div class="info"> <span>Axios</span> </div>
-										<div class="progress-line axios"> <span></span> </div>
-									</div>
-									<div class="bar">
-										<div class="info"> <span>Swiper</span> </div>
-										<div class="progress-line swipers"> <span></span> </div>
-									</div>
-									<div class="bar">
-										<div class="info"> <span>Animation</span> </div>
-										<div class="progress-line animation"> <span></span> </div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-			</div>
-		</section>
-		<section class="bg-project">
-			<div class="inset">
-				<div class="container">
-					<div id="project" class="project">
-						<div class="project-title bubbly-button">
-							<div class="animationTitle">
-								<span id="proect">MY PROJECT</span>
-							</div>
-						</div>
-					</div>
-					<div class="swiper swiperProject">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide project__cards">
-								<div class="display">
-									<div class="card">
-										<div class="cover item-a">
-											<h6>WHITE&nbsp;LEADING&nbsp;PAGE</h6>
-											<span class="price">GB&nbsp;PROJECT</span>
-											<div class="card-back">
-												<a href="https://realpromms.github.io/HTML/"
-													target="_blank">PLAY&nbsp;TO&nbsp;WATCH!</a>
+							<div class="panels">
+								<div class="panel flex" id="one-panel">
+									<div class="skill-bars-one">
+										<div class="bar">
+											<div class="info"> <span>HTML5</span> </div>
+											<div class="skill__progress">
+												<div class="progress-line html"> <span></span> </div>
 											</div>
 										</div>
-										<div class="card__info">
-											<p class="card__info-description">
-												<!-- Макет сделан во время учебы в GeekBrains по программе
+										<div class="bar">
+											<div class="info"> <span>CSS3</span> </div>
+											<div class="skill__progress2">
+												<div class="progress-line css"> <span></span> </div>
+											</div>
+										</div>
+										<div class="bar">
+											<div class="info"> <span>Java Script</span> </div>
+											<div class="skill__progress3">
+												<div class="progress-line JavaScript"> <span></span> </div>
+											</div>
+										</div>
+									</div>
+									<div class="skill-bars-one two">
+										<div class="bar">
+											<div class="info"> <span>React JS</span> </div>
+											<div class="skill__progress4">
+												<div class="progress-line react"> <span></span></div>
+											</div>
+										</div>
+										<div class="bar">
+											<div class="info"> <span>BootStrap</span> </div>
+											<div class="skill__progress5">
+												<div class="progress-line bootstrap"> <span></span></div>
+											</div>
+										</div>
+										<div class="bar">
+											<div class="info"> <span>WordPress</span></div>
+											<div class="skill__progress6">
+												<div class="progress-line wordpress"> <span></span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="panel flex" id="two-panel">
+									<div class="skill-bars-one">
+										<div class="bar">
+											<div class="info"> <span class="panelAnimation">------</span> </div>
+											<div class="progress-line other_skill"> <span></span> </div>
+										</div>
+									</div>
+									<div class="skill-bars-one">
+										<div class="bar">
+											<div class="info"> <span>------</span> </div>
+											<div class="progress-line other_skill"> <span></span> </div>
+										</div>
+									</div>
+								</div>
+								<div class="panel flex" id="three-panel">
+									<div class="skill-bars-one">
+										<div class="bar">
+											<div class="info"> <span>Git</span> </div>
+											<div class="progress-line git"> <span></span> </div>
+										</div>
+										<div class="bar">
+											<div class="info"> <span>Npm</span> </div>
+											<div class="progress-line npm"> <span></span> </div>
+										</div>
+										<div class="bar">
+											<div class="info"> <span>Webpack</span> </div>
+											<div class="progress-line webpack"> <span></span> </div>
+										</div>
+									</div>
+									<div class="skill-bars-one">
+										<div class="bar">
+											<div class="info"> <span>Axios</span> </div>
+											<div class="progress-line axios"> <span></span> </div>
+										</div>
+										<div class="bar">
+											<div class="info"> <span>Swiper</span> </div>
+											<div class="progress-line swipers"> <span></span> </div>
+										</div>
+										<div class="bar">
+											<div class="info"> <span>Animation</span> </div>
+											<div class="progress-line animation"> <span></span> </div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<section class="bg-project">
+				<div class="inset">
+					<div class="container">
+						<div id="project" class="project">
+							<div class="project-title bubbly-button">
+								<div class="animationTitle">
+									<span id="proect">MY PROJECT</span>
+								</div>
+							</div>
+						</div>
+						<div class="swiper swiperProject">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide project__cards">
+									<div class="display">
+										<div class="card">
+											<div class="cover item-a">
+												<h6>WHITE&nbsp;LEADING&nbsp;PAGE</h6>
+												<span class="price">GB&nbsp;PROJECT</span>
+												<div class="card-back">
+													<a href="https://realpromms.github.io/HTML/"
+														target="_blank">PLAY&nbsp;TO&nbsp;WATCH!</a>
+												</div>
+											</div>
+											<div class="card__info">
+												<p class="card__info-description">
+													<!-- Макет сделан во время учебы в GeekBrains по программе
 												"Базовая верстка" -->
-												The layout was made while studying at GeekBrains under the program
-												"Basic layout"
-											</p>
-											<div class="card__info-block">
-												<p class="card__info-text">
-													<!-- Ипользовал технологии: -->
-													Used technology:
+													The layout was made while studying at GeekBrains under the program
+													"Basic layout"
 												</p>
+												<div class="card__info-block">
+													<p class="card__info-text">
+														<!-- Ипользовал технологии: -->
+														Used technology:
+													</p>
+												</div>
+												<ul class="card__info-list">
+													<li>HTML5</li>
+													<li>CSS3</li>
+													<li>SCSS - preprocessor</li>
+												</ul>
 											</div>
-											<ul class="card__info-list">
-												<li>HTML5</li>
-												<li>CSS3</li>
-												<li>SCSS - preprocessor</li>
-											</ul>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="swiper-slide project__cards">
-								<div class="display">
-									<div class="card">
-										<div class="cover item-b">
-											<h6>DARK&nbsp;LEADING&nbsp;PAGE</h6>
-											<span class="price">GB&nbsp;PROJECT</span>
-											<div class="card-back">
-												<a href="https://realpromms.github.io/Homework-HTML/"
-													target="_blank">PLAY&nbsp;TO&nbsp;WATCH!</a>
+								<div class="swiper-slide project__cards">
+									<div class="display">
+										<div class="card">
+											<div class="cover item-b">
+												<h6>DARK&nbsp;LEADING&nbsp;PAGE</h6>
+												<span class="price">GB&nbsp;PROJECT</span>
+												<div class="card-back">
+													<a href="https://realpromms.github.io/Homework-HTML/"
+														target="_blank">PLAY&nbsp;TO&nbsp;WATCH!</a>
+												</div>
 											</div>
-										</div>
-										<div class="card__info">
-											<p class="card__info-description">
-												<!-- Макет сделан во время учебы в GeekBrains по программе
+											<div class="card__info">
+												<p class="card__info-description">
+													<!-- Макет сделан во время учебы в GeekBrains по программе
 												"Базовая верстка" -->
-												The layout was made while studying at GeekBrains under the program
-												"Basic layout"
-											</p>
-											<div class="card__info-block">
-												<p class="card__info-text">
-													<!-- Ипользовал технологии: -->
-													Used technology:
+													The layout was made while studying at GeekBrains under the program
+													"Basic layout"
 												</p>
+												<div class="card__info-block">
+													<p class="card__info-text">
+														<!-- Ипользовал технологии: -->
+														Used technology:
+													</p>
+												</div>
+												<ul class="card__info-list">
+													<li>HTML5</li>
+													<li>CSS3</li>
+													<li>SCSS - preprocessor</li>
+												</ul>
 											</div>
-											<ul class="card__info-list">
-												<li>HTML5</li>
-												<li>CSS3</li>
-												<li>SCSS - preprocessor</li>
-											</ul>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="swiper-slide project__cards">
-								<div class="display">
-									<div class="card">
-										<div class="cover item-c">
-											<h6>ONLINE&nbsp;STORE</h6>
-											<span class="price">GB&nbsp;PROJECT</span>
-											<div class="card-back">
-												<a href="https://realpromms.github.io/GB-MMS-DZ/"
-													target="_blank">PLAY&nbsp;TO&nbsp;WATCH!</a>
+								<div class="swiper-slide project__cards">
+									<div class="display">
+										<div class="card">
+											<div class="cover item-c">
+												<h6>ONLINE&nbsp;STORE</h6>
+												<span class="price">GB&nbsp;PROJECT</span>
+												<div class="card-back">
+													<a href="https://realpromms.github.io/GB-MMS-DZ/"
+														target="_blank">PLAY&nbsp;TO&nbsp;WATCH!</a>
+												</div>
 											</div>
-										</div>
-										<div class="card__info">
-											<p class="card__info-description">
-												<!-- Онлайн магазин сделанный во время учебы в GeekBrains
+											<div class="card__info">
+												<p class="card__info-description">
+													<!-- Онлайн магазин сделанный во время учебы в GeekBrains
 												по
 												программе "Продвинутая верстка" -->
-												An online store made while studying at GeekBrains
-												by
-												the "Advanced Layout" program
-											</p>
-											<div class="card__info-block">
-												<p class="card__info-text">
-													<!-- Ипользовал технологии: -->
-													Used technology:
+													An online store made while studying at GeekBrains
+													by
+													the "Advanced Layout" program
 												</p>
+												<div class="card__info-block">
+													<p class="card__info-text">
+														<!-- Ипользовал технологии: -->
+														Used technology:
+													</p>
+												</div>
+												<ul class="card__info-list">
+													<li>HTML5</li>
+													<li>CSS3</li>
+													<li>SCSS - preprocessor</li>
+													<li>JavaScript</li>
+													<li>BootStrap</li>
+												</ul>
 											</div>
-											<ul class="card__info-list">
-												<li>HTML5</li>
-												<li>CSS3</li>
-												<li>SCSS - preprocessor</li>
-												<li>JavaScript</li>
-												<li>BootStrap</li>
-											</ul>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="swiper-slide project__cards">
-								<div class="display">
-									<div class="card">
-										<div class="cover item-d">
-											<h6>WORKSHOP&nbsp;LEADING</h6>
-											<span class="price">FREELANCE&nbsp;PROJECT</span>
-											<div class="card-back">
-												<a href="https://drawingthebodycourse.pro/"
-													target="_blank">PLAY&nbsp;TO&nbsp;WATCH!</a>
+								<div class="swiper-slide project__cards">
+									<div class="display">
+										<div class="card">
+											<div class="cover item-d">
+												<h6>WORKSHOP&nbsp;LEADING</h6>
+												<span class="price">FREELANCE&nbsp;PROJECT</span>
+												<div class="card-back">
+													<a href="https://drawingthebodycourse.pro/"
+														target="_blank">PLAY&nbsp;TO&nbsp;WATCH!</a>
+												</div>
 											</div>
-										</div>
-										<div class="card__info">
-											<p class="card__info-description">
-												<!-- Одностраничный workshop сделанный на Фрилансе,
+											<div class="card__info">
+												<p class="card__info-description">
+													<!-- Одностраничный workshop сделанный на Фрилансе,
 												верстка
 												натянута на платформу WordPress -->
-												A one-page workshop made on a Freelance basis,
-												layout
-												stretched on the WordPress platform
-											</p>
-											<div class="card__info-block">
-												<p class="card__info-text">
-													<!-- Ипользовал технологии: -->
-													Used technology:
+													A one-page workshop made on a Freelance basis,
+													layout
+													stretched on the WordPress platform
 												</p>
+												<div class="card__info-block">
+													<p class="card__info-text">
+														<!-- Ипользовал технологии: -->
+														Used technology:
+													</p>
+												</div>
+												<ul class="card__info-list">
+													<li>HTML5</li>
+													<li>CSS3</li>
+													<li>SCSS - preprocessor</li>
+													<li>WordPress</li>
+													<li>PHP</li>
+												</ul>
 											</div>
-											<ul class="card__info-list">
-												<li>HTML5</li>
-												<li>CSS3</li>
-												<li>SCSS - preprocessor</li>
-												<li>WordPress</li>
-												<li>PHP</li>
-											</ul>
 										</div>
 									</div>
 								</div>
 							</div>
+							<div class="swiper-pagination"></div>
 						</div>
-						<div class="swiper-pagination"></div>
 					</div>
 				</div>
+			</section>
+
+			<hr class="footer-hr">
+
+		</main>
+
+		<section class="all_button">
+
+			<div class="home-link">
+				<a href="#home"><img src="img/footer/up.png" width="50px" height="50px" alt="img"></a>
 			</div>
-		</section>
 
-		<hr class="footer-hr">
+			<div class="audio">
+				<button class="audio-btn" id="playpausebtn"></button>
+			</div>
 
-	</main>
+			<nav class="menu__toggle">
+				<div class="menu__toggle-content">
+					<div class="toggle-btn">
+						<img class="toggleMain tgdBtn" src="img/footer/setting.png" alt="icon">
+					</div>
 
-	<section class="all_button">
-
-		<div class="home-link">
-			<a href="#home"><img src="img/footer/up.png" width="50px" height="50px" alt="img"></a>
-		</div>
-
-		<div class="audio">
-			<button class="audio-btn" id="playpausebtn"></button>
-		</div>
-
-		<nav class="menu__toggle">
-			<div class="menu__toggle-content">
-				<div class="toggle-btn">
-					<img class="toggleMain tgdBtn" src="img/footer/setting.png" alt="icon">
-				</div>
-
-				<!-- btn mail -->
-				<!-- <span style="--i:1;">
+					<!-- btn mail -->
+					<!-- <span style="--i:1;">
 					<a href="https://mail.ru/" target="_blank"><i class='bx bxs-envelope'></i></a>
 				</span> -->
 
-				<span style="--i:5;">
-					<a href="https://web.whatsapp.com/" target="_blank"><i class='bx bxl-whatsapp flap'></i></a>
-				</span>
+					<span style="--i:5;">
+						<a href="https://web.whatsapp.com/" target="_blank"><i class='bx bxl-whatsapp flap'></i></a>
+					</span>
 
-				<span style="--i:2;">
-					<a href="https://vk.com/" target="_blank"><i class='bx bxl-vk'></i></a>
-				</span>
+					<span style="--i:2;">
+						<a href="https://vk.com/" target="_blank"><i class='bx bxl-vk'></i></a>
+					</span>
 
-				<span style="--i:4;">
-					<a href="https://github.com/REALPROMMS" target="_blank"><i class='bx bxl-github'></i></a>
-				</span>
+					<span style="--i:4;">
+						<a href="https://github.com/REALPROMMS" target="_blank"><i class='bx bxl-github'></i></a>
+					</span>
 
-				<span style="--i:1;">
-					<a href="https://web.telegram.org/" target="_blank"><i class='bx bxl-telegram'></i></a>
-				</span>
+					<span style="--i:1;">
+						<a href="https://web.telegram.org/" target="_blank"><i class='bx bxl-telegram'></i></a>
+					</span>
 
-				<!-- btn night-theme -->
-				<span class="night-btn-toggle" style="--i:3;">
-					<a href="">
-						<div class="power-switch-toggle">
-							<input type="checkbox" />
-							<div class="button">
-								<svg class="power-off">
-									<use xlink:href="#line" class="line" />
-									<use xlink:href="#circle" class="circle" />
-								</svg>
-								<svg class="power-on">
-									<use xlink:href="#line" class="line" />
-									<use xlink:href="#circle" class="circle" />
-								</svg>
+					<!-- btn night-theme -->
+					<span class="night-btn-toggle" style="--i:3;">
+						<a href="">
+							<div class="power-switch-toggle">
+								<input type="checkbox" />
+								<div class="button">
+									<svg class="power-off">
+										<use xlink:href="#line" class="line" />
+										<use xlink:href="#circle" class="circle" />
+									</svg>
+									<svg class="power-on">
+										<use xlink:href="#line" class="line" />
+										<use xlink:href="#circle" class="circle" />
+									</svg>
+								</div>
 							</div>
-						</div>
-						<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-							<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="line">
-								<line x1="75" y1="34" x2="75" y2="58" />
-							</symbol>
-							<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="circle">
-								<circle cx="75" cy="80" r="35" />
-							</symbol>
-						</svg>
-					</a>
-				</span>
+							<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+								<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="line">
+									<line x1="75" y1="34" x2="75" y2="58" />
+								</symbol>
+								<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="circle">
+									<circle cx="75" cy="80" r="35" />
+								</symbol>
+							</svg>
+						</a>
+					</span>
 
-				<!-- sound btn -->
-				<!-- <span style="--i:1;">
+					<!-- sound btn -->
+					<!-- <span style="--i:1;">
 					<a href="#" id="playpausebtn" class="audio-btn"></a>
 				</span> -->
 
-			</div>
-		</nav>
-
-		<div class="night-btn">
-			<div class="power-switch">
-				<input type="checkbox" />
-				<div class="button">
-					<svg class="power-off">
-						<use xlink:href="#line" class="line" />
-						<use xlink:href="#circle" class="circle" />
-					</svg>
-					<svg class="power-on">
-						<use xlink:href="#line" class="line" />
-						<use xlink:href="#circle" class="circle" />
-					</svg>
 				</div>
-			</div>
+			</nav>
 
-			<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-				<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="line">
-					<line x1="75" y1="34" x2="75" y2="58" />
-				</symbol>
-				<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="circle">
-					<circle cx="75" cy="80" r="35" />
-				</symbol>
-			</svg>
-
-		</div>
-
-	</section>
-
-	<footer id="footer" class="bg-footer">
-		<div class="container">
-			<div class="contact">
-				<div class="contact__box">
-					<div class="animationJelloIcons">
-						<div class="animBoxIcon social__mail">
-							<a href="email:#" target="_blank"><img class="social__box-icon" src="img/footer/mail.png"
-									alt="img"></a>
-						</div>
-					</div>
-					<div class="animationJelloIcons2">
-						<div class="animBoxIcon social__git">
-							<a href="https://github.com/REALPROMMS" target="_blank"><img class="social__box-icon"
-									src="img/footer/git.png" alt="img"></a>
-						</div>
-					</div>
-					<div class="animationJelloIcons3">
-						<div class="animBoxIcon social__telegram">
-							<a href="#" target="_blank"><img class="social__box-icon" src="img/footer/telega.png"
-									alt="img"></a>
-						</div>
+			<div class="night-btn">
+				<div class="power-switch">
+					<input type="checkbox" />
+					<div class="button">
+						<svg class="power-off">
+							<use xlink:href="#line" class="line" />
+							<use xlink:href="#circle" class="circle" />
+						</svg>
+						<svg class="power-on">
+							<use xlink:href="#line" class="line" />
+							<use xlink:href="#circle" class="circle" />
+						</svg>
 					</div>
 				</div>
-				<div class="reserved">
-					<p>All rights reserved &copy; Makarov Mihail</p>
+
+				<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+					<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="line">
+						<line x1="75" y1="34" x2="75" y2="58" />
+					</symbol>
+					<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="circle">
+						<circle cx="75" cy="80" r="35" />
+					</symbol>
+				</svg>
+
+			</div>
+
+		</section>
+
+		<footer id="footer" class="bg-footer">
+			<div class="container">
+				<div class="contact">
+					<div class="contact__box">
+						<div class="animationJelloIcons">
+							<div class="animBoxIcon social__mail">
+								<a href="email:#" target="_blank"><img class="social__box-icon" src="img/footer/mail.png"
+										alt="img"></a>
+							</div>
+						</div>
+						<div class="animationJelloIcons2">
+							<div class="animBoxIcon social__git">
+								<a href="https://github.com/REALPROMMS" target="_blank"><img class="social__box-icon"
+										src="img/footer/git.png" alt="img"></a>
+							</div>
+						</div>
+						<div class="animationJelloIcons3">
+							<div class="animBoxIcon social__telegram">
+								<a href="#" target="_blank"><img class="social__box-icon" src="img/footer/telega.png"
+										alt="img"></a>
+							</div>
+						</div>
+					</div>
+					<div class="reserved">
+						<p>All rights reserved &copy; Makarov Mihail</p>
+					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
+		</footer>
 
-
-
-	<script src="libs/swiper/swiper-bundle.min.js"></script>
-	<script src="js/scroll-header.js"></script>
-	<script src="js/app.js"></script>
-	<script src="js/audio-btn.js"></script>
-	<script src="js/observer.js"></script>
-	<script src="js/menu-toggle.js"></script>
-	<script src="js/night-theme.js"></script>
+		<script src="libs/swiper/swiper-bundle.min.js"></script>
+		<script src="js/burger-nav.js"></script>
+		<script src="js/scroll-header.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/audio-btn.js"></script>
+		<script src="js/observer.js"></script>
+		<script src="js/menu-toggle.js"></script>
+		<script src="js/night-theme.js"></script>
 
 </body>
 
