@@ -4,10 +4,8 @@
 .bg-hobby {
 	width: 100%;
 	min-height: 600px;
-	// background-color: #000000;
 	margin-top: 180px;
 	box-shadow: 0px 0px 20px 120px rgba(0, 0, 0);
-	// margin-bottom: 50px;
 	border-radius: 50px;
 	display: flex;
 	flex-direction: column;
@@ -20,6 +18,13 @@
 	padding-bottom: 30px;
 }
 
+.hobby-title {
+	background-color: rgb(2 4 4 / 76%);
+	border-radius: 20px;
+	padding: 5px;
+	display: inline-block;
+}
+
 .hobby-title span {
 	font-size: 3rem;
 	letter-spacing: 0.3rem;
@@ -30,10 +35,9 @@
 	-webkit-background-clip: text;
 	animation: animationFloatingBg 50s ease-in-out infinite;
 	transition-duration: 0.3s;
-	margin-bottom: 10px;
 	box-shadow: 0px 7px 10px -6px #35b397;
-	border-radius: 15px;
 	display: inline-block;
+	border-radius: 15px;
 	cursor: pointer;
 
 	&:hover {

@@ -17,6 +17,12 @@
 	flex-direction: column;
 }
 
+.about-title {
+	background-color: rgb(2 4 4 / 76%);
+	border-radius: 20px;
+	padding: 5px;
+}
+
 .about-title span {
 	font-size: 3rem;
 	letter-spacing: 0.3rem;
@@ -132,6 +138,7 @@ hr {
 		img {
 			cursor: pointer;
 			transition: all 0.3s;
+			filter: invert(1);
 		}
 
 		.icon-mail:hover {

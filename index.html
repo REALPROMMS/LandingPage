@@ -29,12 +29,10 @@
 <body>
 	<!--FULL SCREEN-->
 	<header class="full__screen">
-		<a href="#home" class="full__screen-btn"><span class="full__screen-txt">C<span
+		<a href="#aboutMe" class="full__screen-btn"><span class="full__screen-txt">C<span
 					class="full__screen-letter">L</span>ICK</span></a>
 		<div class="full__screen-squere">
-			<div class="squere-box">
-				<span></span>
-			</div>
+			<div class="squere-box"><span class="squareSpan"></span></div>
 			<div class="squere-box"><span class="circleSpan"></span></div>
 			<div class="squere-box"><span class="squareSpan"></span></div>
 			<div class="squere-box"><span class="circleSpan"></span></div>
@@ -47,10 +45,10 @@
 	</header>
 	<!--FULL SCREEN-->
 
-	<div class="full-site displayNoneAll">
+	<div class="full-site none">
 
 		<!--BURGEN MENU OTHER SITE-->
-		<div class="mobile__burger">
+		<!-- <div class="mobile__burger">
 			<div class="icon" id="menu"><i class="fas fa-bars" id="toggler"></i></div>
 			<div id="main">
 				<nav id="navbar">
@@ -63,38 +61,30 @@
 					</ul>
 				</nav>
 			</div>
-		</div>
+		</div> -->
 		<!--BURGEN MENU OTHER SITE-->
 
 		<!--MAIN HEADER-->
-		<header>
+		<header id="home" class="main-header">
 			<nav id="stickHeader" class="header__menu">
 				<a class="header__menu-link bubbly-button active" href="index.html">HOME</a>
 				<a class="header__menu-link bubbly-button" href="#aboutMe">ABOUT</a>
-				<a class="header__menu-link bubbly-button" href="#skill">SKILL'S</a>
+				<a class="header__menu-link bubbly-button" href="#hobby">HOBBY</a>
+				<a class="header__menu-link bubbly-button" href="#skill">SKILLS</a>
 				<a class="header__menu-link bubbly-button" href="#proect">PORTFOLIO</a>
-				<a class="header__menu-link bubbly-button" href="#footer">CONTACT</a>
 			</nav>
-			<section class="header" id="home">
+			<section class="header">
 				<div class="container">
-
 					<button class="burger">
 						<nav class="header__menu">
 							<a class="header__menu-link bubbly-button active" href="index.html">HOME</a>
 							<a class="header__menu-link bubbly-button" href="#aboutMe">ABOUT</a>
-							<a class="header__menu-link bubbly-button" href="#skill">SKILL'S</a>
+							<a class="header__menu-link bubbly-button" href="#hobby">HOBBY</a>
+							<a class="header__menu-link bubbly-button" href="#skill">SKILLS</a>
 							<a class="header__menu-link bubbly-button" href="#proect">PORTFOLIO</a>
 							<a class="header__menu-link bubbly-button" href="#footer">CONTACT</a>
 						</nav>
 					</button>
-					<!-- <nav id="myHeader" class="header__menu">
-						<a class="header__menu-link bubbly-button active" href="index.html">HOME</a>
-						<a class="header__menu-link bubbly-button" href="#aboutMe">ABOUT</a>
-						<a class="header__menu-link bubbly-button" href="#skill">SKILL'S</a>
-						<a class="header__menu-link bubbly-button" href="#proect">PORTFOLIO</a>
-						<a class="header__menu-link bubbly-button" href="#footer">CONTACT</a>
-					</nav> -->
-
 					<div class="header__info">
 						<span class="header__info-span text">Welcome</span>
 						<a class="header__info-link observer-title-header" href="https://cherepovets.hh.ru/" target="_blank">
@@ -102,11 +92,9 @@
 						</a>
 						<p class="header__info-subtitle text">Never Give Up, Always Go Only Forward</p>
 					</div>
-
 					<div class="header__button bubbly-button">
 						<a class="btn-flip header__button-animation" data-back="Back" data-front="Front" href="#hobby"></a>
 					</div>
-
 				</div>
 			</section>
 		</header>
@@ -115,7 +103,7 @@
 		<hr class="header-hr">
 
 		<!--ALL SECTION-->
-		<main class="main">
+		<main id="aboutMe" class="main">
 
 			<section class="bg-about">
 				<div class="inset">
@@ -123,7 +111,7 @@
 						<div class="about">
 							<div class="about-title bubbly-button">
 								<div class="animationTitle">
-									<span id="aboutMe">ABOUT ME</span>
+									<span>ABOUT ME</span>
 								</div>
 							</div>
 							<div class="about__description">
@@ -145,24 +133,25 @@
 									</div>
 									<hr>
 									<div class="info--bottom">
-										<p class="info--bottom-ld"><img src="img/content/icon/person.png"
-												alt=""><span>Name:</span>
+										<p class="info--bottom-ld"><img src="img/content/icon/person.svg" alt="icon"
+												width="28px"><span>Name:</span>
 											Misha
 											Makarov</p>
-										<p class="info--bottom-ld"><img src="img/content/icon/number.png" alt=""><span>Age:</span>
+										<p class="info--bottom-ld"><img src="img/content/icon/age.svg" width="28px"
+												alt="icon"><span>Age:</span>
 											33
 										</p>
 										<a class="mail-link" href="https://mail.ru/" target="_blank">
-											<p class="info--bottom-ld"><img class="icon-mail" src="img/content/icon/email.png"
-													alt=""><span>Email:</span>
+											<p class="info--bottom-ld"><img class="icon-mail" src="img/content/icon/email.svg"
+													width="28px" alt="icon"><span>Email:</span>
 												m.makarov90@bk.ru</p>
 										</a>
-										<p class="info--bottom-ld"><img src="img/content/icon/russia.png"
-												alt=""><span>From:</span>
+										<p class="info--bottom-ld"><img src="img/content/icon/russia.svg" width="28px"
+												alt="icon"><span>From:</span>
 											Russia
 										</p>
-										<p class="info--bottom-ld"><img src="img/content/icon/work.png"
-												alt=""><span>Profession:</span>
+										<p class="info--bottom-ld"><img src="img/content/icon/work.svg" width="28px"
+												alt="icon"><span>Profession:</span>
 											Frontend Dev.</p>
 									</div>
 								</div>
@@ -171,13 +160,13 @@
 					</div>
 				</div>
 			</section>
-			<section class="bg-hobby">
+			<section id="hobby" class="bg-hobby">
 				<div class="inset">
 					<div class="container">
 						<div class="hobby">
 							<div class="hobby-title bubbly-button">
 								<div class="animationTitle">
-									<span id="hobby">MY HOBBY</span>
+									<span>MY HOBBY</span>
 								</div>
 							</div>
 							<div class="swiper-box">
@@ -223,11 +212,11 @@
 					</div>
 				</div>
 			</section>
-			<section class="bg-skills">
+			<section id="skill" class="bg-skills">
 				<div class="inset">
 					<div class="container">
 
-						<div class="warpper" id="skill">
+						<div class="warpper">
 
 							<input class="radio" id="one" name="group" type="radio" checked>
 							<input class="radio" id="two" name="group" type="radio">
@@ -333,10 +322,10 @@
 					</div>
 				</div>
 			</section>
-			<section class="bg-project">
+			<section id="project" class="bg-project">
 				<div class="inset">
 					<div class="container">
-						<div id="project" class="project">
+						<div class="project">
 							<div class="project-title bubbly-button">
 								<div class="animationTitle">
 									<span id="proect">MY PROJECT</span>

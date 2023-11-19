@@ -50,6 +50,8 @@ body {
 	box-shadow: 0px 0px 17px 7px rgb(0, 0, 0) inset;
 	flex-grow: 1;
 	border-radius: 50px;
+	// position: relative;
+	// z-index: 200;
 }
 
 // !AUDIO-BTN
@@ -66,15 +68,13 @@ body {
 	z-index: 50;
 	filter: opacity(0.7);
 	border-radius: 50%;
-	// box-shadow: 0px 0px 12px 5px #35b397;
 	animation: myAnimPulse 1s ease 0s infinite normal forwards;
 	opacity: 0.5;
 	transition: all 0.2s;
 	filter: invert(1);
 
 	&:hover {
-		box-shadow: 0px 0px 12px 5px #fc3b00;
-		// animation: jello-horizontal 1.2s both;
+		// box-shadow: 0px 0px 12px 5px #1bc7f1;
 		opacity: 1;
 		filter: none;
 	}
@@ -89,15 +89,13 @@ body {
 		position: fixed;
 		animation: myAnimPulse 1s ease 0s infinite normal forwards;
 		border-radius: 50%;
-		// box-shadow: 0px 0px 12px 5px #35b397;
 		opacity: 0.5;
 		z-index: 50;
 		transition: all 0.2s;
 		filter: invert(1);
 
 		&:hover {
-			box-shadow: 0px 0px 12px 5px #fc3b00;
-			// animation: jello-horizontal 1.2s both;
+			// box-shadow: 0px 0px 12px 5px #1bc7f1;
 			opacity: 1;
 			filter: none;
 		}
@@ -124,15 +122,14 @@ body {
 }
 
 // !Для первоночальной страницы, display none block
-.displayNoneAll {
+.none {
 	display: none;
 }
 
-.displayBlockAll {
-	display: block;
+// !Для navbara задал бэкграуд черный что бы не было белого фона
+.main-header {
+	background: black;
 }
-
-
 
 // !MEDIA
 @media (max-width: 567px) {

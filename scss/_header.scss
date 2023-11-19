@@ -25,12 +25,13 @@
 	border-radius: 0;
 }
 
+
 // !MENU
 .header__menu {
 	display: flex;
 	gap: 2%;
 	justify-content: center;
-	padding-top: 2rem;
+	// padding-top: 2rem;
 
 	&-link {
 		text-decoration: none;
@@ -256,6 +257,7 @@
 
 	.header__menu {
 		display: none;
+		padding-top: 2rem;
 	}
 
 	.burger:hover .header__menu {
