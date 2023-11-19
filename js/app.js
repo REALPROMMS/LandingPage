@@ -1,3 +1,4 @@
+// !Настройки swiper
 const swiperProect = new Swiper(".swiperProject", {
 	slidesPerView: 1,
 	spaceBetween: 30,

@@ -1,11 +1,14 @@
 @import './animation/anim-ntheme';
+@import 'vars';
 
 // !NIGHT BTN
 .night-btn {
 	position: absolute;
 	left: 50%;
-	top: 59%;
+	// top: 27.5%;
+	top: 1465px;
 	transform: translate(-50%, -50%);
+	z-index: 3000;
 }
 
 .power-switch {
@@ -262,6 +265,7 @@
 // !MEDIA
 @media (max-width: 567px) {
 	.night-btn {
-		top: 75%;
+		// top: 75%;
+		top: 1645px;
 	}
 }

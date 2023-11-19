@@ -9,9 +9,10 @@
 @import 'full-screen';
 @import 'burger-navigation';
 @import './animation/anim-main';
+@import 'vars';
 
 
-
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
 
 * {
 	margin: 0;
@@ -27,7 +28,7 @@ html,
 body {
 	font-size: 16px;
 	width: 100%;
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-family: 'Tektur', sans-serif;
 }
 
 .container {
@@ -109,7 +110,14 @@ body {
 	}
 }
 
+// !Для header что бы сдлеать его липким
+.sticky {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	z-index: 500000;
 
+}
 
 // !MEDIA
 @media (max-width: 567px) {

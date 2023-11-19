@@ -17,24 +17,20 @@ for (let anchor of anchors) {
 	})
 }
 
-
-
-
 // !Скрипт для липкой навигации
-// window.onscroll = function () { myFunction() };
 
+let headerSelector = document.getElementById("myHeader");
+let sticky = headerSelector.offsetTop;
 
-// let header = document.getElementById("myHeader");
+function myFunction() {
+	if (window.pageYOffset >= sticky) {
+		headerSelector.classList.add("sticky");
+	} else {
+		headerSelector.classList.remove("sticky");
+	}
+}
 
-// let sticky = header.offsetTop;
-
-// function myFunction() {
-// 	if (window.pageYOffset >= sticky) {
-// 		header.classList.add("sticky");
-// 	} else {
-// 		header.classList.remove("sticky");
-// 	}
-// }
+window.onscroll = function () { myFunction() };
 
 
 

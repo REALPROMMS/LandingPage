@@ -2,7 +2,7 @@
 const observerTitle = new IntersectionObserver(items => {
 	items.forEach(item => {
 		const animText = item.target.querySelector('.animationTitle');
-		// if (entry.isIntersecting) // true or false {
+		// if (item.isIntersecting) { // true or false 
 		// 	animText.classList.add('shakeAnim'); // добавялет новый класс
 		// 	return; // если класс добавлен, продолжать уже не надо
 		// }

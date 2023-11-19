@@ -1,3 +1,4 @@
+// !Настройки AUDIO, две кнопки play and pause на сайте появляются
 function initAudioPlayer() {
 	const audio = new Audio('audio/RG-Rose-Wasted.mp3');
 	audio.loop = true;
