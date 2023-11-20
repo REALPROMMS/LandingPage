@@ -7,6 +7,8 @@
 	box-shadow: 0px 0px 20px 120px rgba(0, 0, 0);
 	border-radius: 50px;
 	padding: 0.5rem;
+	position: relative;
+	z-index: 1;
 }
 
 .about {
@@ -27,7 +29,8 @@
 	font-size: 3rem;
 	letter-spacing: 0.3rem;
 	font-weight: bold;
-	color: #ffffff03;
+	// color: #ffffff03;
+	color: rgb(14 237 239 / 31%);
 	background-image: url('/img/main/animation.png');
 	background-repeat: repeat;
 	-webkit-background-clip: text;
@@ -46,7 +49,7 @@
 // !Анимация заголовка, трясется в разные стороны
 .shakeAnim {
 	// animation: shakeAnimTitle 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-	animation: outHideTittle 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: outHideTittle 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 // !DESCRIPTION
@@ -143,6 +146,8 @@ hr {
 
 		.icon-mail:hover {
 			transform: scale(1.2);
+			filter: none;
+
 		}
 	}
 }

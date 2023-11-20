@@ -143,13 +143,13 @@
 	position: absolute;
 	color: $color-btn;
 	cursor: pointer;
-	padding: 0.35em 1em;
-	border: 0.15em solid $color-btn;
-	border-radius: 0.45em;
+	padding: 1rem 2rem;
+	border: 0.4rem solid $color-btn;
+	border-radius: 15px;
 	background: none;
 	perspective: 2em;
 	font-family: 'Tomorrow', sans-serif;
-	font-size: 2em;
+	font-size: 2rem;
 	font-weight: bold;
 	letter-spacing: 2rem;
 	z-index: 10000;
@@ -230,8 +230,8 @@
 
 
 // !MEDIA
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
 	.full__screen-btn {
-		font-size: 1em;
+		letter-spacing: 1rem;
 	}
 }

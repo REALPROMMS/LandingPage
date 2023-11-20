@@ -9,7 +9,7 @@
 	animation: shrink 55s infinite alternate;
 	box-shadow: 0px 0px 50px 30px rgba(0, 0, 0) inset;
 	position: relative;
-	z-index: 105;
+	z-index: 20;
 }
 
 .header-hr {
@@ -20,7 +20,7 @@
 	border-radius: 0;
 	height: 10px;
 	position: relative;
-	z-index: 30;
+	z-index: 10;
 	border: 0;
 	border-radius: 0;
 }
@@ -269,7 +269,7 @@
 	.header__menu {
 		.header__menu-link {
 			font-size: 0.9rem;
-			padding: 0.5rem;
+			padding: 0.4rem;
 
 			&:hover {
 				color: #1bc7f1;
@@ -301,7 +301,7 @@
 	}
 
 	.header__info {
-		height: 25vh;
+		height: 30vh;
 	}
 
 	.header__info h1 {
@@ -318,7 +318,7 @@
 		.header__menu {
 			.header__menu-link {
 				font-size: 1.2rem;
-				padding: 1rem;
+				padding: 0.7rem;
 
 				&:hover {
 					color: #1bc7f1;

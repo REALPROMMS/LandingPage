@@ -29,7 +29,8 @@
 	font-size: 3rem;
 	letter-spacing: 0.3rem;
 	font-weight: bold;
-	color: #ffffff03;
+	// color: #ffffff03;
+	color: rgb(14 237 239 / 31%);
 	background-image: url('/img/main/animation.png');
 	background-repeat: repeat;
 	-webkit-background-clip: text;
@@ -145,7 +146,7 @@
 @media (max-width: 750px) {
 
 	.sliderHobby {
-		width: 100%;
+		width: 90%;
 		margin-top: 0rem;
 		height: 30vh;
 	}
@@ -163,7 +164,7 @@
 	}
 
 	.sliderHobby {
-		width: 100%;
+		width: 85%;
 		height: 30vh;
 	}
 
@@ -183,7 +184,7 @@
 	}
 
 	.sliderHobby {
-		width: 100%;
+		width: 90%;
 		height: 20vh;
 	}
 
@@ -205,7 +206,6 @@
 	}
 
 	.info--bottom-ld span {
-		// font-size: 0.7rem;
 		letter-spacing: 0;
 	}
 }
