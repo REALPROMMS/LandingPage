@@ -2793,8 +2793,8 @@ hr {
 
 .modal-map__box {
   position: fixed;
-  height: 85vh;
-  top: -10%;
+  height: 100vh;
+  top: -15%;
   left: 0;
   right: 0;
   bottom: 0;
@@ -2827,10 +2827,11 @@ hr {
   }
 }
 .box-container-header {
-  padding: 0.3rem;
+  padding: 0.5rem;
   display: flex;
   justify-content: center;
   box-shadow: 0px 0px 10px 3px #000000 inset;
+  position: relative;
 }
 
 .box-container-title {
@@ -2840,6 +2841,19 @@ hr {
   font-weight: 700;
   font-size: 1.3rem;
   letter-spacing: 3px;
+}
+
+.box-container-img {
+  position: absolute;
+  top: 5px;
+  right: 9px;
+  filter: invert(1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.box-container-img:hover {
+  transform: scale(1.2);
+  filter: none;
 }
 
 .box-container-button {
