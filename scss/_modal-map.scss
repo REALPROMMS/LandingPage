@@ -1,0 +1,134 @@
+// !MAP-BUTTON
+.map {
+	display: flex;
+	justify-content: center;
+	filter: invert(1);
+	position: absolute;
+	left: 48.5%;
+	top: 91%;
+	transform: translate(-50%, -50%);
+	animation: myAnimPulse 1s ease 0s infinite normal forwards;
+
+	.map-btn {
+		cursor: pointer;
+		transition: all 0.3s ease-in;
+		position: relative;
+		z-index: 160;
+
+		&:hover {
+			transform: scale(1.5);
+		}
+	}
+}
+
+// !MODAL MAP
+.modal-map__box {
+	position: fixed;
+	height: 85vh;
+	top: -10%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 100;
+}
+
+.box-container {
+	max-height: 60vh;
+	width: 80%;
+	background-color: #2b8b74;
+	border-radius: 16px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 0px 12px 5px #2b8b74;
+	// Показывает модальное окно
+	// animation: scale-in-ver-bottom 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: scale-in-hor-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+// !open modal window
+@keyframes scale-in-hor-center {
+	0% {
+		-webkit-transform: scaleX(0);
+		transform: scaleX(0);
+		opacity: 1;
+	}
+
+	100% {
+		-webkit-transform: scaleX(1);
+		transform: scaleX(1);
+		opacity: 1;
+	}
+}
+
+
+.box-container-header {
+	padding: 0.3rem;
+	display: flex;
+	justify-content: center;
+	box-shadow: 0px 0px 10px 3px #000000 inset;
+}
+
+.box-container-title {
+	display: flex;
+	align-items: center;
+	line-height: 1;
+	font-weight: 700;
+	font-size: 1.3rem;
+	letter-spacing: 3px;
+}
+
+.box-container-button {
+	padding: 12px 20px;
+	border-radius: 8px;
+	background-color: transparent;
+	font-weight: bold;
+	border: 0;
+	cursor: pointer;
+}
+
+.map-btn-close {
+	color: #000000;
+	box-shadow: 0px 0px 5px 1px #000000;
+	transition: all 0.3s;
+	cursor: pointer;
+
+	&:hover {
+		color: #000000;
+		background-color: #1bc7f1;
+		box-shadow: 0px 0px 5px 1px #1bc7f1, 0px 0px 5px 1px #000000 inset;
+		transform: scale(1.2);
+	}
+}
+
+// Скрывает модальное окно
+.animation-modal-window2 {
+	animation: scale-out-horizontal 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+// !close modal window
+@keyframes scale-out-horizontal {
+	0% {
+		-webkit-transform: scaleX(1);
+		transform: scaleX(1);
+		opacity: 1;
+	}
+
+	100% {
+		-webkit-transform: scaleX(0);
+		transform: scaleX(0);
+		opacity: 1;
+	}
+}
+
+
+
+// !NEDIA
+@media (max-width: 600px) {
+	.modal-container {
+		width: 90%;
+	}
+}

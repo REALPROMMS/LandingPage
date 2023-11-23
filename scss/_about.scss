@@ -63,12 +63,6 @@
 
 .about__description-img {
 	width: 100%;
-	transition-duration: 0.3s;
-
-	&:hover {
-		filter: hue-rotate(-45deg);
-		transition-duration: 0.3s;
-	}
 }
 
 hr {
@@ -170,6 +164,7 @@ hr {
 @media (max-width: 567px) {
 	.about__description-img {
 		display: flex;
+		justify-content: center;
 	}
 
 	.bg-about {

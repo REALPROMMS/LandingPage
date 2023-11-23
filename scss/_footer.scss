@@ -25,13 +25,11 @@
 
 	img {
 		transition-duration: 0.3s;
-		border: 1px solid #35b397;
 		border-radius: 50%;
 		filter: opacity(0.5);
 
 		&:hover {
 			transform: scale(1.2);
-			border: 1px solid #35b397;
 			border-radius: 50%;
 			box-shadow: 0px 0px 12px 5px #35b397;
 			filter: opacity(1);
@@ -39,12 +37,11 @@
 	}
 }
 
-
 .footer-hr {
 	height: 10px;
 	position: relative;
 	z-index: 20;
-	margin: 120px 0px 35px 0px;
+	margin: 160px 0px 35px 0px;
 	border: 0;
 	border-radius: 0;
 }
@@ -73,7 +70,6 @@
 	&:hover {
 		filter: hue-rotate(45deg);
 	}
-
 }
 
 // Иконки сжимаются в footer

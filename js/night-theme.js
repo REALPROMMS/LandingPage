@@ -6,6 +6,7 @@ power.addEventListener('click', () => {
 	header.classList.toggle('night-mode')
 });
 
+
 // !MAIN NIGHT
 body = document.querySelector('body'),
 	main = body.querySelector('.main'),
@@ -45,3 +46,14 @@ body = document.querySelector('body'),
 power.addEventListener('click', () => {
 	footer.classList.toggle('night-mode')
 });
+
+
+// const elementsNight = ['.header', '.main', '.bg-footer'];
+// const newFn = (element) => {
+// 	let power = document.querySelector('.night-btn');
+
+// 	power.addEventListener('click', () => {
+// 		element.classList.toggle('night-mode')
+// 	});
+// }
+// newFn(elementsNight)
