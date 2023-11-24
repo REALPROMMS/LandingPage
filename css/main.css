@@ -1810,7 +1810,7 @@ hr {
 }
 
 .toggle__menu.open .toggle__menu-content span {
-  transform: rotate(calc(var(--i) * -45deg)) translateY(120px);
+  transform: rotate(calc(var(--element) * -45deg)) translateY(120px);
   opacity: 1;
 }
 
@@ -2971,6 +2971,11 @@ body {
 
 .main-header {
   background: #000000;
+}
+
+.box {
+  color: white;
+  display: none;
 }
 
 @media (max-width: 567px) {

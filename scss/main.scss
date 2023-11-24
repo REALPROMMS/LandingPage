@@ -83,6 +83,13 @@ body {
 	background: $color-black;
 }
 
+.box {
+	color: white;
+	display: none;
+}
+
+
+
 // !MEDIA
 @media (max-width: 567px) {
 	.main {

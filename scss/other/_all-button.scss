@@ -111,7 +111,7 @@
 }
 
 .toggle__menu.open .toggle__menu-content span {
-	transform: rotate(calc(var(--i) * (-360deg/8))) translateY(120px);
+	transform: rotate(calc(var(--element) * (-360deg/8))) translateY(120px); // element это переменная
 	opacity: 1;
 }
 
