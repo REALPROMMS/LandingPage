@@ -5,8 +5,6 @@
 .night-btn {
 	position: absolute;
 	left: 50%;
-	// top: 27.5%;
-	// top: 1465px;
 	top: 550px;
 	transform: translate(-50%, -50%);
 	z-index: 105;
@@ -48,7 +46,7 @@
 			position: absolute;
 			z-index: 1;
 			fill: none;
-			stroke: #35b397;
+			stroke: $color-green;
 			stroke-width: 8px;
 			stroke-linecap: round;
 			stroke-linejoin: round;
@@ -67,7 +65,7 @@
 		}
 
 		.power-on {
-			filter: drop-shadow(0px 0px 6px #1bc7f1);
+			filter: drop-shadow(0px 0px 6px $color-blue);
 
 			.line {
 				opacity: 0.5;
@@ -102,10 +100,12 @@
 
 				.power-on,
 				.power-off {
+					// обводка кнопки POWER
 					animation: click-animation .3s ease forwards;
 					transform: scale(1);
 
 					.line {
+						// обводка кнопки POWER
 						animation: line-animation .8s ease-in forwards;
 					}
 
@@ -174,7 +174,7 @@
 			position: absolute;
 			z-index: 1;
 			fill: none;
-			stroke: #35b397;
+			stroke: $color-green;
 			stroke-width: 8px;
 			stroke-linecap: round;
 			stroke-linejoin: round;
@@ -193,7 +193,7 @@
 		}
 
 		.power-on {
-			filter: drop-shadow(0px 0px 6px #1bc7f1);
+			filter: drop-shadow(0px 0px 6px $color-blue);
 
 			.line {
 				opacity: 0.5;
@@ -228,10 +228,12 @@
 
 				.power-on,
 				.power-off {
+					// обводка кнопки POWER
 					animation: click-animation .3s ease forwards;
 					transform: scale(1);
 
 					.line {
+						// обводка кнопки POWER
 						animation: line-animation .8s ease-in forwards;
 					}
 
@@ -267,8 +269,6 @@
 // !MEDIA
 @media (max-width: 567px) {
 	.night-btn {
-		// top: 75%;
-		// top: 1645px;
 		top: 725px;
 	}
 }

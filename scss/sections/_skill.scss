@@ -4,9 +4,8 @@
 .bg-skills {
 	width: 100%;
 	min-height: 600px;
-	// background-color: #000000;
 	margin-top: 180px;
-	box-shadow: 0px 0px 20px 120px rgba(0, 0, 0);
+	box-shadow: 0px 0px 20px 120px $color-black;
 	border-radius: 50px;
 	display: flex;
 	flex-direction: column;
@@ -35,35 +34,35 @@
 		cursor: pointer;
 		padding: 10px 10px;
 		display: flex;
-		color: #fff;
+		color: $color-white;
 		font-weight: bold;
 		border-radius: 5px;
-		box-shadow: 0px 0px 9px 0px #35b397;
+		box-shadow: 0px 0px 9px 0px $color-green;
 		transition: all 0.5s ease-in;
 		align-items: center;
 
 		&:hover {
-			background: #35b397;
-			color: #000;
+			background: $color-green;
+			color: $color-black;
+			// повяление полосы
 			animation: shake-horizontal 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 		}
 	}
 
 	.panels {
-		// background: linear-gradient(0deg, #000000 -21%, #1bc7f1 500%);
-		box-shadow: 0px 0px 12px 2px #35b397 inset;
+		box-shadow: 0px 0px 12px 2px $color-green inset;
 		width: 100%;
 		border-radius: 10rem;
 		overflow: hidden;
 		padding: 2rem;
-		color: #ffffff;
+		color: $color-white;
 
 		.panel {
 			display: none;
 			animation: fadein 0.8s;
 
 			.panel-text {
-				color: #000000;
+				color: $color-black;
 				font-size: 1rem;
 				padding: 0.5rem;
 				font-weight: bold;
@@ -82,7 +81,6 @@
 #three:checked~.panels #three-panel {
 	transition-duration: 0.3s;
 	display: flex;
-	// box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 	border-radius: 25px;
 }
 
@@ -117,7 +115,7 @@
 
 .skill-bar-link {
 	text-decoration: none;
-	color: white;
+	color: $color-white;
 }
 
 .bar {
@@ -126,7 +124,7 @@
 
 	&:hover {
 		filter: hue-rotate(45deg);
-		color: #1bc7f1;
+		color: $color-blue;
 	}
 }
 
@@ -135,23 +133,26 @@
 	font-weight: bold;
 	letter-spacing: 0.1rem;
 	opacity: 0;
+	// появление текста
 	animation: showText 0.5s 1s linear forwards;
 }
 
 .progress-line {
 	height: 20px;
 	width: 100%;
-	background: #000000;
+	background: $color-black;
 	position: relative;
 	transform: scaleX(0);
 	transform-origin: left;
 	border-radius: 15px;
 	cursor: pointer;
 	transition-duration: 0.3s;
+	// появление полос
 	animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
 .animationPanel {
+	// появление полос
 	animation: animateSkill 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
@@ -161,7 +162,8 @@
 	border-radius: 10px;
 	transform: scaleX(0);
 	transform-origin: left;
-	background: #35b397;
+	background: $color-green;
+	// появление полос
 	animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards
 }
 
@@ -175,7 +177,8 @@
 	opacity: 0;
 	border: 7px solid transparent;
 	border-bottom-width: 0px;
-	border-top-color: #000;
+	border-top-color: $color-black;
+	// появление текста скиллов (цифры)
 	animation: showText2 0.5s 1.5s linear forwards;
 }
 
@@ -184,12 +187,13 @@
 	top: -28px;
 	right: 0;
 	font-weight: 500;
-	background: #1bc7f1;
-	color: #000000;
+	background: $color-blue;
+	color: $color-black;
 	opacity: 0;
 	padding: 1px 8px;
 	font-size: 12px;
 	border-radius: 10px;
+	// появление текста скиллов (цифры)
 	animation: showText2 0.5s 1.5s linear forwards;
 }
 
@@ -364,6 +368,6 @@
 @media (max-width: 567px) {
 	.bg-skills {
 		margin-top: 95px;
-		box-shadow: 0px 0px 20px 40px rgb(0, 0, 0);
+		box-shadow: 0px 0px 20px 40px $bg-text;
 	}
 }

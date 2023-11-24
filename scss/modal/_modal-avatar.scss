@@ -44,7 +44,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	box-shadow: 0px 0px 7px 2px #000000;
+	box-shadow: 0px 0px 7px 2px $modal-color;
 	cursor: pointer;
 }
 
@@ -64,13 +64,13 @@
 }
 
 .personal__data {
-	background: #35b397;
+	background: $color-green;
 	display: flex;
 	flex-direction: row;
 	height: 70px;
 	transition: height 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
 	width: 300px;
-	box-shadow: 0px 0px 5px 1px #000000, 0px 0px 5px 1px #000000 inset;
+	box-shadow: 0px 0px 5px 1px $modal-color, 0px 0px 5px 1px $modal-color inset;
 	border-top-left-radius: 25px;
 	border-top-right-radius: 25px;
 	width: 100%;
@@ -85,7 +85,7 @@
 	}
 
 	&-name {
-		color: #000000;
+		color: $modal-color;
 		font-size: 16px;
 		line-height: 70px;
 		margin-left: 20px;
@@ -105,7 +105,7 @@
 }
 
 .cross {
-	background: #000000;
+	background: $modal-color;
 	border-radius: 10px;
 	height: 20px;
 	position: relative;
@@ -125,7 +125,7 @@
 	}
 
 	.cross__line-one {
-		background: #ffffff;
+		background: $color-white;
 		height: 12px;
 		position: absolute;
 		transform: translateX(9px) translateY(4px) rotate(45deg);
@@ -133,7 +133,7 @@
 	}
 
 	.cross__line-two {
-		background: #ffffff;
+		background: $color-white;
 		height: 12px;
 		position: absolute;
 		transform: translateX(9px) translateY(4px) rotate(-45deg);
@@ -142,13 +142,13 @@
 }
 
 .social {
-	background: #35b397;
+	background: $color-green;
 	color: #444247;
 	font-size: 14px;
 	height: 200px;
 	padding-top: 5px;
 	width: 300px;
-	box-shadow: 0px 0px 5px 1px #000000, 0px 0px 5px 1px #000000 inset;
+	box-shadow: 0px 0px 5px 1px $modal-color, 0px 0px 5px 1px $modal-color inset;
 	border-bottom-left-radius: 25px;
 	border-bottom-right-radius: 25px;
 	width: 100%;
@@ -179,7 +179,7 @@
 	}
 
 	&-link a {
-		color: #000000;
+		color: $modal-color;
 		text-decoration: none;
 
 		&:hover {

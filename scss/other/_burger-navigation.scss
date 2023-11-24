@@ -1,20 +1,7 @@
 @import '../vars';
 
-//animations
-@keyframes rotate_scale {
-	0% {
-		transform: scale(0) rotate(0) translate(25%, -50%);
-		opacity: 1;
-	}
-
-	100% {
-		transform: scale(6) rotate(250deg) translate(-50%, -50%);
-		opacity: 0;
-	}
-}
-
 // !ICON BURGER
-.icon {
+.burger-icon {
 	position: fixed;
 	top: 2%;
 	right: 2%;
@@ -43,8 +30,8 @@
 		border-radius: 15px;
 
 		&:hover {
-			box-shadow: 0px 0px 5px 1px #1bc6f1;
-			color: #1bc6f1;
+			box-shadow: 0px 0px 5px 1px $color-blue;
+			color: $color-blue;
 			transform: scale(1.2);
 			border-radius: 15px;
 		}
@@ -61,7 +48,6 @@
 	}
 }
 
-
 #main {
 	height: 100vh;
 	width: 100%;
@@ -75,7 +61,6 @@
 
 #navbar {
 	position: relative;
-	// z-index: 2;
 	width: 100%;
 	height: 100%;
 	justify-content: center;
@@ -84,7 +69,7 @@
 	transform: translateY(-100%);
 	transition: 1s ease;
 	background-color: rgba(0, 0, 0, 0.582);
-	box-shadow: 0px 0px 20px 10px #35b397 inset;
+	box-shadow: 0px 0px 20px 10px $color-green inset;
 
 
 	ul#links {
@@ -103,7 +88,7 @@
 				left: -5%;
 				width: 10px;
 				height: 10px;
-				border: 3px solid #35b397;
+				border: 3px solid $color-green;
 				border-top: none;
 				border-right: none;
 				transition: all 0.4s ease-in;
@@ -113,7 +98,7 @@
 				width: 100%;
 				height: 0;
 				left: 0;
-				border-color: #1bc7f1;
+				border-color: $color-blue;
 			}
 
 			&::after {
@@ -123,7 +108,7 @@
 				right: -5%;
 				width: 10px;
 				height: 10px;
-				border: 3px solid #35b397;
+				border: 3px solid $color-green;
 				border-bottom: none;
 				border-left: none;
 				transition: all 0.4s ease-in;
@@ -133,12 +118,12 @@
 				width: 100%;
 				height: 0;
 				right: 0;
-				border-color: #1bc7f1;
+				border-color: $color-blue;
 			}
 
 			a {
 				text-decoration: none;
-				color: #35b397;
+				color: $color-green;
 				font-weight: bold;
 				font-size: 1.5em;
 				text-transform: uppercase;
@@ -146,22 +131,22 @@
 				width: 100%;
 
 				&:hover {
-					color: #1bc7f1;
+					color: $color-blue;
 				}
 
 			}
 
 			.active-home {
-				color: #1bc7f1;
+				color: $color-blue;
 			}
 		}
 	}
 }
 
 
-
+// !MEDIA
 @media (max-width: 785px) {
-	.icon {
+	.burger-icon {
 		display: block;
 	}
 }

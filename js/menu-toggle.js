@@ -1,20 +1,19 @@
 // !Добавляет класс open при нажатии на кнопку roggle-btn
-const nav = document.querySelector('.menu__toggle'),
-	toggleBtn = nav.querySelector('.toggle-btn');
+const toggleMenu = document.querySelector('.toggle__menu'),
+	toggleButton = toggleMenu.querySelector('.toggle-button');
 
-toggleBtn.addEventListener('click', () => {
-	nav.classList.toggle('open')
+toggleButton.addEventListener('click', () => {
+	toggleMenu.classList.toggle('open')
 });
 
-
 // !Удаляет класс с анимацией на кнопке toggle menubar(при ее активации), а после закрытия меню снова добалвяет этот класс
-const animToggle = document.querySelector('.menu__toggle'),
-	animTgBtn = animToggle.querySelector('.toggleMain');
+const animationToggle = document.querySelector('.toggle__menu'),
+	animationPulseButton = animationToggle.querySelector('.toggle-img');
 
-animTgBtn.addEventListener('click', () => {
-	if (animTgBtn.querySelector('tgdBtn') === true) {
-		animTgBtn.classList.remove('tgdBtn')
+animationPulseButton.addEventListener('click', () => {
+	if (animationPulseButton.querySelector('button-click') === true) {
+		animationPulseButton.classList.remove('button-click')
 	} else {
-		animTgBtn.classList.toggle('tgdBtn')
+		animationPulseButton.classList.toggle('button-click')
 	}
 });

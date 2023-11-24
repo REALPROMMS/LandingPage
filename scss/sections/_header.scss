@@ -6,16 +6,17 @@
 	height: 100vh;
 	max-width: 100%;
 	filter: brightness(75%);
+	// БГ основной секции летает из стороны в сторону 
 	animation: shrink 55s infinite alternate;
-	box-shadow: 0px 0px 50px 30px rgba(0, 0, 0) inset;
+	box-shadow: 0px 0px 50px 30px $color-black inset;
 	position: relative;
 	z-index: 20;
 }
 
 .header-hr {
 	height: 7px;
-	box-shadow: 0px -4px 12px 14px #000000;
-	background-color: #000000;
+	box-shadow: 0px -4px 12px 14px $color-black;
+	background-color: $color-black;
 	border: none;
 	border-radius: 0;
 	height: 10px;
@@ -24,7 +25,6 @@
 	border: 0;
 	border-radius: 0;
 }
-
 
 // !MENU
 .header__menu {
@@ -68,7 +68,7 @@
 }
 
 // !BURGER
-.burger {
+.header__burger {
 	cursor: pointer;
 	position: relative;
 	border: none;
@@ -82,8 +82,8 @@
 	display: none
 }
 
-.burger::before,
-.burger::after {
+.header__burger::before,
+.header__burger::after {
 	content: '';
 	left: 0;
 	position: absolute;
@@ -95,13 +95,13 @@
 	transition-duration: 0.3s;
 }
 
-.burger::before {
+.header__burger::before {
 	top: 0;
 	box-shadow: 0 11px 0 $color-white;
 	transition-duration: 0.3s;
 }
 
-.burger::after {
+.header__burger::after {
 	bottom: 0;
 }
 
@@ -160,7 +160,9 @@
 	color: #ffffff03;
 	background-image: url('/img/main/animation.png');
 	background-repeat: repeat;
+	// Делает БГ текста прозрачным
 	-webkit-background-clip: text;
+	// БГ текста летает в виде картинки
 	animation: animationFloatingBg 50s ease-in-out infinite;
 	font-weight: 900;
 	-webkit-text-stroke: 1px;
@@ -174,6 +176,7 @@
 }
 
 .animationBtn {
+	// появляется кнопка с эффектом глич
 	animation: text-flicker-in-glow 2s 0.5s linear both;
 }
 
@@ -222,6 +225,9 @@
 	}
 
 	&:before {
+		content: 'HELLO ME FRIEND';
+		position: relative;
+		background: transparent;
 		top: 0;
 		left: 0;
 		opacity: 1;
@@ -230,9 +236,6 @@
 		padding: 0px 30px;
 		line-height: 40px;
 		transition: 0.5s;
-		position: relative;
-		background: transparent;
-		content: 'HELLO ME FRIEND';
 		transform: translateY(0) rotateX(0);
 		border: 3px solid $color-green;
 		border-radius: 25px;
@@ -244,7 +247,7 @@
 
 // !MEDIA
 @media (max-width: 784px) {
-	.burger {
+	.header__burger {
 		display: flex;
 		margin-bottom: 60px;
 	}
@@ -258,7 +261,7 @@
 		padding-top: 2rem;
 	}
 
-	.burger:hover .header__menu {
+	.header__burger:hover .header__menu {
 		display: flex;
 		flex-direction: column;
 		text-align: center;
@@ -278,14 +281,14 @@
 		}
 	}
 
-	.burger:hover::before,
-	.burger:hover::after {
+	.header__burger:hover::before,
+	.header__burger:hover::after {
 		background: $color-blue;
 		transition-duration: 0.3s;
 
 	}
 
-	.burger:hover::before {
+	.header__burger:hover::before {
 		box-shadow: 0 11px 0 $color-blue;
 		transition-duration: 0.3s;
 
@@ -310,11 +313,11 @@
 		font-size: 0.8rem;
 	}
 
-	.burger {
+	.header__burger {
 		margin-bottom: 280px;
 
 		.header__menu {
-			.header__menu-link {
+			&-link {
 				font-size: 1.2rem;
 				padding: 0.7rem;
 
@@ -327,5 +330,4 @@
 			}
 		}
 	}
-
 }

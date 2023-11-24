@@ -5,8 +5,8 @@
 .bg-footer {
 	width: 100%;
 	min-height: 200px;
-	background-color: #000000;
-	box-shadow: 0px 0px 20px 50px rgba(0, 0, 0);
+	background-color: $color-black;
+	box-shadow: 0px 0px 20px 50px $color-black;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -31,7 +31,7 @@
 		&:hover {
 			transform: scale(1.2);
 			border-radius: 50%;
-			box-shadow: 0px 0px 12px 5px #35b397;
+			box-shadow: 0px 0px 12px 5px $color-green;
 			filter: opacity(1);
 		}
 	}
@@ -58,11 +58,13 @@
 	color: #ffffff03;
 	background-image: url('/img/main/animation.png');
 	background-repeat: repeat;
+	// Делает БГ текста прозрачным
 	-webkit-background-clip: text;
+	// БГ текста летает в виде картинки
 	animation: animationFloatingBg 50s ease-in-out infinite;
 	transition-duration: 0.3s;
 	margin-bottom: 80px;
-	box-shadow: 1px 1px 5px -1px #35b397;
+	box-shadow: 1px 1px 5px -1px $color-green;
 	border-radius: 15px;
 	display: inline-block;
 	padding: 5px;

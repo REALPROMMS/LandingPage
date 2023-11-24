@@ -4,7 +4,7 @@
 @import './sections/project';
 @import './sections/hobby';
 @import './sections/footer';
-@import './other/menu-toggle';
+@import './other/all-button';
 @import './other/night-theme';
 @import './other/full-screen';
 @import './other/burger-navigation';
@@ -14,8 +14,9 @@
 @import './animation/anim-main';
 @import 'vars';
 
-
+// !Шрифты (2й шрифт для кнопки CLICK)
 @import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@700&display=swap');
 
 * {
 	margin: 0;
@@ -46,93 +47,40 @@ body {
 	background-size: cover;
 	height: 100%;
 	padding-top: 150px;
+	// движение BG
 	animation: animationFloatingBg 25s ease-in-out infinite;
 }
 
+// !Внешние рамки
 .inset {
-	box-shadow: 0px 0px 17px 7px rgb(0, 0, 0) inset;
+	box-shadow: 0px 0px 17px 7px $color-black inset;
 	flex-grow: 1;
 	border-radius: 50px;
-}
-
-// !AUDIO-BTN
-.audio-btn {
-	background: url(/img/audio-icons/play.png) no-repeat;
-	border: none;
-	width: 50px;
-	height: 50px;
-	cursor: pointer;
-	position: absolute;
-	top: 92%;
-	left: 2%;
-	position: fixed;
-	z-index: 10;
-	filter: opacity(0.7);
-	border-radius: 50%;
-	animation: myAnimPulse 1s ease 0s infinite normal forwards;
-	opacity: 0.5;
-	transition: all 0.2s;
-	filter: invert(1);
-
-	&:hover {
-		// box-shadow: 0px 0px 12px 5px #1bc7f1;
-		opacity: 1;
-		filter: none;
-	}
-}
-
-// !HOME-BTN
-.home-link {
-	img {
-		position: absolute;
-		top: 92%;
-		right: 2%;
-		position: fixed;
-		animation: myAnimPulse 1s ease 0s infinite normal forwards;
-		border-radius: 50%;
-		opacity: 0.5;
-		z-index: 10;
-		transition: all 0.2s;
-		filter: invert(1);
-
-		&:hover {
-			// box-shadow: 0px 0px 12px 5px #1bc7f1;
-			opacity: 1;
-			filter: none;
-		}
-	}
-}
-
-// !Анимация нажатия кнопки
-.bubbly-button {
-	transition: all ease-in 0.1s, box-shadow ease-in 0.25s;
-
-	&:active {
-		transform: scale(0.9);
-	}
 }
 
 // !Для header что бы сдлеать его липким
 .sticky {
 	position: fixed;
-	// position: sticky;
 	top: 0;
 	width: 100%;
 	z-index: 21;
 }
 
+// !BG для липкого header
 .bg-sticky {
-	background-color: #043b368c;
+	background-color: rgb(26 113 112 / 55%);
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
 }
 
-// !Для первоночальной страницы, display none block
+// !Для первоночальной страницы, display NONE
 .none {
 	display: none;
 }
 
 // !Для navbara задал бэкграуд черный что бы не было белого фона
 .main-header {
-	background: black;
+	background: $color-black;
 }
 
 // !MEDIA

@@ -4,7 +4,7 @@
 	width: 100%;
 	min-height: 600px;
 	margin-top: 180px;
-	box-shadow: 0px 0px 20px 120px rgba(0, 0, 0);
+	box-shadow: 0px 0px 20px 120px $color-black;
 	border-radius: 50px;
 	display: flex;
 	flex-direction: column;
@@ -18,7 +18,7 @@
 }
 
 .hobby-title {
-	background-color: rgb(2 4 4 / 76%);
+	background-color: #020404c2;
 	border-radius: 20px;
 	padding: 5px;
 	display: inline-block;
@@ -28,14 +28,15 @@
 	font-size: 3rem;
 	letter-spacing: 0.3rem;
 	font-weight: bold;
-	// color: #ffffff03;
 	color: rgb(14 237 239 / 31%);
 	background-image: url('/img/main/animation.png');
 	background-repeat: repeat;
+	// Делает БГ текста прозрачным
 	-webkit-background-clip: text;
+	// БГ текста летает в виде картинки
 	animation: animationFloatingBg 50s ease-in-out infinite;
 	transition-duration: 0.3s;
-	box-shadow: 0px 7px 10px -6px #35b397;
+	box-shadow: 0px 7px 10px -6px $color-green;
 	display: inline-block;
 	border-radius: 15px;
 	cursor: pointer;
@@ -47,8 +48,8 @@
 
 // !HOBBY-INFO
 .hobby__info {
-	color: #ffffff;
-	text-shadow: 0px 0px 5px #35b397;
+	color: $color-white;
+	text-shadow: 0px 0px 5px $color-green;
 	margin-left: 1rem;
 }
 
@@ -59,12 +60,12 @@
 
 .hobby__info-subtitle {
 	font-size: 1rem;
-	// border-bottom: 1px solid #35b397;
+	// border-bottom: 1px solid $color-green;
 	border-radius: 5px;
 	background-color: #00000082;
 	padding: 10px;
 	border-radius: 20px;
-	box-shadow: -3px -3px 3px 1px #35b397;
+	box-shadow: -3px -3px 3px 1px $color-green;
 }
 
 // !SWIPER HOBBY
@@ -79,7 +80,7 @@
 	width: 70%;
 	height: 40vh;
 	margin-top: 3rem;
-	box-shadow: 0px 0px 0px 0px #35b397 inset;
+	box-shadow: 0px 0px 0px 0px $color-green inset;
 }
 
 .swiper-slide {
@@ -98,7 +99,7 @@
 
 		&:hover {
 
-			box-shadow: 0px 0px 10px 5px #35b397;
+			box-shadow: 0px 0px 10px 5px $color-green;
 		}
 	}
 
@@ -108,21 +109,21 @@
 }
 
 .swiper-button-prev {
-	color: #35b397;
+	color: $color-green;
 
 	&:hover {
 		transform: scale(1.1);
-		color: #1bc7f1;
+		color: $color-blue;
 	}
 }
 
 .swiper-button-next {
-	color: #35b397;
+	color: $color-green;
 	font-size: 1rem;
 
 	&:hover {
 		transform: scale(1.1);
-		color: #1bc7f1;
+		color: $color-blue;
 	}
 }
 
@@ -132,11 +133,11 @@
 }
 
 .swiper-pagination-bullet {
-	background-color: #35b397;
+	background-color: $color-green;
 }
 
 .swiper-pagination-bullet-active {
-	background-color: #1bc7f1;
+	background-color: $color-blue;
 }
 
 
@@ -158,7 +159,7 @@
 @media (max-width: 567px) {
 
 	.bg-hobby {
-		box-shadow: 0px 0px 20px 40px rgb(0, 0, 0);
+		box-shadow: 0px 0px 20px 40px $color-black;
 		margin-top: 95px;
 	}
 

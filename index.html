@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--FIVEICONS-->
@@ -11,57 +12,50 @@
 	<link rel="manifest" href="index.html" />
 	<!--FIVEICONS-->
 
-	<!--SWIPER LIBS-->
-	<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
-	<!--SWIPER LIBS-->
-
 	<!-- BOX ICONS CSS -->
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 	<!-- BOX ICONS CSS -->
 
-	<link rel="stylesheet" href="css/main.css">
-	<title>REALPROMMS</title>
 	<!--AJAX(JQUERY) LIBS FOR BURGEN MENU ICON-BURGER-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 	<!--AJAX(JQUERY) LIBS FOR BURGEN MENU ICON-BURGER-->
+
+	<!--SWIPER LIBS-->
+	<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+	<!--SWIPER LIBS-->
+
+	<link rel="stylesheet" href="css/main.css">
+	<title>REALPROMMS</title>
+
 </head>
 
 <body>
-	<!--FULL SCREEN-->
-	<header class="full__screen">
-		<!-- #aboutMe - плавная прокрутка -->
-		<a href="#home" class="full__screen-btn"><span class="full__screen-txt">C<span
-					class="full__screen-letter">L</span>ICK</span></a>
-		<div class="full__screen-squere">
-			<!-- <div class="squere-box"><span class="squareSpan"></span></div>
-			<div class="squere-box"><span class="circleSpan"></span></div>
-			<div class="squere-box"><span class="squareSpan"></span></div>
-			<div class="squere-box"><span class="circleSpan"></span></div>
-			<div class="squere-box"><span class="squareSpan"></span></div>
-			<div class="squere-box"><span class="circleSpan"></span></div>
-			<div class="squere-box"><span class="squareSpan"></span></div>
-			<div class="squere-box"><span class="circleSpan"></span></div>
-			<div class="squere-box"><span class="squareSpan"></span></div> -->
-		</div>
 
+	<!--FULL SCREEN-->
+	<header class="full-screen">
+		<a href="#home" class="full-screen__button">
+			<span class="full-screen__text">C<span class="full-screen__letter">L</span>ICK</span>
+		</a>
 	</header>
 	<!--FULL SCREEN-->
 
 	<div class="wrapper none">
 
 		<!--BURGEN MENU OTHER SITE-->
-		<div class="mobile__burger">
-			<div class="icon" id="menu"><i class="fas fa-bars" id="toggler"></i></div>
-			<div id="main">
-				<nav id="navbar">
-					<ul id="links">
-						<li><a class="active-home" href="index.html">HOME</a></li>
-						<li><a href="#aboutMe">ABOUT</a></li>
-						<li><a href="#hobby">HOBBY</a></li>
-						<li><a href="#skill">SKILLS</a></li>
-						<li><a href="#proect">PORTFOLIO</a></li>
-					</ul>
-				</nav>
+		<div class="mobile">
+			<div class="mobile__burger">
+				<div class="burger-icon" id="menu"><i class="fas fa-bars" id="toggler"></i></div>
+				<div id="main">
+					<nav id="navbar">
+						<ul id="links">
+							<li><a class="active-home" href="index.html">HOME</a></li>
+							<li><a href="#aboutMe">ABOUT</a></li>
+							<li><a href="#hobby">HOBBY</a></li>
+							<li><a href="#skill">SKILLS</a></li>
+							<li><a href="#proect">PORTFOLIO</a></li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 		</div>
 		<!--BURGEN MENU OTHER SITE-->
@@ -75,9 +69,9 @@
 				<a class="header__menu-link bubbly-button" href="#skill">SKILLS</a>
 				<a class="header__menu-link bubbly-button" href="#proect">PORTFOLIO</a>
 			</nav>
-			<section class="header">
+			<div class="header">
 				<div class="container">
-					<button class="burger">
+					<button class="header__burger">
 						<nav class="header__menu">
 							<a class="header__menu-link bubbly-button active" href="index.html">HOME</a>
 							<a class="header__menu-link bubbly-button" href="#aboutMe">ABOUT</a>
@@ -98,7 +92,7 @@
 						<a class="btn-flip header__button-animation" data-back="Back" data-front="Front" href="#hobby"></a>
 					</div>
 				</div>
-			</section>
+			</div>
 		</header>
 		<!--MAIN HEADER-->
 
@@ -599,57 +593,59 @@
 				<button class="audio-btn" id="playpausebtn"></button>
 			</div>
 
-			<nav class="menu__toggle">
-				<div class="menu__toggle-content">
-					<div class="toggle-btn">
-						<img class="toggleMain tgdBtn" src="img/footer/setting.png" alt="icon">
-					</div>
+			<div class="toggle">
+				<nav class="toggle__menu">
+					<div class="toggle__menu-content">
+						<div class="toggle-button">
+							<img class="toggle-img button-click" src="img/footer/setting.png" alt="icon">
+						</div>
 
-					<span style="--i:5;">
-						<a href="https://web.whatsapp.com/" target="_blank"><i class='bx bxl-whatsapp flap'></i></a>
-					</span>
+						<span style="--i:5;">
+							<a href="https://web.whatsapp.com/" target="_blank"><i class='bx bxl-whatsapp flap'></i></a>
+						</span>
 
-					<span style="--i:2;">
-						<a href="https://vk.com/" target="_blank"><i class='bx bxl-vk'></i></a>
-					</span>
+						<span style="--i:2;">
+							<a href="https://vk.com/" target="_blank"><i class='bx bxl-vk'></i></a>
+						</span>
 
-					<span style="--i:4;">
-						<a href="https://github.com/REALPROMMS" target="_blank"><i class='bx bxl-github'></i></a>
-					</span>
+						<span style="--i:4;">
+							<a href="https://github.com/REALPROMMS" target="_blank"><i class='bx bxl-github'></i></a>
+						</span>
 
-					<span style="--i:1;">
-						<a href="https://web.telegram.org/" target="_blank"><i class='bx bxl-telegram'></i></a>
-					</span>
+						<span style="--i:1;">
+							<a href="https://web.telegram.org/" target="_blank"><i class='bx bxl-telegram'></i></a>
+						</span>
 
-					<!-- btn night-theme -->
-					<span class="night-btn-toggle" style="--i:3;">
-						<a href="">
-							<div class="power-switch-toggle">
-								<input type="checkbox" />
-								<div class="button">
-									<svg class="power-off">
-										<use xlink:href="#line" class="line" />
-										<use xlink:href="#circle" class="circle" />
-									</svg>
-									<svg class="power-on">
-										<use xlink:href="#line" class="line" />
-										<use xlink:href="#circle" class="circle" />
-									</svg>
+						<!-- btn night-theme -->
+						<span class="night-btn-toggle" style="--i:3;">
+							<a href="">
+								<div class="power-switch-toggle">
+									<input type="checkbox" />
+									<div class="button">
+										<svg class="power-off">
+											<use xlink:href="#line" class="line" />
+											<use xlink:href="#circle" class="circle" />
+										</svg>
+										<svg class="power-on">
+											<use xlink:href="#line" class="line" />
+											<use xlink:href="#circle" class="circle" />
+										</svg>
+									</div>
 								</div>
-							</div>
-							<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-								<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="line">
-									<line x1="75" y1="34" x2="75" y2="58" />
-								</symbol>
-								<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="circle">
-									<circle cx="75" cy="80" r="35" />
-								</symbol>
-							</svg>
-						</a>
-					</span>
+								<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+									<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="line">
+										<line x1="75" y1="34" x2="75" y2="58" />
+									</symbol>
+									<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="circle">
+										<circle cx="75" cy="80" r="35" />
+									</symbol>
+								</svg>
+							</a>
+						</span>
 
-				</div>
-			</nav>
+					</div>
+				</nav>
+			</div>
 
 			<div class="night-btn">
 				<div class="power-switch">
@@ -767,7 +763,7 @@
 	<script src="js/burger-nav.js"></script>
 	<script src="js/menu-toggle.js"></script>
 	<script src="js/night-theme.js"></script>
-	<script src="js/app.js"></script>
+	<script src="js/swiper.js"></script>
 	<script src="js/audio-btn.js"></script>
 	<script src="js/observer.js"></script>
 	<script src="js/full-screen.js"></script>

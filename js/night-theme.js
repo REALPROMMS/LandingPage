@@ -6,7 +6,6 @@ power.addEventListener('click', () => {
 	header.classList.toggle('night-mode')
 });
 
-
 // !MAIN NIGHT
 body = document.querySelector('body'),
 	main = body.querySelector('.main'),

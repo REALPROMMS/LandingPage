@@ -9,6 +9,7 @@
 	left: 48.5%;
 	top: 91%;
 	transform: translate(-50%, -50%);
+	// пульсация кнопки
 	animation: myAnimPulse 1s ease 0s infinite normal forwards;
 
 	.map-btn {
@@ -40,18 +41,15 @@
 .box-container {
 	max-height: 60vh;
 	width: 80%;
-	background-color: #2b8b74;
+	background-color: $color-green;
 	border-radius: 16px;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
-	box-shadow: 0px 0px 12px 5px #2b8b74;
+	box-shadow: 0px 0px 12px 5px $color-green;
 	// Показывает модальное окно
-	// animation: scale-in-ver-bottom 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	animation: scale-in-hor-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-
-
 
 // !open modal window
 @keyframes scale-in-hor-center {
@@ -68,12 +66,11 @@
 	}
 }
 
-
 .box-container-header {
 	padding: 0.5rem;
 	display: flex;
 	justify-content: center;
-	box-shadow: 0px 0px 10px 3px #000000 inset;
+	box-shadow: 0px 0px 10px 3px $modal-color inset;
 	position: relative;
 }
 
@@ -110,21 +107,22 @@
 }
 
 .map-btn-close {
-	color: #000000;
-	box-shadow: 0px 0px 5px 1px #000000;
+	color: $modal-color;
+	box-shadow: 0px 0px 5px 1px $modal-color;
 	transition: all 0.3s;
 	cursor: pointer;
 
 	&:hover {
-		color: #000000;
-		background-color: #1bc7f1;
-		box-shadow: 0px 0px 5px 1px #1bc7f1, 0px 0px 5px 1px #000000 inset;
+		color: $modal-color;
+		background-color: $color-blue;
+		box-shadow: 0px 0px 5px 1px $color-blue, 0px 0px 5px 1px $modal-color inset;
 		transform: scale(1.2);
 	}
 }
 
-// Скрывает модальное окно
+
 .animation-modal-window2 {
+	// Скрывает модальное окно
 	animation: scale-out-horizontal 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
