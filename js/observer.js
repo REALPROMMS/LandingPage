@@ -79,6 +79,22 @@ const observerSkill = new IntersectionObserver(items => {
 const elementsSkill = ['.skill__progress', '.skill__progress2', '.skill__progress3', '.skill__progress4', '.skill__progress5', '.skill__progress6'];
 elementsSkill.forEach(elementsSkill => observerSkill.observe(document.querySelector(elementsSkill)));
 
+// !----------------------------------
+
+// !Появляется бэкграунд у header, при прокрутке до класса Hobby +++
+const observerBg = new IntersectionObserver(items => {
+	items.forEach(item => {
+		const menuBG = document.querySelector('.header__menu')
+		menuBG.classList.toggle('bg-sticky', item.isIntersecting);
+	});
+});
+const elementsBg = ['.bg-hobby', '.bg-skills', '.project-title', '.bg-footer'];
+elementsBg.forEach(elementsBg => observerBg.observe(document.querySelector(elementsBg)));
+
+// !----------------------------------
+
+
+
 // !------------- замена блока кода
 // if (entry.isIntersecting) {
 // 	animBox.classList.add('social-box-anim');
@@ -88,3 +104,6 @@ elementsSkill.forEach(elementsSkill => observerSkill.observe(document.querySelec
 // animBox.classList.remove('social-box-anim');
 // !------------- одной строкой можно заменить код который выше в коментах
 // animBox.classList.toggle('social-box-anim', entry.isIntersecting);
+
+
+

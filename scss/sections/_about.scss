@@ -1,5 +1,5 @@
-@import './animation/anim-about';
-@import 'vars';
+@import '../animation/anim-about';
+@import '../vars';
 
 .bg-about {
 	width: 100%;
@@ -69,6 +69,7 @@ hr {
 	box-shadow: 0px 0px 10px 0px #35b397;
 	height: 9px;
 	border-radius: 25px;
+	border: 1px;
 }
 
 .description-img {

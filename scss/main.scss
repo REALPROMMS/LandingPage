@@ -1,16 +1,16 @@
-@import 'header';
-@import 'about';
-@import 'skill';
-@import 'project';
-@import 'hobby';
-@import 'footer';
-@import 'menu-toggle';
-@import 'night-theme';
-@import 'full-screen';
-@import 'burger-navigation';
-@import 'modal';
-@import 'modal-avatar';
-@import 'modal-map';
+@import './sections/header';
+@import './sections/about';
+@import './sections/skill';
+@import './sections/project';
+@import './sections/hobby';
+@import './sections/footer';
+@import './other/menu-toggle';
+@import './other/night-theme';
+@import './other/full-screen';
+@import './other/burger-navigation';
+@import './modal/modal';
+@import './modal/modal-avatar';
+@import './modal/modal-map';
 @import './animation/anim-main';
 @import 'vars';
 
@@ -119,7 +119,10 @@ body {
 	top: 0;
 	width: 100%;
 	z-index: 21;
+}
 
+.bg-sticky {
+	background-color: #043b368c;
 }
 
 // !Для первоночальной страницы, display none block
