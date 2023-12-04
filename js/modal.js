@@ -22,3 +22,8 @@ reserved.addEventListener('click', () => {
 		}, 700);
 	});
 })
+
+
+modalWindow.querySelector('.modal-container').addEventListener('click', (event) => {
+	event.stopPropagation();
+})
