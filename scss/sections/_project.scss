@@ -2,7 +2,7 @@
 
 .bg-project {
 	width: 100%;
-	min-height: 600px;
+	min-height: 650px;
 	margin-top: 180px;
 	box-shadow: 0px 0px 20px 120px $color-black;
 	border-radius: 50px;
@@ -149,8 +149,8 @@
 			bottom: 0px;
 			z-index: 2;
 			transition: ease all 1.3s;
-			background: rgba(0, 0, 0, .4);
-			border-radius: 25px
+			background: rgba(0, 0, 0, 0.4);
+			border-radius: 25px;
 		}
 
 		&.item-a {
@@ -170,6 +170,18 @@
 
 		&.item-d {
 			background-image: url('/img/content/project/fo.png');
+			background-position: center center;
+		}
+		&.item-e {
+			background-image: url('/img/content/project/TodoListJS.jpg');
+			background-position: center center;
+		}
+		&.item-f {
+			background-image: url('/img/content/project/banner.jpg');
+			background-position: center center;
+		}
+		&.item-g {
+			background-image: url('/img/content/project/TodoREACT.jpg');
 			background-position: center center;
 		}
 
@@ -279,7 +291,6 @@
 
 // !MEDIA
 @media (max-width: 585px) {
-
 	.bg-project {
 		box-shadow: 0px 0px 20px 50px $color-black;
 		margin-top: 95px;
@@ -333,7 +344,6 @@
 }
 
 @media (max-width: 490px) {
-
 	.project-title span {
 		font-size: 2.2rem;
 	}
