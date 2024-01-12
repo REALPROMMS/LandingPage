@@ -2,7 +2,7 @@
 
 // !AUDIO BUTTON
 .audio-btn {
-	background: url(../../img/audio-icons/play.png) no-repeat;
+	background: url(../img/audio-icons/play.png) no-repeat;
 	border: none;
 	width: 50px;
 	height: 50px;
@@ -68,7 +68,6 @@
 	}
 }
 
-
 .toggle__menu-content .toggle-button,
 .toggle__menu-content span a {
 	height: 50px;
@@ -111,7 +110,7 @@
 }
 
 .toggle__menu.open .toggle__menu-content span {
-	transform: rotate(calc(var(--element) * (-360deg/8))) translateY(120px); // element это переменная
+	transform: rotate(calc(var(--element) * (-360deg / 8))) translateY(120px); // element это переменная
 	opacity: 1;
 }
 
