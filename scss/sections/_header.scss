@@ -2,11 +2,11 @@
 @import '../vars';
 
 .header {
-	background: url('/img/main/bg-header.jpg') fixed;
+	background: url('../../img/main/bg-header.jpg') fixed;
 	height: 100vh;
 	max-width: 100%;
 	filter: brightness(75%);
-	// БГ основной секции летает из стороны в сторону 
+	// БГ основной секции летает из стороны в сторону
 	animation: shrink 55s infinite alternate;
 	box-shadow: 0px 0px 50px 30px $color-black inset;
 	position: relative;
@@ -79,7 +79,7 @@
 	justify-content: center;
 	margin: 0 auto;
 	top: 20px;
-	display: none
+	display: none;
 }
 
 .header__burger::before,
@@ -122,7 +122,6 @@
 	letter-spacing: 0.3rem;
 	transition-duration: 0.3s;
 	font-weight: bold;
-
 }
 
 .header__info-link {
@@ -134,7 +133,7 @@
 	color: $color-blue;
 	transition-duration: 0.3s;
 	display: flex;
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 
 	&:hover {
 		box-shadow: 0px 14px 10px -6px $color-green;
@@ -194,7 +193,6 @@
 	font-weight: bold;
 
 	&:hover {
-
 		&:after {
 			opacity: 1;
 			transform: translateY(0) rotateX(0);
@@ -221,7 +219,6 @@
 		border-radius: 25px;
 		border: 3px solid $color-blue;
 		box-shadow: 0px 0px 7px 3px $color-blue;
-
 	}
 
 	&:before {
@@ -239,11 +236,8 @@
 		transform: translateY(0) rotateX(0);
 		border: 3px solid $color-green;
 		border-radius: 25px;
-
 	}
 }
-
-
 
 // !MEDIA
 @media (max-width: 784px) {
@@ -285,18 +279,15 @@
 	.header__burger:hover::after {
 		background: $color-blue;
 		transition-duration: 0.3s;
-
 	}
 
 	.header__burger:hover::before {
 		box-shadow: 0 11px 0 $color-blue;
 		transition-duration: 0.3s;
-
 	}
 }
 
 @media (max-width: 567px) {
-
 	.header {
 		height: 100vh;
 	}
