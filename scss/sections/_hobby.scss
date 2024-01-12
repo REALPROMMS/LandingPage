@@ -29,7 +29,7 @@
 	letter-spacing: 0.3rem;
 	font-weight: bold;
 	color: rgb(14 237 239 / 31%);
-	background-image: url('/img/main/animation.png');
+	background-image: url('../../img/main/animation.png');
 	background-repeat: repeat;
 	// Делает БГ текста прозрачным
 	-webkit-background-clip: text;
@@ -98,7 +98,6 @@
 		transition-duration: 0.3s;
 
 		&:hover {
-
 			box-shadow: 0px 0px 10px 5px $color-green;
 		}
 	}
@@ -140,11 +139,8 @@
 	background-color: $color-blue;
 }
 
-
-
 // !MEDIA
 @media (max-width: 750px) {
-
 	.sliderHobby {
 		width: 90%;
 		margin-top: 0rem;
@@ -157,7 +153,6 @@
 }
 
 @media (max-width: 567px) {
-
 	.bg-hobby {
 		box-shadow: 0px 0px 20px 40px $color-black;
 		margin-top: 95px;
@@ -175,7 +170,6 @@
 	.swiper-button-prev {
 		display: none;
 	}
-
 }
 
 @media (max-width: 400px) {

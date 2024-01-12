@@ -118,7 +118,7 @@
   }
 }
 .header {
-  background: url("./img/main/bg-header.jpg") fixed;
+  background: url("../img/main/bg-header.jpg") fixed;
   height: 100vh;
   max-width: 100%;
   filter: brightness(75%);
@@ -438,7 +438,7 @@
   letter-spacing: 0.3rem;
   font-weight: bold;
   color: rgba(14, 237, 239, 0.31);
-  background-image: url("/img/main/animation.png");
+  background-image: url("../img/main/animation.png");
   background-repeat: repeat;
   -webkit-background-clip: text;
   animation: animationFloatingBg 50s ease-in-out infinite;
@@ -1025,7 +1025,7 @@ hr {
   letter-spacing: 0.3rem;
   font-weight: bold;
   color: rgba(14, 237, 239, 0.31);
-  background-image: url("/img/main/animation.png");
+  background-image: url("../../img/main/animation.png");
   background-repeat: repeat;
   -webkit-background-clip: text;
   animation: animationFloatingBg 50s ease-in-out infinite;
@@ -1349,7 +1349,7 @@ hr {
   letter-spacing: 0.3rem;
   font-weight: bold;
   color: rgba(14, 237, 239, 0.31);
-  background-image: url("/img/main/animation.png");
+  background-image: url("../../img/main/animation.png");
   background-repeat: repeat;
   -webkit-background-clip: text;
   animation: animationFloatingBg 50s ease-in-out infinite;
@@ -2630,7 +2630,7 @@ hr {
 }
 
 .me {
-  background-image: url("/img/main/logo.jpeg");
+  background-image: url("../img/main/logo.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -2951,7 +2951,7 @@ body {
 }
 
 .main {
-  background: url("/img/main/bg-main.jpg") fixed;
+  background: url("../img/main/bg-main.jpg") fixed;
   background-size: cover;
   height: 100%;
   padding-top: 150px;

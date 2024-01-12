@@ -43,7 +43,7 @@ body {
 
 // !BG
 .main {
-	background: url('/img/main/bg-main.jpg') fixed;
+	background: url('../img/main/bg-main.jpg') fixed;
 	background-size: cover;
 	height: 100%;
 	padding-top: 150px;
@@ -87,8 +87,6 @@ body {
 	color: white;
 	display: none;
 }
-
-
 
 // !MEDIA
 @media (max-width: 567px) {

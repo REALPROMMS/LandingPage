@@ -30,7 +30,7 @@
 	letter-spacing: 0.3rem;
 	font-weight: bold;
 	color: rgb(14 237 239 / 31%);
-	background-image: url('/img/main/animation.png');
+	background-image: url('../img/main/animation.png');
 	background-repeat: repeat;
 	// Делает БГ текста прозрачным
 	-webkit-background-clip: text;
@@ -50,7 +50,7 @@
 // !Анимация заголовка, появление из hide
 .shakeAnim {
 	// появление текста
-	animation: outHideTittle 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: outHideTittle 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 // !DESCRIPTION
@@ -107,7 +107,6 @@ hr {
 
 	&-message {
 		padding-bottom: 1.5rem;
-
 	}
 }
 
@@ -143,7 +142,6 @@ hr {
 		.icon-mail:hover {
 			transform: scale(1.2);
 			filter: none;
-
 		}
 	}
 }
@@ -153,8 +151,6 @@ hr {
 	text-decoration: none;
 	color: $color-white;
 }
-
-
 
 // !MEDIA
 @media (max-width: 750px) {
@@ -196,7 +192,6 @@ hr {
 }
 
 @media (max-width: 400px) {
-
 	.about__description {
 		gap: 2rem;
 	}
@@ -226,7 +221,6 @@ hr {
 }
 
 @media (max-width: 355px) {
-
 	.info--top {
 		gap: 0.5rem;
 		font-size: 0.7rem;
