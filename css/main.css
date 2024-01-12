@@ -1138,31 +1138,31 @@ hr {
   border-radius: 25px;
 }
 .card .cover.item-a {
-  background-image: url("/img/content/project/one.png");
+  background-image: url("../img/content/project/one.png");
   background-position: center center;
 }
 .card .cover.item-b {
-  background-image: url("/img/content/project/two.png");
+  background-image: url("../img/content/project/two.png");
   background-position: center center;
 }
 .card .cover.item-c {
-  background-image: url("/img/content/project/three.png");
+  background-image: url("../img/content/project/three.png");
   background-position: center center;
 }
 .card .cover.item-d {
-  background-image: url("/img/content/project/fo.png");
+  background-image: url("../img/content/project/fo.png");
   background-position: center center;
 }
 .card .cover.item-e {
-  background-image: url("/img/content/project/TodoListJS.jpg");
+  background-image: url("../img/content/project/TodoListJS.jpg");
   background-position: center center;
 }
 .card .cover.item-f {
-  background-image: url("/img/content/project/banner.jpg");
+  background-image: url("../img/content/project/banner.jpg");
   background-position: center center;
 }
 .card .cover.item-g {
-  background-image: url("/img/content/project/TodoREACT.jpg");
+  background-image: url("../img/content/project/TodoREACT.jpg");
   background-position: center center;
 }
 .card .cover h6 {
