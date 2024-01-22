@@ -1165,6 +1165,10 @@ hr {
   background-image: url("../img/content/project/TodoREACT.jpg");
   background-position: center center;
 }
+.card .cover.item-h {
+  background-image: url("../img/content/project/magical-ball.jpg");
+  background-position: center center;
+}
 .card .cover h6 {
   font-weight: bold;
   position: absolute;
