@@ -188,6 +188,31 @@
 			background-image: url('../img/content/project/magical-ball.jpg');
 			background-position: center center;
 		}
+		&.item-x {
+			background-image: url('../img/content/project/travel.png');
+			background-position: center center;
+		}
+		//tilda
+		&.item-y {
+			background-image: url('../img/content/project/fire-magic.png');
+			background-position: center center;
+		}
+		&.item-u {
+			background-image: url('../img/content/project/taro-profi1.png');
+			background-position: center center;
+		}
+		&.item-z {
+			background-image: url('../img/content/project/wind-magic.png');
+			background-position: center center;
+		}
+		&.item-l {
+			background-image: url('../img/content/project/taro-profi2.png');
+			background-position: center center;
+		}
+		&.item-m {
+			background-image: url('../img/content/project/runes.png');
+			background-position: center center;
+		}
 
 		h6 {
 			font-weight: bold;
@@ -281,7 +306,7 @@
 .swiper-backface-hidden .swiper-slide {
 	display: flex;
 	align-items: center;
-	margin-left: 10px;
+	// margin-left: 10px;
 	margin-right: 10px;
 }
 

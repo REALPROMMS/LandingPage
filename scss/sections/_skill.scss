@@ -45,7 +45,8 @@
 			background: $color-green;
 			color: $color-black;
 			// повяление полосы
-			animation: shake-horizontal 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+			animation: shake-horizontal 0.7s
+				cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 		}
 	}
 
@@ -76,17 +77,17 @@
 	display: none;
 }
 
-#one:checked~.panels #one-panel,
-#two:checked~.panels #two-panel,
-#three:checked~.panels #three-panel {
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel {
 	transition-duration: 0.3s;
 	display: flex;
 	border-radius: 25px;
 }
 
-#one:checked~.tabs #one-tab,
-#two:checked~.tabs #two-tab,
-#three:checked~.tabs #three-tab {
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab {
 	transform: scale(1.2);
 }
 
@@ -164,12 +165,12 @@
 	transform-origin: left;
 	background: $color-green;
 	// появление полос
-	animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards
+	animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
 .progress-line span::before {
 	position: absolute;
-	content: "";
+	content: '';
 	top: -10px;
 	right: 0;
 	height: 0;
@@ -207,11 +208,11 @@
 }
 
 .JavaScript span {
-	width: 50%;
+	width: 75%;
 }
 
 .react span {
-	width: 25%;
+	width: 50%;
 }
 
 .bootstrap span {
@@ -223,36 +224,43 @@
 }
 
 .html span::after {
-	content: "74%";
+	content: '74%';
 }
 
 .css span::after {
-	content: "82%";
+	content: '82%';
 }
 
 .JavaScript span::after {
-	content: "50%";
+	content: '75%';
 }
 
 .react span::after {
-	content: "25%";
+	content: '50%';
 }
 
 .bootstrap span::after {
-	content: "30%";
+	content: '30%';
 }
 
 .wordpress span::after {
-	content: "35%";
+	content: '35%';
 }
 
 // !TWO PANEL
-.other_skill span::after {
-	content: "50%";
+.tilda span::after {
+	content: '64%';
 }
 
-.other_skill span {
-	width: 50%;
+.tilda span {
+	width: 52%;
+}
+.getcourse span::after {
+	content: '52%';
+}
+
+.getcourse span {
+	width: 52%;
 }
 
 // !THREE PANEL
@@ -281,30 +289,28 @@
 }
 
 .git span::after {
-	content: "50%";
+	content: '50%';
 }
 
 .npm span::after {
-	content: "35%";
+	content: '35%';
 }
 
 .webpack span::after {
-	content: "25%";
+	content: '25%';
 }
 
 .english span::after {
-	content: "25%";
+	content: '25%';
 }
 
 .swipers span::after {
-	content: "48%";
+	content: '48%';
 }
 
 .animation span::after {
-	content: "44%";
+	content: '44%';
 }
-
-
 
 // !MEDIA
 @media (max-width: 750px) {
@@ -318,7 +324,6 @@
 }
 
 @media (max-width: 585px) {
-
 	.tabs {
 		column-gap: 2rem;
 		flex-direction: column;

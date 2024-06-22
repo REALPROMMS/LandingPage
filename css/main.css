@@ -845,11 +845,11 @@ hr {
 }
 
 .JavaScript span {
-  width: 50%;
+  width: 75%;
 }
 
 .react span {
-  width: 25%;
+  width: 50%;
 }
 
 .bootstrap span {
@@ -869,11 +869,11 @@ hr {
 }
 
 .JavaScript span::after {
-  content: "50%";
+  content: "75%";
 }
 
 .react span::after {
-  content: "25%";
+  content: "50%";
 }
 
 .bootstrap span::after {
@@ -884,12 +884,20 @@ hr {
   content: "35%";
 }
 
-.other_skill span::after {
-  content: "50%";
+.tilda span::after {
+  content: "64%";
 }
 
-.other_skill span {
-  width: 50%;
+.tilda span {
+  width: 52%;
+}
+
+.getcourse span::after {
+  content: "52%";
+}
+
+.getcourse span {
+  width: 52%;
 }
 
 .git span {
@@ -1169,6 +1177,30 @@ hr {
   background-image: url("../img/content/project/magical-ball.jpg");
   background-position: center center;
 }
+.card .cover.item-x {
+  background-image: url("../img/content/project/travel.png");
+  background-position: center center;
+}
+.card .cover.item-y {
+  background-image: url("../img/content/project/fire-magic.png");
+  background-position: center center;
+}
+.card .cover.item-u {
+  background-image: url("../img/content/project/taro-profi1.png");
+  background-position: center center;
+}
+.card .cover.item-z {
+  background-image: url("../img/content/project/wind-magic.png");
+  background-position: center center;
+}
+.card .cover.item-l {
+  background-image: url("../img/content/project/taro-profi2.png");
+  background-position: center center;
+}
+.card .cover.item-m {
+  background-image: url("../img/content/project/runes.png");
+  background-position: center center;
+}
 .card .cover h6 {
   font-weight: bold;
   position: absolute;
@@ -1252,7 +1284,6 @@ hr {
 .swiper-backface-hidden .swiper-slide {
   display: flex;
   align-items: center;
-  margin-left: 10px;
   margin-right: 10px;
 }
 
